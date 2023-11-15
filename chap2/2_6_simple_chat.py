@@ -15,13 +15,6 @@ client = OpenAI(
 # Debug
 # st.sidebar.write(st.session_state.convo)
 
-# Functions
-def dumb_chat():
-  with open('fake/dummy1.json') as f:
-    dummy = json.load(f)
-  st.write(dummy[1]['content'])
-  return dummy[1]['content']
-
 def chat_stream(messages,model='gpt-3.5-turbo'):
   # Generate a response from the ChatGPT model
   completion = client.chat.completions.create(
@@ -69,6 +62,5 @@ if prompt := st.chat_input():
   # Query the chatbot with the complete conversation
   with st.chat_message('assistant',avatar=avatar['assistant']):
      result = chat_stream(st.session_state.convo,selected_model)
-    #  result = dumb_chat()
   # Add response to the conversation
   st.session_state.convo.append({'role':'assistant', 'content':result})
