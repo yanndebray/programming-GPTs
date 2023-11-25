@@ -3,6 +3,9 @@ import json
 
 # Functions
 def dumb_chat():
+    return "Hello world"
+
+def dumb_chat2():
     with open('chat/convo0.json') as f:
         dummy = json.load(f)
     return dummy[1]['content']
