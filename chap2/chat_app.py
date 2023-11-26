@@ -12,9 +12,6 @@ client = OpenAI(
     api_key=st.secrets['OPENAI_API_KEY'],
 )
 
-# Debug
-# st.sidebar.write(st.session_state.convo)
-
 # Functions
 def new_chat():
    st.session_state.convo = []
@@ -64,7 +61,7 @@ if 'convo' not in st.session_state:
 
 n = len(os.listdir('chat'))
 if 'id' not in st.session_state:
-    st.session_state.id = n+1
+    st.session_state.id = n
 
 id = st.session_state.id
 
@@ -103,3 +100,6 @@ if prompt:
   # Add response to the conversation
   st.session_state.convo.append({'role':'assistant', 'content':result})
   save_chat(id)
+
+# Debug
+# st.sidebar.write(st.session_state.convo)
