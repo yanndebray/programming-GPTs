@@ -1,3 +1,9 @@
 openai
 streamlit
 tomli
+tiktoken
+langchain
+ipykernel
+bs4
+webvtt-py
+youtube-transcript-api

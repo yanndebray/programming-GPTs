@@ -1,0 +1,3469 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:03.179
+hello good people have you ever wondered
+
+00:00:03.179 --> 00:00:05.640
+what Lang chain was or maybe you've
+
+00:00:05.640 --> 00:00:07.319
+heard about it and you've played around
+
+00:00:07.319 --> 00:00:09.240
+with a few sections but you're not quite
+
+00:00:09.240 --> 00:00:11.460
+sure where to look next well in this
+
+00:00:11.460 --> 00:00:13.500
+video we're going to be covering all of
+
+00:00:13.500 --> 00:00:15.480
+the lane chain Basics with the goal of
+
+00:00:15.480 --> 00:00:18.060
+getting you building and having fun as
+
+00:00:18.060 --> 00:00:20.400
+quick as possible my name is Greg and
+
+00:00:20.400 --> 00:00:22.140
+I've been having a ton of fun building
+
+00:00:22.140 --> 00:00:24.720
+out apps in langchain now I share most
+
+00:00:24.720 --> 00:00:26.340
+of my work on Twitter so if you want to
+
+00:00:26.340 --> 00:00:28.560
+go check it out links in the description
+
+00:00:28.560 --> 00:00:31.260
+you can go follow along with me now this
+
+00:00:31.260 --> 00:00:33.059
+video is going to be based off of the
+
+00:00:33.059 --> 00:00:35.520
+new conceptual docs from lanechain and
+
+00:00:35.520 --> 00:00:37.200
+the reason why I'm doing a video here is
+
+00:00:37.200 --> 00:00:39.000
+because it takes all the technical
+
+00:00:39.000 --> 00:00:41.399
+pieces and abstracts them up into more
+
+00:00:41.399 --> 00:00:43.980
+theoretical qualitative aspects of Lane
+
+00:00:43.980 --> 00:00:45.899
+chain which I think is extremely helpful
+
+00:00:45.899 --> 00:00:49.079
+for it and in order to understand this a
+
+00:00:49.079 --> 00:00:50.399
+little bit better I've created a
+
+00:00:50.399 --> 00:00:53.100
+companion for this video and that is the
+
+00:00:53.100 --> 00:00:55.260
+Lang chain cookbook links in the
+
+00:00:55.260 --> 00:00:56.820
+description if you want to go check that
+
+00:00:56.820 --> 00:00:58.680
+out please go and check out the GitHub
+
+00:00:58.680 --> 00:01:00.360
+and you can follow along here I'm gonna
+
+00:01:00.360 --> 00:01:01.800
+put a lot of time stamps in the
+
+00:01:01.800 --> 00:01:03.059
+description as well there's gonna be a
+
+00:01:03.059 --> 00:01:04.440
+fair amount of content in this one so
+
+00:01:04.440 --> 00:01:06.540
+you can watch it all the way through or
+
+00:01:06.540 --> 00:01:07.860
+if you want to skip to a certain section
+
+00:01:07.860 --> 00:01:09.840
+feel free to jump to that time stamp all
+
+00:01:09.840 --> 00:01:12.479
+right without further Ado let's jump
+
+00:01:12.479 --> 00:01:13.619
+into it all right here are the new
+
+00:01:13.619 --> 00:01:15.240
+conceptual docs from Lang chain now the
+
+00:01:15.240 --> 00:01:16.560
+reason why these are different is
+
+00:01:16.560 --> 00:01:18.600
+because there are the python docs which
+
+00:01:18.600 --> 00:01:19.500
+are going to be the more technical
+
+00:01:19.500 --> 00:01:21.600
+focused one or the JavaScript docs as
+
+00:01:21.600 --> 00:01:22.860
+well which is also more technical
+
+00:01:22.860 --> 00:01:25.619
+documentation however these concepts are
+
+00:01:25.619 --> 00:01:27.060
+more qualitative so you can understand
+
+00:01:27.060 --> 00:01:29.340
+what is going on in the background of
+
+00:01:29.340 --> 00:01:31.200
+these different sections here now we're
+
+00:01:31.200 --> 00:01:32.939
+going to focus on these components of
+
+00:01:32.939 --> 00:01:35.040
+Lang chain there's an entire section on
+
+00:01:35.040 --> 00:01:36.840
+use cases which is when you actually put
+
+00:01:36.840 --> 00:01:38.460
+these into practice and that is going to
+
+00:01:38.460 --> 00:01:40.259
+be a part two of this video so we won't
+
+00:01:40.259 --> 00:01:41.820
+jump into this today that would be a too
+
+00:01:41.820 --> 00:01:43.439
+long for us we're going to run through
+
+00:01:43.439 --> 00:01:46.740
+schema models prompts indexes indexes
+
+00:01:46.740 --> 00:01:49.799
+memory chains and agents with a working
+
+00:01:49.799 --> 00:01:52.320
+code sample for each one of those well
+
+00:01:52.320 --> 00:01:54.119
+without further Ado let's jump into some
+
+00:01:54.119 --> 00:01:55.979
+code here we are with the Lang chain
+
+00:01:55.979 --> 00:01:58.320
+cookbook now my goal is to make this a
+
+00:01:58.320 --> 00:02:00.000
+dense document with a ton of links so
+
+00:02:00.000 --> 00:02:01.380
+you can go and self-service right into
+
+00:02:01.380 --> 00:02:03.960
+their links in the description and if
+
+00:02:03.960 --> 00:02:05.399
+you want to follow along I encourage you
+
+00:02:05.399 --> 00:02:07.079
+to get this on your computer and go from
+
+00:02:07.079 --> 00:02:09.720
+it go for it from there so the goal of
+
+00:02:09.720 --> 00:02:11.220
+this dock is to provide an introductory
+
+00:02:11.220 --> 00:02:12.780
+understanding of the components and use
+
+00:02:12.780 --> 00:02:16.260
+cases of Lang chain in a explain like M5
+
+00:02:16.260 --> 00:02:19.020
+way with examples and code Snippets for
+
+00:02:19.020 --> 00:02:20.819
+use cases check out part two which is
+
+00:02:20.819 --> 00:02:21.959
+not made yet that is coming soon
+
+00:02:21.959 --> 00:02:23.640
+hopefully by the time you see this it
+
+00:02:23.640 --> 00:02:25.739
+will be a bunch of links here we go into
+
+00:02:25.739 --> 00:02:28.140
+what is Lang chain so Lang chain is
+
+00:02:28.140 --> 00:02:29.640
+going to be a framework for developing
+
+00:02:29.640 --> 00:02:32.520
+applications powered by language models
+
+00:02:32.520 --> 00:02:34.620
+well Greg openai just came out with
+
+00:02:34.620 --> 00:02:37.560
+plugins yes but there is a whole lot of
+
+00:02:37.560 --> 00:02:38.640
+other things that you can do with
+
+00:02:38.640 --> 00:02:40.560
+language models outside of those and
+
+00:02:40.560 --> 00:02:43.379
+Lang chain helps abstract a ton of that
+
+00:02:43.379 --> 00:02:45.120
+so that you're able to work with it more
+
+00:02:45.120 --> 00:02:48.120
+easily and intermix different pieces and
+
+00:02:48.120 --> 00:02:50.160
+customize really how you need to
+
+00:02:50.160 --> 00:02:51.900
+so Lane chain makes the complicated
+
+00:02:51.900 --> 00:02:54.000
+parts of working and building with AI
+
+00:02:54.000 --> 00:02:56.580
+models easier it does this in two main
+
+00:02:56.580 --> 00:02:58.319
+ways the first big way is going to be
+
+00:02:58.319 --> 00:02:59.940
+through integration so you can bring
+
+00:02:59.940 --> 00:03:02.459
+external data such as your files other
+
+00:03:02.459 --> 00:03:05.400
+applications API data to your language
+
+00:03:05.400 --> 00:03:07.680
+models which is cool the other big way
+
+00:03:07.680 --> 00:03:09.420
+that it helps do this is through agency
+
+00:03:09.420 --> 00:03:11.640
+so it allows your language models to
+
+00:03:11.640 --> 00:03:13.379
+interact with its environment via
+
+00:03:13.379 --> 00:03:15.959
+decision making basically you're using
+
+00:03:15.959 --> 00:03:17.700
+the language model to help decide which
+
+00:03:17.700 --> 00:03:20.519
+action to take next and you do this when
+
+00:03:20.519 --> 00:03:22.379
+the path isn't so clear or it may be
+
+00:03:22.379 --> 00:03:24.480
+unknown and we'll get into more more of
+
+00:03:24.480 --> 00:03:25.620
+that later
+
+00:03:25.620 --> 00:03:27.780
+so why link chain specifically there are
+
+00:03:27.780 --> 00:03:29.340
+four big reasons why I like Lane chain
+
+00:03:29.340 --> 00:03:30.900
+the first one is going to be for the
+
+00:03:30.900 --> 00:03:33.120
+components Lang chain makes it easy to
+
+00:03:33.120 --> 00:03:34.739
+swap out abstractions and components
+
+00:03:34.739 --> 00:03:36.900
+necessary to work with language models
+
+00:03:36.900 --> 00:03:39.840
+basically they've created a ton of tools
+
+00:03:39.840 --> 00:03:41.940
+that make it super simple to work with
+
+00:03:41.940 --> 00:03:44.940
+language models like chat GPT or
+
+00:03:44.940 --> 00:03:46.620
+anything on how you face how you may
+
+00:03:46.620 --> 00:03:48.120
+want also because it allows you to
+
+00:03:48.120 --> 00:03:50.040
+customize chains really easily so
+
+00:03:50.040 --> 00:03:51.840
+there's a ton of out of the box of
+
+00:03:51.840 --> 00:03:53.640
+support for using and customizing chains
+
+00:03:53.640 --> 00:03:57.239
+basically combining series of actions
+
+00:03:57.239 --> 00:03:58.379
+together
+
+00:03:58.379 --> 00:04:00.599
+on the qualitative side of why LinkedIn
+
+00:04:00.599 --> 00:04:02.459
+is awesome is because the speed is great
+
+00:04:02.459 --> 00:04:04.500
+almost every day I need to go and make
+
+00:04:04.500 --> 00:04:06.180
+sure that I'm on the latest branch of
+
+00:04:06.180 --> 00:04:08.099
+Lang Chan and I go and I update it every
+
+00:04:08.099 --> 00:04:10.319
+time so the speed is awesome the other
+
+00:04:10.319 --> 00:04:12.060
+really cool part is the community so
+
+00:04:12.060 --> 00:04:13.680
+there's a ton of meetups there's a
+
+00:04:13.680 --> 00:04:15.239
+Discord Channel and there's a ton of
+
+00:04:15.239 --> 00:04:16.799
+events like webinars that go on
+
+00:04:16.799 --> 00:04:18.239
+throughout the week that are really
+
+00:04:18.239 --> 00:04:20.280
+awesome learning resources for us
+
+00:04:20.280 --> 00:04:24.300
+cool now again to summarize all this why
+
+00:04:24.300 --> 00:04:25.620
+do we need Lang chain well because
+
+00:04:25.620 --> 00:04:27.180
+language models can be pretty
+
+00:04:27.180 --> 00:04:29.280
+straightforward it is text in text app
+
+00:04:29.280 --> 00:04:30.840
+and you may have experienced this
+
+00:04:30.840 --> 00:04:32.880
+yourself however once you just start
+
+00:04:32.880 --> 00:04:34.919
+developing applications there's a ton of
+
+00:04:34.919 --> 00:04:36.419
+friction points that Lang chain is going
+
+00:04:36.419 --> 00:04:40.020
+to help you develop uh there's a ton of
+
+00:04:40.020 --> 00:04:40.800
+friction points that they're going to
+
+00:04:40.800 --> 00:04:43.259
+help you with basically now the last
+
+00:04:43.259 --> 00:04:44.520
+thing that I'll say about this before we
+
+00:04:44.520 --> 00:04:46.680
+jump into it is that this cookbook isn't
+
+00:04:46.680 --> 00:04:48.419
+going to cover all of the aspects of
+
+00:04:48.419 --> 00:04:50.340
+Lang chain this isn't meant to be a
+
+00:04:50.340 --> 00:04:51.840
+replacement for the documentation online
+
+00:04:51.840 --> 00:04:54.419
+this is meant to show you a very broad
+
+00:04:54.419 --> 00:04:56.100
+overview about the capabilities that
+
+00:04:56.100 --> 00:04:58.919
+there are with my interpretation of them
+
+00:04:58.919 --> 00:05:00.900
+and my voice over with it and with that
+
+00:05:00.900 --> 00:05:02.460
+I'm hoping that you can get to building
+
+00:05:02.460 --> 00:05:05.520
+and impact as quick as possible
+
+00:05:05.520 --> 00:05:07.320
+I'm super curious to see what you build
+
+00:05:07.320 --> 00:05:09.180
+so please let me know and uh I will
+
+00:05:09.180 --> 00:05:10.680
+hopefully uh I would love to see it
+
+00:05:10.680 --> 00:05:11.880
+first thing we're going to do is we're
+
+00:05:11.880 --> 00:05:14.699
+going to import our openai API key now I
+
+00:05:14.699 --> 00:05:16.020
+have a hidden cell here but you're going
+
+00:05:16.020 --> 00:05:19.259
+to replace your API key API key right
+
+00:05:19.259 --> 00:05:21.180
+here just throw that in there the first
+
+00:05:21.180 --> 00:05:22.680
+aspect of link chain components that
+
+00:05:22.680 --> 00:05:24.360
+we're going to look at is the schema now
+
+00:05:24.360 --> 00:05:25.620
+I almost didn't even include this one
+
+00:05:25.620 --> 00:05:26.940
+but the first one is going to be text
+
+00:05:26.940 --> 00:05:29.160
+now what's really cool about these
+
+00:05:29.160 --> 00:05:31.020
+language models is that text is the new
+
+00:05:31.020 --> 00:05:33.660
+programming language not verbatim not
+
+00:05:33.660 --> 00:05:35.220
+per se but we're using a lot more
+
+00:05:35.220 --> 00:05:37.259
+English language to tell language models
+
+00:05:37.259 --> 00:05:39.720
+what to do in this case what day comes
+
+00:05:39.720 --> 00:05:41.699
+after Friday is an example of something
+
+00:05:41.699 --> 00:05:43.620
+I may go tell a language model and it is
+
+00:05:43.620 --> 00:05:45.000
+going to respond back to me with a
+
+00:05:45.000 --> 00:05:47.280
+natural language response very cool next
+
+00:05:47.280 --> 00:05:49.620
+up is going to be chat messages so like
+
+00:05:49.620 --> 00:05:52.139
+text chat messages are similar but they
+
+00:05:52.139 --> 00:05:53.699
+have different types the first type is
+
+00:05:53.699 --> 00:05:55.320
+going to be system and this is helpful
+
+00:05:55.320 --> 00:05:57.180
+background context that tell the AI what
+
+00:05:57.180 --> 00:05:59.880
+to do all right like your helpful
+
+00:05:59.880 --> 00:06:01.979
+teacher assistant bot or something then
+
+00:06:01.979 --> 00:06:03.419
+we have human messages and these are
+
+00:06:03.419 --> 00:06:04.919
+messages that are intended to represent
+
+00:06:04.919 --> 00:06:07.860
+the user and so literally user input or
+
+00:06:07.860 --> 00:06:10.080
+something that I may text from it then
+
+00:06:10.080 --> 00:06:11.639
+we have ai messages and these are
+
+00:06:11.639 --> 00:06:14.340
+messages that show what the AI responded
+
+00:06:14.340 --> 00:06:16.139
+with and the cool part about this is the
+
+00:06:16.139 --> 00:06:18.300
+AI may or may not have actually
+
+00:06:18.300 --> 00:06:20.220
+responded with it but you can tell it
+
+00:06:20.220 --> 00:06:21.660
+that it did so that it has additional
+
+00:06:21.660 --> 00:06:24.180
+context on how to answer you okay so
+
+00:06:24.180 --> 00:06:25.199
+what I'm going to do here is I'm going
+
+00:06:25.199 --> 00:06:27.180
+to import chat open Ai and my three
+
+00:06:27.180 --> 00:06:28.620
+message types and then I'm going to
+
+00:06:28.620 --> 00:06:30.360
+create my chat model I'm going to do
+
+00:06:30.360 --> 00:06:31.620
+that and then I'm going to type in two
+
+00:06:31.620 --> 00:06:34.259
+messages the first system message is you
+
+00:06:34.259 --> 00:06:36.120
+are a nice AI bot that helps a user
+
+00:06:36.120 --> 00:06:37.740
+figure out what to eat in a short
+
+00:06:37.740 --> 00:06:40.380
+sentence and then a human message I like
+
+00:06:40.380 --> 00:06:42.479
+tomatoes what should I eat let me go
+
+00:06:42.479 --> 00:06:43.800
+ahead and run this
+
+00:06:43.800 --> 00:06:45.660
+and you get an AI message back because
+
+00:06:45.660 --> 00:06:47.520
+this is what it responds with you could
+
+00:06:47.520 --> 00:06:48.960
+try making a tomato salad with fresh
+
+00:06:48.960 --> 00:06:51.479
+basil and mozzarella cheese thanks AI
+
+00:06:51.479 --> 00:06:54.120
+That's cool what you can also do is you
+
+00:06:54.120 --> 00:06:56.039
+can also pass more chat history and get
+
+00:06:56.039 --> 00:06:58.020
+responses from the AI so in this case
+
+00:06:58.020 --> 00:07:00.660
+you're a nice AI bot that helps a user
+
+00:07:00.660 --> 00:07:02.400
+figure out where to travel to in one
+
+00:07:02.400 --> 00:07:03.660
+short sentence
+
+00:07:03.660 --> 00:07:05.940
+I'm saying I like the beaches where
+
+00:07:05.940 --> 00:07:07.139
+should I go
+
+00:07:07.139 --> 00:07:09.120
+I'm telling it that it responded to me
+
+00:07:09.120 --> 00:07:10.319
+it didn't actually do this but I'm
+
+00:07:10.319 --> 00:07:12.419
+telling it that it did you should go to
+
+00:07:12.419 --> 00:07:15.660
+Nice France cool what else should I do
+
+00:07:15.660 --> 00:07:17.160
+when
+
+00:07:17.160 --> 00:07:19.380
+when I'm there and so the reason why I
+
+00:07:19.380 --> 00:07:20.880
+did this one is because you'll notice
+
+00:07:20.880 --> 00:07:23.639
+that I didn't say where I went it's
+
+00:07:23.639 --> 00:07:25.020
+going to have to infer from the history
+
+00:07:25.020 --> 00:07:28.139
+on what where I went and it says wow and
+
+00:07:28.139 --> 00:07:29.460
+nice and so it picked up where I was
+
+00:07:29.460 --> 00:07:30.960
+because it gets the history of the chat
+
+00:07:30.960 --> 00:07:32.819
+messages now if you're making a chatbot
+
+00:07:32.819 --> 00:07:34.919
+you could see how you could append
+
+00:07:34.919 --> 00:07:36.720
+different messages that have been back
+
+00:07:36.720 --> 00:07:39.000
+and forth uh I'm not sure if that's a
+
+00:07:39.000 --> 00:07:40.380
+verb but back and forth through the user
+
+00:07:40.380 --> 00:07:41.759
+okay
+
+00:07:41.759 --> 00:07:43.500
+the next model that we're the next model
+
+00:07:43.500 --> 00:07:44.819
+that we're going to look at is going to
+
+00:07:44.819 --> 00:07:47.340
+be documents so documents are important
+
+00:07:47.340 --> 00:07:49.560
+because this represents a piece of text
+
+00:07:49.560 --> 00:07:52.800
+along with Associated metadata now
+
+00:07:52.800 --> 00:07:54.720
+metadata is just a fancy word for things
+
+00:07:54.720 --> 00:07:56.819
+about that document and in this case
+
+00:07:56.819 --> 00:07:59.699
+this document or the text is held within
+
+00:07:59.699 --> 00:08:03.000
+a field called page content so this is
+
+00:08:03.000 --> 00:08:04.500
+my document it's full text that I've
+
+00:08:04.500 --> 00:08:06.960
+gathered from other places awesome and
+
+00:08:06.960 --> 00:08:08.400
+then I'm going to pass in some metadata
+
+00:08:08.400 --> 00:08:10.380
+and this metadata is a dictionary of key
+
+00:08:10.380 --> 00:08:13.080
+value pairs my document ID which is my
+
+00:08:13.080 --> 00:08:15.300
+key here and then some random document
+
+00:08:15.300 --> 00:08:17.280
+ID here that happens to be an INT it
+
+00:08:17.280 --> 00:08:19.379
+could be whatever you want it to be my
+
+00:08:19.379 --> 00:08:21.000
+document Source this is the Lang chain
+
+00:08:21.000 --> 00:08:24.000
+papers and then my document create time
+
+00:08:24.000 --> 00:08:25.800
+is going to be some timestamp whatever
+
+00:08:25.800 --> 00:08:27.120
+you want it to be and this is going to
+
+00:08:27.120 --> 00:08:29.220
+be can be whatever format you want this
+
+00:08:29.220 --> 00:08:30.840
+is extremely helpful for when you're
+
+00:08:30.840 --> 00:08:33.479
+making a large repositories of
+
+00:08:33.479 --> 00:08:34.979
+information and you want to be able to
+
+00:08:34.979 --> 00:08:37.020
+filter by it so instead of just going
+
+00:08:37.020 --> 00:08:38.940
+and asking link chain to look at all
+
+00:08:38.940 --> 00:08:40.620
+your documents in your database you can
+
+00:08:40.620 --> 00:08:42.360
+go ahead and filter these by a certain
+
+00:08:42.360 --> 00:08:44.820
+metadata go ahead and run this and you
+
+00:08:44.820 --> 00:08:46.320
+can see here I get a document object
+
+00:08:46.320 --> 00:08:48.899
+with a bunch of metadata on it from
+
+00:08:48.899 --> 00:08:52.320
+there cool if those are the schemas that
+
+00:08:52.320 --> 00:08:53.580
+we work with the next thing we're going
+
+00:08:53.580 --> 00:08:55.380
+to look at is the different models now
+
+00:08:55.380 --> 00:08:58.019
+these are the ways of interacting with
+
+00:08:58.019 --> 00:09:00.300
+well different models
+
+00:09:00.300 --> 00:09:02.100
+um but the reason why this is important
+
+00:09:02.100 --> 00:09:03.540
+is because they're different model types
+
+00:09:03.540 --> 00:09:05.640
+let me just show an example here the
+
+00:09:05.640 --> 00:09:06.720
+normal one that we're looking at is
+
+00:09:06.720 --> 00:09:08.220
+going to be the language model and this
+
+00:09:08.220 --> 00:09:10.860
+is when text goes in and text comes out
+
+00:09:10.860 --> 00:09:13.140
+okay now the first thing I'll do is I'll
+
+00:09:13.140 --> 00:09:15.660
+import open Ai and I'll make my model
+
+00:09:15.660 --> 00:09:17.339
+and you'll notice here that I changed my
+
+00:09:17.339 --> 00:09:18.540
+model in case you ever want to change
+
+00:09:18.540 --> 00:09:21.000
+your model as well and so I'm going to
+
+00:09:21.000 --> 00:09:22.740
+pass in a regular string into this one
+
+00:09:22.740 --> 00:09:25.140
+into my language model what day comes
+
+00:09:25.140 --> 00:09:26.220
+after Friday
+
+00:09:26.220 --> 00:09:28.560
+go ahead and run this and I get Saturday
+
+00:09:28.560 --> 00:09:31.740
+comes out the other end but not all
+
+00:09:31.740 --> 00:09:33.779
+models are like this you actually have
+
+00:09:33.779 --> 00:09:35.399
+chat models as well and we looked at
+
+00:09:35.399 --> 00:09:36.959
+this in the previous example but I
+
+00:09:36.959 --> 00:09:38.760
+didn't call it out specifically so for
+
+00:09:38.760 --> 00:09:40.800
+this one I'm going to import chat open
+
+00:09:40.800 --> 00:09:42.779
+AI I'm going to import my messages again
+
+00:09:42.779 --> 00:09:45.240
+I'm going to put temperature equals one
+
+00:09:45.240 --> 00:09:46.860
+which means the model is going to get a
+
+00:09:46.860 --> 00:09:49.200
+little spicy on me no but really it just
+
+00:09:49.200 --> 00:09:51.080
+means it's going to have more creativity
+
+00:09:51.080 --> 00:09:53.100
+and it's it's a little bit more
+
+00:09:53.100 --> 00:09:55.200
+exaggerated and so in this case I'm
+
+00:09:55.200 --> 00:09:57.720
+going to say you are an unhelpful AI bot
+
+00:09:57.720 --> 00:10:00.000
+that makes jokes at whatever the user
+
+00:10:00.000 --> 00:10:02.700
+says and in this case the user says I
+
+00:10:02.700 --> 00:10:04.200
+would like to go to New York how should
+
+00:10:04.200 --> 00:10:06.000
+I do this I'm going to go ahead and run
+
+00:10:06.000 --> 00:10:07.140
+this model
+
+00:10:07.140 --> 00:10:08.640
+you could try walking but I don't
+
+00:10:08.640 --> 00:10:09.959
+recommend it unless you have a lot of
+
+00:10:09.959 --> 00:10:11.220
+time on your hands
+
+00:10:11.220 --> 00:10:12.899
+maybe try flapping your arms really hard
+
+00:10:12.899 --> 00:10:14.700
+to see if it can fly there so as you can
+
+00:10:14.700 --> 00:10:17.040
+see it took that system message
+
+00:10:17.040 --> 00:10:21.000
+and it understood those directions and
+
+00:10:21.000 --> 00:10:22.920
+it uh it wasn't very helpful for me well
+
+00:10:22.920 --> 00:10:24.120
+because I told her not to be very
+
+00:10:24.120 --> 00:10:25.260
+helpful
+
+00:10:25.260 --> 00:10:26.580
+the last type of model that we're going
+
+00:10:26.580 --> 00:10:28.080
+to look at is going to be your text and
+
+00:10:28.080 --> 00:10:30.060
+betting model the reason why this one is
+
+00:10:30.060 --> 00:10:32.100
+important is because we do a lot of
+
+00:10:32.100 --> 00:10:34.140
+similarity searches and a lot of
+
+00:10:34.140 --> 00:10:35.760
+comparing texts when working with
+
+00:10:35.760 --> 00:10:38.100
+language models now in this case openai
+
+00:10:38.100 --> 00:10:40.500
+also has an AI embeddings model that
+
+00:10:40.500 --> 00:10:41.940
+we're going to use there's a lot of
+
+00:10:41.940 --> 00:10:43.500
+embedding models out there you can use
+
+00:10:43.500 --> 00:10:45.300
+whatever you want I just use open AI
+
+00:10:45.300 --> 00:10:47.100
+because it feels like it's a standard
+
+00:10:47.100 --> 00:10:48.959
+and it's very simple right now so I'm
+
+00:10:48.959 --> 00:10:51.420
+going to pass in my API key I'm going to
+
+00:10:51.420 --> 00:10:53.640
+get my embeddings engine ready and then
+
+00:10:53.640 --> 00:10:55.680
+I'm going to define a piece of text hi
+
+00:10:55.680 --> 00:10:57.660
+it's time for the beach let me go ahead
+
+00:10:57.660 --> 00:10:58.920
+and do that text
+
+00:10:58.920 --> 00:11:00.839
+and what I'm going to do is I'm going to
+
+00:11:00.839 --> 00:11:03.060
+pass that text and I'm going to embed
+
+00:11:03.060 --> 00:11:05.459
+that text so what that means is is it's
+
+00:11:05.459 --> 00:11:06.959
+going to take this string which is just
+
+00:11:06.959 --> 00:11:08.760
+a series of letters and it's going to
+
+00:11:08.760 --> 00:11:11.579
+convert it into a vector and in this
+
+00:11:11.579 --> 00:11:13.380
+case a vector is just simply a
+
+00:11:13.380 --> 00:11:15.300
+one-dimensional array meaning a list of
+
+00:11:15.300 --> 00:11:18.540
+numbers and that'll be a semantic
+
+00:11:18.540 --> 00:11:21.240
+representation of that text that's a
+
+00:11:21.240 --> 00:11:23.339
+fancy way of saying is that meaning of
+
+00:11:23.339 --> 00:11:25.140
+that text is going to be embedded in
+
+00:11:25.140 --> 00:11:26.760
+those numbers right there which makes it
+
+00:11:26.760 --> 00:11:28.459
+really easy to compare
+
+00:11:28.459 --> 00:11:31.500
+across other as others as well so I'm
+
+00:11:31.500 --> 00:11:32.940
+going to put that in a variable called
+
+00:11:32.940 --> 00:11:34.680
+text embeddings I'm going to see how
+
+00:11:34.680 --> 00:11:36.480
+long my text embeddings is and I'm going
+
+00:11:36.480 --> 00:11:38.820
+to get a preview of it so you'll notice
+
+00:11:38.820 --> 00:11:40.760
+here that my text embedding length is
+
+00:11:40.760 --> 00:11:44.820
+1536 this means that there are 1536
+
+00:11:44.820 --> 00:11:47.880
+different numbers within that list that
+
+00:11:47.880 --> 00:11:49.740
+represent the meaning of my text
+
+00:11:49.740 --> 00:11:51.720
+that's a lot of numbers and I'm glad I
+
+00:11:51.720 --> 00:11:52.680
+don't have to deal with them I'm glad
+
+00:11:52.680 --> 00:11:54.600
+the computer can so here's a sample of
+
+00:11:54.600 --> 00:11:55.680
+what those look like in case you're
+
+00:11:55.680 --> 00:11:58.200
+curious I only show the first uh five
+
+00:11:58.200 --> 00:12:00.000
+here but I put a dot dot dots you know
+
+00:12:00.000 --> 00:12:01.160
+that there are
+
+00:12:01.160 --> 00:12:04.079
+1531 other numbers out there next let's
+
+00:12:04.079 --> 00:12:06.600
+look at prompts so prompts are going to
+
+00:12:06.600 --> 00:12:08.820
+be the text that you send over to your
+
+00:12:08.820 --> 00:12:10.920
+language model we've already sent some
+
+00:12:10.920 --> 00:12:12.540
+prompts over to the language model but
+
+00:12:12.540 --> 00:12:14.519
+they've been pretty simple in this case
+
+00:12:14.519 --> 00:12:15.899
+we're going to start doing more
+
+00:12:15.899 --> 00:12:17.640
+instructional prompts and passing those
+
+00:12:17.640 --> 00:12:19.860
+to our model so again a prompt is what
+
+00:12:19.860 --> 00:12:21.959
+we pass to our language model I'm going
+
+00:12:21.959 --> 00:12:24.240
+to import open AI in this case I'm using
+
+00:12:24.240 --> 00:12:26.459
+DaVinci as my model and I'm going to say
+
+00:12:26.459 --> 00:12:29.339
+prompt equals this string now I use
+
+00:12:29.339 --> 00:12:31.920
+three three double quotes because
+
+00:12:31.920 --> 00:12:34.079
+um well I think it looks fancier no but
+
+00:12:34.079 --> 00:12:35.640
+really it's just easier to use which is
+
+00:12:35.640 --> 00:12:37.680
+why I like it in this case I'm not doing
+
+00:12:37.680 --> 00:12:39.660
+anything fancy and I could have passed
+
+00:12:39.660 --> 00:12:40.860
+this string right within my language
+
+00:12:40.860 --> 00:12:42.920
+model but in this case I
+
+00:12:42.920 --> 00:12:45.720
+made a variable for it because it's a
+
+00:12:45.720 --> 00:12:47.160
+little bit easier to understand so
+
+00:12:47.160 --> 00:12:48.779
+today's Monday tomorrow's Wednesday what
+
+00:12:48.779 --> 00:12:50.100
+is wrong with the statement the
+
+00:12:50.100 --> 00:12:51.240
+statement is incorrect tomorrow's
+
+00:12:51.240 --> 00:12:52.800
+Tuesday not Wednesday so you can see how
+
+00:12:52.800 --> 00:12:54.899
+it picked it up from there now why
+
+00:12:54.899 --> 00:12:56.459
+prompts are cool is because we start to
+
+00:12:56.459 --> 00:12:58.680
+get into the prompt template world
+
+00:12:58.680 --> 00:13:00.300
+the reason why prompt templates are
+
+00:13:00.300 --> 00:13:02.459
+important is because most of the time
+
+00:13:02.459 --> 00:13:03.839
+you're going to be dynamically
+
+00:13:03.839 --> 00:13:06.120
+generating your prompts meaning they
+
+00:13:06.120 --> 00:13:07.620
+won't just be static strings that you
+
+00:13:07.620 --> 00:13:09.300
+type out but you're actually going to be
+
+00:13:09.300 --> 00:13:10.980
+inputting tokens or inputting
+
+00:13:10.980 --> 00:13:13.260
+placeholders based off of the scenario
+
+00:13:13.260 --> 00:13:14.940
+that we're you're working with
+
+00:13:14.940 --> 00:13:17.160
+so in this case what I'm doing here is
+
+00:13:17.160 --> 00:13:19.860
+I'm importing my packages again in this
+
+00:13:19.860 --> 00:13:21.180
+case prompt template is going to be the
+
+00:13:21.180 --> 00:13:22.980
+new one I'm going to do DaVinci again
+
+00:13:22.980 --> 00:13:25.019
+okay great and in this case I'm going to
+
+00:13:25.019 --> 00:13:27.600
+create a template to start so I really
+
+00:13:27.600 --> 00:13:30.420
+want to travel to location you'll notice
+
+00:13:30.420 --> 00:13:31.860
+my opened and closed brackets around
+
+00:13:31.860 --> 00:13:33.660
+location which means that this is going
+
+00:13:33.660 --> 00:13:35.279
+to be a token that I'm going to be
+
+00:13:35.279 --> 00:13:37.440
+replacing later what should I do there
+
+00:13:37.440 --> 00:13:39.300
+respond in one short sentence because
+
+00:13:39.300 --> 00:13:41.639
+we're also just responded too much I'm
+
+00:13:41.639 --> 00:13:43.920
+going to create a prompt template in
+
+00:13:43.920 --> 00:13:44.820
+this case I'm going to put it in this
+
+00:13:44.820 --> 00:13:46.560
+variable prompt my input variable is
+
+00:13:46.560 --> 00:13:48.120
+going to be location which matches the
+
+00:13:48.120 --> 00:13:49.740
+same name that we had up here and then
+
+00:13:49.740 --> 00:13:51.480
+the template is this this whole thing
+
+00:13:51.480 --> 00:13:54.000
+that I had here the final prompt is
+
+00:13:54.000 --> 00:13:56.279
+going to be prompt.format which means
+
+00:13:56.279 --> 00:13:58.560
+going to insert the values I tell you go
+
+00:13:58.560 --> 00:14:00.480
+and insert the value Rome into where it
+
+00:14:00.480 --> 00:14:02.820
+says location right here let's go ahead
+
+00:14:02.820 --> 00:14:04.079
+and run this
+
+00:14:04.079 --> 00:14:05.880
+so final prompt I really want to travel
+
+00:14:05.880 --> 00:14:08.160
+to Rome which replace location up above
+
+00:14:08.160 --> 00:14:09.899
+and here we have our prompt template
+
+00:14:09.899 --> 00:14:11.639
+that's finally filled out and then in
+
+00:14:11.639 --> 00:14:14.519
+terms of the output it tells me what I
+
+00:14:14.519 --> 00:14:16.440
+should do so it took that information in
+
+00:14:16.440 --> 00:14:18.540
+with Rome and responded one short
+
+00:14:18.540 --> 00:14:21.000
+sentence it gives me this which is cool
+
+00:14:21.000 --> 00:14:24.000
+all right the next cool part that we're
+
+00:14:24.000 --> 00:14:25.680
+going to look at is the example
+
+00:14:25.680 --> 00:14:27.959
+selectors so often when you're
+
+00:14:27.959 --> 00:14:29.760
+constructing your prompts you're going
+
+00:14:29.760 --> 00:14:31.500
+to do something called in context
+
+00:14:31.500 --> 00:14:34.200
+learning this means that you're going to
+
+00:14:34.200 --> 00:14:35.459
+show you're going to show the language
+
+00:14:35.459 --> 00:14:37.740
+model what you want it to do and one of
+
+00:14:37.740 --> 00:14:39.120
+the main ways that people do this is
+
+00:14:39.120 --> 00:14:41.519
+through examples this could be about how
+
+00:14:41.519 --> 00:14:43.860
+to answer a customer service request or
+
+00:14:43.860 --> 00:14:45.899
+it could be how to respond to some
+
+00:14:45.899 --> 00:14:48.300
+nuanced question and in this case I'm
+
+00:14:48.300 --> 00:14:51.120
+going to pick examples however we have
+
+00:14:51.120 --> 00:14:54.060
+example selectors because say you had 10
+
+00:14:54.060 --> 00:14:55.560
+000 different examples you don't want to
+
+00:14:55.560 --> 00:14:57.240
+throw all those into your uh into your
+
+00:14:57.240 --> 00:14:58.860
+prompt they may not fit and they may not
+
+00:14:58.860 --> 00:15:00.300
+be as relevant so you want to select
+
+00:15:00.300 --> 00:15:02.339
+which ones you want and in this case
+
+00:15:02.339 --> 00:15:04.019
+what I'm going to do is I'm going to
+
+00:15:04.019 --> 00:15:06.480
+import a lot of things here but the one
+
+00:15:06.480 --> 00:15:08.459
+I'm the main star of the show is going
+
+00:15:08.459 --> 00:15:10.560
+to be the semantic similarity example
+
+00:15:10.560 --> 00:15:14.220
+selector that's a long name for a
+
+00:15:14.220 --> 00:15:15.600
+functionality that's going to select
+
+00:15:15.600 --> 00:15:17.940
+similar examples so I'm going to get my
+
+00:15:17.940 --> 00:15:19.740
+language model going again I'm going to
+
+00:15:19.740 --> 00:15:21.660
+get my example prompt and this is just a
+
+00:15:21.660 --> 00:15:23.820
+prompt template like we saw up above and
+
+00:15:23.820 --> 00:15:25.680
+then I'm going to define a list of
+
+00:15:25.680 --> 00:15:28.380
+different examples so in this case I
+
+00:15:28.380 --> 00:15:31.199
+want to name a noun and then I want the
+
+00:15:31.199 --> 00:15:33.240
+language model to tell me where this
+
+00:15:33.240 --> 00:15:35.699
+noun is usually found so in this case a
+
+00:15:35.699 --> 00:15:37.860
+pirate on a ship a pilot on a plane
+
+00:15:37.860 --> 00:15:40.980
+driver in a car a tree
+
+00:15:40.980 --> 00:15:43.560
+oh that's not true a tree in the ground
+
+00:15:43.560 --> 00:15:46.500
+or a bird in a nest so I'll go ahead and
+
+00:15:46.500 --> 00:15:47.760
+run that one
+
+00:15:47.760 --> 00:15:49.139
+and then what we're going to do is we're
+
+00:15:49.139 --> 00:15:50.760
+going to get our example selector ready
+
+00:15:50.760 --> 00:15:53.459
+so we have our similar example selector
+
+00:15:53.459 --> 00:15:56.279
+we're going to pass it the list of
+
+00:15:56.279 --> 00:15:58.320
+examples that I just defined above but
+
+00:15:58.320 --> 00:16:00.060
+then we're also going to pass it our
+
+00:16:00.060 --> 00:16:01.800
+embedding engine and the reason why we
+
+00:16:01.800 --> 00:16:03.180
+do this is because we're actually going
+
+00:16:03.180 --> 00:16:05.100
+to match examples on their semantic
+
+00:16:05.100 --> 00:16:07.380
+meaning so not just matching them off of
+
+00:16:07.380 --> 00:16:09.720
+similar strings but off of what they
+
+00:16:09.720 --> 00:16:11.699
+actually mean so in this case we're
+
+00:16:11.699 --> 00:16:13.260
+going to use the open AI embeddings
+
+00:16:13.260 --> 00:16:15.839
+which is one of the models that has been
+
+00:16:15.839 --> 00:16:17.820
+shared by Facebook which is really cool
+
+00:16:17.820 --> 00:16:19.199
+and this is going to help store our
+
+00:16:19.199 --> 00:16:20.820
+embeddings and then we're going to tell
+
+00:16:20.820 --> 00:16:21.839
+it
+
+00:16:21.839 --> 00:16:24.480
+um how many we want how many examples we
+
+00:16:24.480 --> 00:16:26.040
+want back in this case I want k equals
+
+00:16:26.040 --> 00:16:29.220
+two let me go ahead and run that and
+
+00:16:29.220 --> 00:16:31.860
+then we're going to have a new prompt
+
+00:16:31.860 --> 00:16:33.300
+template here and this is going to be
+
+00:16:33.300 --> 00:16:35.880
+the few shot prompt template meaning the
+
+00:16:35.880 --> 00:16:37.139
+few shot part means that there's going
+
+00:16:37.139 --> 00:16:39.480
+to be a few examples in there for us so
+
+00:16:39.480 --> 00:16:41.519
+we give it our example selector we give
+
+00:16:41.519 --> 00:16:43.139
+our example prompt which we made up
+
+00:16:43.139 --> 00:16:44.820
+above and then we're going to add on
+
+00:16:44.820 --> 00:16:46.740
+just some little strings before and
+
+00:16:46.740 --> 00:16:48.899
+after to make it easier for the model so
+
+00:16:48.899 --> 00:16:50.399
+give the location that an item is
+
+00:16:50.399 --> 00:16:52.620
+usually found in cool and then the
+
+00:16:52.620 --> 00:16:54.480
+suffix will be the input and the output
+
+00:16:54.480 --> 00:16:56.160
+that we have from here based off of what
+
+00:16:56.160 --> 00:16:58.620
+the user inputs then the input variable
+
+00:16:58.620 --> 00:17:01.320
+go ahead and do that so here I'm going
+
+00:17:01.320 --> 00:17:04.919
+to say my noun is student So based off
+
+00:17:04.919 --> 00:17:07.079
+of the noun of student it's going to go
+
+00:17:07.079 --> 00:17:08.880
+and find me the examples up above that
+
+00:17:08.880 --> 00:17:11.459
+are most closely related to student and
+
+00:17:11.459 --> 00:17:13.439
+we're going to use those examples so if
+
+00:17:13.439 --> 00:17:14.819
+I would go ahead and do this I'm going
+
+00:17:14.819 --> 00:17:16.679
+to say print and it's going to print me
+
+00:17:16.679 --> 00:17:18.059
+the prompt that we're actually going to
+
+00:17:18.059 --> 00:17:20.100
+use within or give to our language model
+
+00:17:20.100 --> 00:17:22.919
+in this case it found the driver and it
+
+00:17:22.919 --> 00:17:25.319
+found the pilot one being most similar
+
+00:17:25.319 --> 00:17:28.620
+to student which is cool now if I were
+
+00:17:28.620 --> 00:17:31.500
+to do a different one say flower it's
+
+00:17:31.500 --> 00:17:33.120
+going to give me the the tree and the
+
+00:17:33.120 --> 00:17:35.100
+bird examples okay but I'm going to
+
+00:17:35.100 --> 00:17:36.960
+stick this with student and what I'm
+
+00:17:36.960 --> 00:17:38.039
+going to do is I'm going to take this
+
+00:17:38.039 --> 00:17:39.720
+prompter that we just made and I'm going
+
+00:17:39.720 --> 00:17:41.820
+to pass that into the language model and
+
+00:17:41.820 --> 00:17:43.380
+all of a sudden you get classroom the
+
+00:17:43.380 --> 00:17:44.580
+next thing we're going to look at is
+
+00:17:44.580 --> 00:17:47.280
+output parsers now that's kind of a
+
+00:17:47.280 --> 00:17:49.919
+complicated way to say
+
+00:17:49.919 --> 00:17:52.020
+um we need some structured output like
+
+00:17:52.020 --> 00:17:54.480
+we want the language model to return a
+
+00:17:54.480 --> 00:17:56.940
+Json object back to us why well because
+
+00:17:56.940 --> 00:17:58.740
+it makes it a heck of a lot easier to go
+
+00:17:58.740 --> 00:18:00.240
+deal with and work with on the other
+
+00:18:00.240 --> 00:18:01.440
+side
+
+00:18:01.440 --> 00:18:03.360
+there's two big Concepts when we talk
+
+00:18:03.360 --> 00:18:04.980
+about output parsers first it's going to
+
+00:18:04.980 --> 00:18:07.500
+be the formatting instructions piece so
+
+00:18:07.500 --> 00:18:09.179
+this is the prompt template that is
+
+00:18:09.179 --> 00:18:11.340
+going to tell your language model how to
+
+00:18:11.340 --> 00:18:13.140
+respond back to you and Lang chain
+
+00:18:13.140 --> 00:18:15.240
+provides us some conventions to do this
+
+00:18:15.240 --> 00:18:17.100
+automatically which is cool and then the
+
+00:18:17.100 --> 00:18:18.000
+second thing we're going to have is
+
+00:18:18.000 --> 00:18:19.799
+going to be the parser and so this is
+
+00:18:19.799 --> 00:18:21.960
+going to be the tool that is going to
+
+00:18:21.960 --> 00:18:23.880
+parse the output of your language model
+
+00:18:23.880 --> 00:18:26.039
+so the language model can only return
+
+00:18:26.039 --> 00:18:28.200
+back a string but if we want a Json
+
+00:18:28.200 --> 00:18:30.360
+object well we need to go and parse that
+
+00:18:30.360 --> 00:18:32.400
+string and extract the Json Json from
+
+00:18:32.400 --> 00:18:34.679
+that okay so we're going to get a
+
+00:18:34.679 --> 00:18:36.120
+structured output parsing and we're
+
+00:18:36.120 --> 00:18:37.740
+going to get the response schema from
+
+00:18:37.740 --> 00:18:39.419
+there let's import our language model
+
+00:18:39.419 --> 00:18:41.220
+again and we're going to have a response
+
+00:18:41.220 --> 00:18:43.500
+schema so in this case I just want it to
+
+00:18:43.500 --> 00:18:45.660
+be a two field Json object it I'm going
+
+00:18:45.660 --> 00:18:47.460
+to have a bad string which is a poorly
+
+00:18:47.460 --> 00:18:50.100
+formatted user input string and then a
+
+00:18:50.100 --> 00:18:52.559
+good string this is your response a
+
+00:18:52.559 --> 00:18:54.780
+formatted response and so the really
+
+00:18:54.780 --> 00:18:56.520
+nice response from the um from the
+
+00:18:56.520 --> 00:18:57.960
+language model there and in this case
+
+00:18:57.960 --> 00:18:59.160
+I'm going to go ahead and create my
+
+00:18:59.160 --> 00:19:00.960
+output parser which is going to read the
+
+00:19:00.960 --> 00:19:02.700
+response schema and it's going to be
+
+00:19:02.700 --> 00:19:04.020
+able to parse it for us but we won't use
+
+00:19:04.020 --> 00:19:05.760
+that until just a second here
+
+00:19:05.760 --> 00:19:07.080
+so first thing we're going to have is
+
+00:19:07.080 --> 00:19:09.299
+our format instructions so on the output
+
+00:19:09.299 --> 00:19:11.400
+and parser we're going to say get format
+
+00:19:11.400 --> 00:19:12.960
+instructions and then let's print those
+
+00:19:12.960 --> 00:19:14.039
+out
+
+00:19:14.039 --> 00:19:15.900
+in fact I don't need to do that I could
+
+00:19:15.900 --> 00:19:18.419
+just print this out directly right here
+
+00:19:18.419 --> 00:19:21.539
+cool and so this is a piece of text that
+
+00:19:21.539 --> 00:19:24.360
+is going to be input or insert put into
+
+00:19:24.360 --> 00:19:26.400
+the prompt the output should be a
+
+00:19:26.400 --> 00:19:29.460
+markdown code snippet format it in the
+
+00:19:29.460 --> 00:19:32.520
+following schema Json and then the two
+
+00:19:32.520 --> 00:19:34.380
+fields that I input up above but it did
+
+00:19:34.380 --> 00:19:35.640
+the formatting for me or at least Lane
+
+00:19:35.640 --> 00:19:37.740
+chain did for him to put it into here
+
+00:19:37.740 --> 00:19:39.600
+so let's go ahead and create a prompt
+
+00:19:39.600 --> 00:19:41.700
+template we're going to do a placeholder
+
+00:19:41.700 --> 00:19:44.100
+variable for our format instructions and
+
+00:19:44.100 --> 00:19:45.059
+then we're also going to do a
+
+00:19:45.059 --> 00:19:47.100
+placeholder for user input this will be
+
+00:19:47.100 --> 00:19:48.480
+the poorly formatted string that the
+
+00:19:48.480 --> 00:19:50.400
+user is going to input and then finally
+
+00:19:50.400 --> 00:19:52.200
+I put your response here just to tell it
+
+00:19:52.200 --> 00:19:53.280
+it's like hey I'm done telling you
+
+00:19:53.280 --> 00:19:55.200
+instructions give me a response we go
+
+00:19:55.200 --> 00:19:56.880
+ahead and we get the prompt template we
+
+00:19:56.880 --> 00:19:58.620
+have the user input we have a partial
+
+00:19:58.620 --> 00:20:00.780
+variable of format instructions and this
+
+00:20:00.780 --> 00:20:02.100
+will be the format instructions we had
+
+00:20:02.100 --> 00:20:04.140
+up above we have our template which is
+
+00:20:04.140 --> 00:20:05.940
+the string up above here and then we
+
+00:20:05.940 --> 00:20:07.559
+have our prompt value so this will be
+
+00:20:07.559 --> 00:20:09.840
+the actual value that is filled out with
+
+00:20:09.840 --> 00:20:12.299
+the variables I tell it and I'm going to
+
+00:20:12.299 --> 00:20:15.059
+say welcome to California with an
+
+00:20:15.059 --> 00:20:17.280
+exclamation point let's go ahead and do
+
+00:20:17.280 --> 00:20:19.200
+that one and here I print out the final
+
+00:20:19.200 --> 00:20:20.700
+prompt that is going to be sent to the
+
+00:20:20.700 --> 00:20:22.620
+llm we have user input Welcome to
+
+00:20:22.620 --> 00:20:24.179
+California with everything we had up
+
+00:20:24.179 --> 00:20:27.059
+above let's go ahead and run this
+
+00:20:27.059 --> 00:20:29.460
+let's see what it responds back to us so
+
+00:20:29.460 --> 00:20:31.260
+we get a string here it kind of looks
+
+00:20:31.260 --> 00:20:33.120
+like gobbledygook but if we were to
+
+00:20:33.120 --> 00:20:34.559
+print this out it'd make more sense but
+
+00:20:34.559 --> 00:20:36.000
+before printing out let's just go ahead
+
+00:20:36.000 --> 00:20:37.919
+and parse this and now we can actually
+
+00:20:37.919 --> 00:20:40.860
+parse this and we get a nice uh Json
+
+00:20:40.860 --> 00:20:42.299
+object back well in this case it's going
+
+00:20:42.299 --> 00:20:44.220
+to be addict but um you can see here
+
+00:20:44.220 --> 00:20:45.539
+it's typed
+
+00:20:45.539 --> 00:20:46.919
+the next thing we're going to look at is
+
+00:20:46.919 --> 00:20:48.720
+different indexes so in this case we're
+
+00:20:48.720 --> 00:20:50.820
+going to be structuring documents in a
+
+00:20:50.820 --> 00:20:52.500
+way that language models have a better
+
+00:20:52.500 --> 00:20:54.660
+time working with them and one of the
+
+00:20:54.660 --> 00:20:56.220
+main ways that lanechain does this it's
+
+00:20:56.220 --> 00:20:58.260
+going to be through document loaders now
+
+00:20:58.260 --> 00:21:00.000
+this is very similar to the open AI
+
+00:21:00.000 --> 00:21:01.919
+plugins that just were released however
+
+00:21:01.919 --> 00:21:03.480
+there's a lot of support for a lot of
+
+00:21:03.480 --> 00:21:05.700
+really cool data sources in langchain
+
+00:21:05.700 --> 00:21:07.020
+that aren't yet supported within the
+
+00:21:07.020 --> 00:21:09.660
+plug-in World in this case I'm going to
+
+00:21:09.660 --> 00:21:12.660
+be doing a Hacker News data loader so
+
+00:21:12.660 --> 00:21:14.460
+all I'm doing is just passing a simple
+
+00:21:14.460 --> 00:21:17.160
+URL to this data loader I'm going to say
+
+00:21:17.160 --> 00:21:19.919
+hey go get me that data and so I'm
+
+00:21:19.919 --> 00:21:21.780
+asking hey how many pieces of data did
+
+00:21:21.780 --> 00:21:23.280
+you find
+
+00:21:23.280 --> 00:21:25.860
+uh and in this case it found 76
+
+00:21:25.860 --> 00:21:27.419
+different comments within this Hacker
+
+00:21:27.419 --> 00:21:29.220
+News Post and I asked it to print me out
+
+00:21:29.220 --> 00:21:32.760
+a sample and here we see uh one of the
+
+00:21:32.760 --> 00:21:34.740
+responses by the moderator dang within
+
+00:21:34.740 --> 00:21:36.960
+uh Hacker News and we see the response
+
+00:21:36.960 --> 00:21:39.059
+there we see different comments uh you
+
+00:21:39.059 --> 00:21:40.200
+can go and work with these within your
+
+00:21:40.200 --> 00:21:41.520
+language model now which is pretty cool
+
+00:21:41.520 --> 00:21:43.500
+another big piece of what we do a ton of
+
+00:21:43.500 --> 00:21:46.140
+is text splitting so oftentimes your
+
+00:21:46.140 --> 00:21:48.539
+document like your book or your essay or
+
+00:21:48.539 --> 00:21:50.280
+whatever is going to be too long for
+
+00:21:50.280 --> 00:21:52.080
+your language model you need to split it
+
+00:21:52.080 --> 00:21:54.299
+up into chunks and text Splitters will
+
+00:21:54.299 --> 00:21:56.159
+help with this now the reason why you do
+
+00:21:56.159 --> 00:21:57.840
+this is because if you want a single
+
+00:21:57.840 --> 00:22:00.240
+answer out of a book it wouldn't behoove
+
+00:22:00.240 --> 00:22:02.580
+you too much to input that entire book
+
+00:22:02.580 --> 00:22:04.860
+Into The Prompt one because it's too
+
+00:22:04.860 --> 00:22:06.960
+long but two is because the signal to
+
+00:22:06.960 --> 00:22:09.360
+noise ratio is too much or it's too
+
+00:22:09.360 --> 00:22:10.980
+little for your language model to
+
+00:22:10.980 --> 00:22:13.020
+effectively do its job it'd be a lot
+
+00:22:13.020 --> 00:22:14.520
+better if you just put in a few pieces
+
+00:22:14.520 --> 00:22:16.559
+of text into there and in order to get
+
+00:22:16.559 --> 00:22:18.419
+those few pieces of text we need to do
+
+00:22:18.419 --> 00:22:20.760
+splitting or chunking of those so in
+
+00:22:20.760 --> 00:22:22.380
+this case I'm going to do text splitting
+
+00:22:22.380 --> 00:22:24.240
+and the one that I use most often is
+
+00:22:24.240 --> 00:22:25.980
+going to be the recursive character text
+
+00:22:25.980 --> 00:22:27.960
+splitter there's a lot of different
+
+00:22:27.960 --> 00:22:29.520
+types of text Splitters depending on
+
+00:22:29.520 --> 00:22:31.080
+your use case I encourage you to go
+
+00:22:31.080 --> 00:22:32.880
+check those out and in this case I'm
+
+00:22:32.880 --> 00:22:35.220
+going to pull in a Paul Graham essay his
+
+00:22:35.220 --> 00:22:37.799
+worked essay this one is quite long it
+
+00:22:37.799 --> 00:22:39.659
+may be as long as actually so if I were
+
+00:22:39.659 --> 00:22:40.980
+to read his document
+
+00:22:40.980 --> 00:22:43.020
+I just have one big long document right
+
+00:22:43.020 --> 00:22:44.580
+now which means it's a really long piece
+
+00:22:44.580 --> 00:22:46.559
+of text but in this case what I want to
+
+00:22:46.559 --> 00:22:48.240
+do is I want to have the recursive
+
+00:22:48.240 --> 00:22:50.400
+character text splitter and I'm going to
+
+00:22:50.400 --> 00:22:53.220
+say chunk size equals 150. this means
+
+00:22:53.220 --> 00:22:56.520
+that I'm going to have a size of 150
+
+00:22:56.520 --> 00:22:59.400
+when I end up splitting my star document
+
+00:22:59.400 --> 00:23:01.620
+there and if you want chunk overlap that
+
+00:23:01.620 --> 00:23:03.480
+means that the Venn diagram of your docs
+
+00:23:03.480 --> 00:23:05.580
+is going to overlap just a little bit I
+
+00:23:05.580 --> 00:23:06.900
+encourage you to play with these
+
+00:23:06.900 --> 00:23:08.400
+variables to see which one works best
+
+00:23:08.400 --> 00:23:10.260
+for your use case normally I wouldn't do
+
+00:23:10.260 --> 00:23:11.820
+150 I'd probably do a thousand or two
+
+00:23:11.820 --> 00:23:13.860
+thousand but for demonstration purposes
+
+00:23:13.860 --> 00:23:16.740
+I'm doing 150. go ahead and run that and
+
+00:23:16.740 --> 00:23:18.419
+so we had one document up above but
+
+00:23:18.419 --> 00:23:21.120
+after I split it I now have 606
+
+00:23:21.120 --> 00:23:23.280
+documents all right and if I wanted to
+
+00:23:23.280 --> 00:23:24.900
+preview those I can go ahead and preview
+
+00:23:24.900 --> 00:23:27.059
+these and see how they're nice and small
+
+00:23:27.059 --> 00:23:29.280
+they're super small and if I wanted to
+
+00:23:29.280 --> 00:23:31.140
+make this 50 for example well then my
+
+00:23:31.140 --> 00:23:33.059
+chunks will be a whole lot smaller but
+
+00:23:33.059 --> 00:23:34.740
+let me go ahead and make that bigger the
+
+00:23:34.740 --> 00:23:35.760
+next thing we're going to look at is
+
+00:23:35.760 --> 00:23:37.919
+going to be retrievers now retrievers
+
+00:23:37.919 --> 00:23:40.500
+are easy ways to combine your documents
+
+00:23:40.500 --> 00:23:42.419
+with your language models there's going
+
+00:23:42.419 --> 00:23:43.559
+to be a lot of different types of
+
+00:23:43.559 --> 00:23:45.480
+retrievers and the most widely supported
+
+00:23:45.480 --> 00:23:46.860
+one is going to be the vector store
+
+00:23:46.860 --> 00:23:49.799
+Retriever and it's most widely supported
+
+00:23:49.799 --> 00:23:51.240
+because we're doing so much similarity
+
+00:23:51.240 --> 00:23:53.340
+search within embeddings let's look at
+
+00:23:53.340 --> 00:23:55.559
+an example here we're going to load up a
+
+00:23:55.559 --> 00:23:57.120
+hologram essay just like how we had
+
+00:23:57.120 --> 00:23:58.440
+beforehand I'm going to do some
+
+00:23:58.440 --> 00:23:59.820
+splitting of it and so we're going to
+
+00:23:59.820 --> 00:24:01.559
+get a whole bunch of documents
+
+00:24:01.559 --> 00:24:03.240
+we're going to split the documents and
+
+00:24:03.240 --> 00:24:04.620
+then I'm going to create embeddings out
+
+00:24:04.620 --> 00:24:06.840
+of those documents and so all those
+
+00:24:06.840 --> 00:24:07.980
+little chunks we're going to create
+
+00:24:07.980 --> 00:24:09.360
+vectors out of them which is the
+
+00:24:09.360 --> 00:24:10.919
+semantic meaning of them and then I'm
+
+00:24:10.919 --> 00:24:13.080
+going to store those vectors within a
+
+00:24:13.080 --> 00:24:14.940
+document store here okay and I'm going
+
+00:24:14.940 --> 00:24:17.520
+to call that within a my DB there and
+
+00:24:17.520 --> 00:24:19.440
+then I'm going to say hey this retriever
+
+00:24:19.440 --> 00:24:21.000
+is going to be the DB but we're going to
+
+00:24:21.000 --> 00:24:22.799
+set it as the retriever okay so it knows
+
+00:24:22.799 --> 00:24:24.539
+to go get stuff and if I were to look at
+
+00:24:24.539 --> 00:24:26.159
+this you can see here that we have our
+
+00:24:26.159 --> 00:24:27.720
+Vector store retriever that's output
+
+00:24:27.720 --> 00:24:28.799
+right here
+
+00:24:28.799 --> 00:24:31.140
+okay we're going to take our Retriever
+
+00:24:31.140 --> 00:24:33.179
+and I'm going to say hey go get me the
+
+00:24:33.179 --> 00:24:34.980
+relevant documents what types of things
+
+00:24:34.980 --> 00:24:37.260
+did the author want to build now in the
+
+00:24:37.260 --> 00:24:38.580
+background what it's doing here is it's
+
+00:24:38.580 --> 00:24:40.380
+taking the string and it's converting it
+
+00:24:40.380 --> 00:24:42.299
+to a vector it's taking that vector and
+
+00:24:42.299 --> 00:24:43.500
+it's going to go compare it to the
+
+00:24:43.500 --> 00:24:45.360
+vector store that you have and find the
+
+00:24:45.360 --> 00:24:47.520
+similar documents that come from there
+
+00:24:47.520 --> 00:24:48.960
+so what I'm going to do here is I'm just
+
+00:24:48.960 --> 00:24:50.340
+going to print out this is a one-liner
+
+00:24:50.340 --> 00:24:51.960
+kind of complicated one just to print
+
+00:24:51.960 --> 00:24:54.000
+out the preview of the documents that we
+
+00:24:54.000 --> 00:24:55.260
+have here I'm just going to have it
+
+00:24:55.260 --> 00:24:56.520
+print out the first two
+
+00:24:56.520 --> 00:24:58.980
+docs is not defined great let's go ahead
+
+00:24:58.980 --> 00:25:00.720
+and run those so all of a sudden these
+
+00:25:00.720 --> 00:25:02.280
+are the previews of the docs that it
+
+00:25:02.280 --> 00:25:03.780
+found there
+
+00:25:03.780 --> 00:25:05.820
+um what I wanted was to not just build
+
+00:25:05.820 --> 00:25:08.159
+things but build things that would last
+
+00:25:08.159 --> 00:25:10.559
+so you can see here that out of all
+
+00:25:10.559 --> 00:25:12.059
+those documents that I found it found
+
+00:25:12.059 --> 00:25:13.980
+the two that were most similar to what I
+
+00:25:13.980 --> 00:25:16.140
+was looking for which is really cool I
+
+00:25:16.140 --> 00:25:18.240
+wanted to build things nice next let's
+
+00:25:18.240 --> 00:25:20.220
+look at Vector stores so we briefly just
+
+00:25:20.220 --> 00:25:21.539
+talked about Vector stores right before
+
+00:25:21.539 --> 00:25:23.400
+this but to go into it a little bit
+
+00:25:23.400 --> 00:25:25.320
+further think of a vector store really
+
+00:25:25.320 --> 00:25:27.320
+the way that I think about it is a table
+
+00:25:27.320 --> 00:25:30.840
+with rows with your embeddings and
+
+00:25:30.840 --> 00:25:32.700
+Associated metadata that comes with it
+
+00:25:32.700 --> 00:25:35.700
+an example of it is right here two main
+
+00:25:35.700 --> 00:25:37.140
+players in the space are now are going
+
+00:25:37.140 --> 00:25:39.299
+to be pine cone and weeviate however if
+
+00:25:39.299 --> 00:25:40.740
+you want to you can go check out open
+
+00:25:40.740 --> 00:25:42.900
+ai's retriever documentation and they
+
+00:25:42.900 --> 00:25:44.220
+list a whole bunch of other ones that
+
+00:25:44.220 --> 00:25:46.320
+you may find awesome for you
+
+00:25:46.320 --> 00:25:48.419
+okay so let's go ahead and look at these
+
+00:25:48.419 --> 00:25:50.880
+again we're going to import our models
+
+00:25:50.880 --> 00:25:53.400
+we got our embeddings okay cool now with
+
+00:25:53.400 --> 00:25:55.320
+these embeddings I'm gonna look at that
+
+00:25:55.320 --> 00:25:57.240
+and based off of how I split my document
+
+00:25:57.240 --> 00:25:59.820
+up above with a thousand chunks or a
+
+00:25:59.820 --> 00:26:02.039
+thousand as a chunk size we get 78
+
+00:26:02.039 --> 00:26:04.380
+documents Auto programs worked essay
+
+00:26:04.380 --> 00:26:06.240
+okay what I'm going to do is I'm going
+
+00:26:06.240 --> 00:26:07.740
+to create those as embeddings and I'm
+
+00:26:07.740 --> 00:26:09.240
+going to get my embeddings list from
+
+00:26:09.240 --> 00:26:12.179
+there and I'm going to let's look at the
+
+00:26:12.179 --> 00:26:14.520
+length of the embedding list I have 78
+
+00:26:14.520 --> 00:26:16.679
+embeddings reason why is because I have
+
+00:26:16.679 --> 00:26:18.960
+one vector for each one of my documents
+
+00:26:18.960 --> 00:26:21.779
+so all right makes sense and here's a
+
+00:26:21.779 --> 00:26:23.760
+sample of one so here's an example of
+
+00:26:23.760 --> 00:26:26.400
+what the embedding would look like it's
+
+00:26:26.400 --> 00:26:28.799
+a numerical representation of the
+
+00:26:28.799 --> 00:26:30.960
+semantic meaning of your document there
+
+00:26:30.960 --> 00:26:32.880
+so your vector store is going to be
+
+00:26:32.880 --> 00:26:34.380
+storing your embeddings and it makes
+
+00:26:34.380 --> 00:26:36.240
+them easily searchable so in this case
+
+00:26:36.240 --> 00:26:37.559
+it is going to take my embedding and
+
+00:26:37.559 --> 00:26:38.760
+it's going to store it like a database
+
+00:26:38.760 --> 00:26:40.260
+the next topic I want to look at is
+
+00:26:40.260 --> 00:26:42.360
+going to be Memory so this is going to
+
+00:26:42.360 --> 00:26:44.279
+be how you help your language models
+
+00:26:44.279 --> 00:26:46.860
+remember things the most common use case
+
+00:26:46.860 --> 00:26:48.299
+for this is going to be your chat
+
+00:26:48.299 --> 00:26:50.400
+history so if you're making a chat bot
+
+00:26:50.400 --> 00:26:52.020
+then you can tell up the history
+
+00:26:52.020 --> 00:26:53.580
+messages that you've had beforehand
+
+00:26:53.580 --> 00:26:55.440
+which makes it a whole lot better at
+
+00:26:55.440 --> 00:26:57.360
+helping your user do whatever it needs
+
+00:26:57.360 --> 00:26:58.919
+to do so in this case I'm going to
+
+00:26:58.919 --> 00:27:00.900
+import chat message history and I'm
+
+00:27:00.900 --> 00:27:03.120
+going to import my chat open AI again
+
+00:27:03.120 --> 00:27:05.220
+and so I'm going to create my chat model
+
+00:27:05.220 --> 00:27:06.720
+and then I'm going to create my history
+
+00:27:06.720 --> 00:27:09.299
+model and to my history model I'm going
+
+00:27:09.299 --> 00:27:12.240
+to add an AI message Hi and then I'm
+
+00:27:12.240 --> 00:27:14.520
+going to add a user message what is the
+
+00:27:14.520 --> 00:27:16.380
+capital of France so let me go ahead and
+
+00:27:16.380 --> 00:27:17.940
+run that and if I were to take a look at
+
+00:27:17.940 --> 00:27:20.220
+my history messages I get my two that
+
+00:27:20.220 --> 00:27:21.840
+are input right there they're in the
+
+00:27:21.840 --> 00:27:23.520
+right order as we would expect there to
+
+00:27:23.520 --> 00:27:24.419
+be
+
+00:27:24.419 --> 00:27:26.520
+so what's cool is that I can pass my
+
+00:27:26.520 --> 00:27:29.100
+history of messages to the language
+
+00:27:29.100 --> 00:27:31.140
+model and so in this case it is going to
+
+00:27:31.140 --> 00:27:33.900
+read oh I said hi to start and then the
+
+00:27:33.900 --> 00:27:35.760
+human message was what's the capital of
+
+00:27:35.760 --> 00:27:37.200
+France and let's see what it responds
+
+00:27:37.200 --> 00:27:39.480
+back to us the capital France is Paris
+
+00:27:39.480 --> 00:27:41.159
+and it gives us an AI message which is
+
+00:27:41.159 --> 00:27:43.860
+cool and so what I want to do here is I
+
+00:27:43.860 --> 00:27:45.900
+want to add an AI message to my history
+
+00:27:45.900 --> 00:27:49.140
+which uh I shouldn't repeat this but I
+
+00:27:49.140 --> 00:27:51.179
+am actually no I'm not repeating it I'm
+
+00:27:51.179 --> 00:27:52.559
+taking the AI response and I'm just
+
+00:27:52.559 --> 00:27:54.059
+putting out the content let me print out
+
+00:27:54.059 --> 00:27:55.679
+those messages again and you can see
+
+00:27:55.679 --> 00:27:58.559
+here that it adds uh the capital Francis
+
+00:27:58.559 --> 00:28:00.480
+Paris to the end of my chat history
+
+00:28:00.480 --> 00:28:02.159
+which makes it easy for me to work with
+
+00:28:02.159 --> 00:28:03.900
+and another cool functionality of this
+
+00:28:03.900 --> 00:28:05.279
+too is link chain makes it extremely
+
+00:28:05.279 --> 00:28:07.500
+simple to save this chat history so you
+
+00:28:07.500 --> 00:28:10.080
+can go ahead and load it later a lot of
+
+00:28:10.080 --> 00:28:11.340
+really cool functionality I encourage
+
+00:28:11.340 --> 00:28:13.260
+you to go check out the next concept
+
+00:28:13.260 --> 00:28:15.299
+we're going to look at is chains so in
+
+00:28:15.299 --> 00:28:16.620
+this case we're going to be combining
+
+00:28:16.620 --> 00:28:19.020
+different llm calls and actions
+
+00:28:19.020 --> 00:28:21.659
+automatically so say you have one input
+
+00:28:21.659 --> 00:28:22.919
+but then the output of that language
+
+00:28:22.919 --> 00:28:24.840
+model you want to use as the input to
+
+00:28:24.840 --> 00:28:26.640
+another call and then another call and
+
+00:28:26.640 --> 00:28:28.320
+then another call well in that case
+
+00:28:28.320 --> 00:28:30.240
+you're going to be using chains which is
+
+00:28:30.240 --> 00:28:32.279
+where the chain and Lang chain comes
+
+00:28:32.279 --> 00:28:33.900
+from so in this case we're going to
+
+00:28:33.900 --> 00:28:35.760
+cover two of them there's a lot of
+
+00:28:35.760 --> 00:28:38.159
+really complicated examples here I
+
+00:28:38.159 --> 00:28:39.600
+encourage you again to go check out the
+
+00:28:39.600 --> 00:28:41.520
+documentation to see if one of them
+
+00:28:41.520 --> 00:28:43.140
+would cover your use case better than
+
+00:28:43.140 --> 00:28:45.000
+what you're seeing here the first one is
+
+00:28:45.000 --> 00:28:47.100
+going to be a simple sequential chain
+
+00:28:47.100 --> 00:28:49.020
+and in this case I'm going to go ahead
+
+00:28:49.020 --> 00:28:51.480
+and tell it hey I want you to do X and
+
+00:28:51.480 --> 00:28:54.120
+then Y and then Z now the reason why
+
+00:28:54.120 --> 00:28:55.440
+this is important
+
+00:28:55.440 --> 00:28:57.240
+or why I like to do it is because it
+
+00:28:57.240 --> 00:28:59.700
+helps break up the tasks Now language
+
+00:28:59.700 --> 00:29:01.740
+models can get distracted sometimes and
+
+00:29:01.740 --> 00:29:03.840
+if you ask it to do too many things in a
+
+00:29:03.840 --> 00:29:05.940
+row it could get it could get confused
+
+00:29:05.940 --> 00:29:07.860
+it could start to hallucinate and that's
+
+00:29:07.860 --> 00:29:10.200
+not good for anybody Plus
+
+00:29:10.200 --> 00:29:11.700
+I want to make sure that my thinking is
+
+00:29:11.700 --> 00:29:13.200
+sound and that way I can kind of check
+
+00:29:13.200 --> 00:29:14.700
+out the different outputs of each one of
+
+00:29:14.700 --> 00:29:16.799
+my different actions here so in this
+
+00:29:16.799 --> 00:29:18.000
+case I'm going to import the simple
+
+00:29:18.000 --> 00:29:19.919
+sequential chain let me go ahead and run
+
+00:29:19.919 --> 00:29:21.659
+this and I'm going to put two different
+
+00:29:21.659 --> 00:29:23.399
+things to here I'm going to use two
+
+00:29:23.399 --> 00:29:25.620
+different prompt templates so your job
+
+00:29:25.620 --> 00:29:27.899
+is to come up with a classic dish from
+
+00:29:27.899 --> 00:29:30.120
+the area that the user suggests I'm
+
+00:29:30.120 --> 00:29:32.159
+going to input the user location and I'm
+
+00:29:32.159 --> 00:29:33.480
+going to give it the user location which
+
+00:29:33.480 --> 00:29:35.399
+we'll we'll do in a second here
+
+00:29:35.399 --> 00:29:38.039
+and I'm going to create a llm chain with
+
+00:29:38.039 --> 00:29:39.360
+this and I'm going to call it location
+
+00:29:39.360 --> 00:29:41.220
+chain which basically is going to take
+
+00:29:41.220 --> 00:29:42.539
+my language model it's going to take a
+
+00:29:42.539 --> 00:29:44.460
+prompt template okay
+
+00:29:44.460 --> 00:29:45.840
+and then the next one we're going to
+
+00:29:45.840 --> 00:29:48.960
+look at given a meal give a short and
+
+00:29:48.960 --> 00:29:50.700
+simple recipe on how to make that dish
+
+00:29:50.700 --> 00:29:53.340
+at home so in this case we have the user
+
+00:29:53.340 --> 00:29:54.960
+location which that's not actually what
+
+00:29:54.960 --> 00:29:58.500
+we want we want user meal output this
+
+00:29:58.500 --> 00:30:00.480
+wouldn't have mattered because I had the
+
+00:30:00.480 --> 00:30:01.679
+variables the same but it just to make
+
+00:30:01.679 --> 00:30:02.640
+it more clear
+
+00:30:02.640 --> 00:30:05.760
+given a meal okay cool your response I'm
+
+00:30:05.760 --> 00:30:07.080
+going to do the same thing I'm going to
+
+00:30:07.080 --> 00:30:08.940
+put that into a meal chain so what it's
+
+00:30:08.940 --> 00:30:11.100
+going to do is it's going to Output a
+
+00:30:11.100 --> 00:30:13.140
+meal a classic dish and then it's going
+
+00:30:13.140 --> 00:30:14.940
+to Output a simple recipe for that
+
+00:30:14.940 --> 00:30:16.140
+classic dish
+
+00:30:16.140 --> 00:30:18.899
+okay I'm gonna create my simple
+
+00:30:18.899 --> 00:30:21.240
+sequential chain and in this case I'm
+
+00:30:21.240 --> 00:30:22.799
+going to specify My Chains as my
+
+00:30:22.799 --> 00:30:25.260
+location chain and then the meal chain
+
+00:30:25.260 --> 00:30:27.779
+order matters be careful on that I'm
+
+00:30:27.779 --> 00:30:29.700
+going to set verbose equals true which
+
+00:30:29.700 --> 00:30:30.840
+means that it's going to tell us what
+
+00:30:30.840 --> 00:30:32.039
+it's thinking and it's actually going to
+
+00:30:32.039 --> 00:30:33.299
+print those statements out so it's
+
+00:30:33.299 --> 00:30:35.159
+easier to debug what's going on
+
+00:30:35.159 --> 00:30:36.899
+let's go ahead and create that and then
+
+00:30:36.899 --> 00:30:39.179
+I'm going to say My overall chain I want
+
+00:30:39.179 --> 00:30:41.220
+you to run and in this case I only have
+
+00:30:41.220 --> 00:30:42.840
+one input variable which is going to be
+
+00:30:42.840 --> 00:30:44.820
+Rome which is going to be the user
+
+00:30:44.820 --> 00:30:46.740
+location that I start in the first place
+
+00:30:46.740 --> 00:30:48.720
+let me go ahead and run this so you can
+
+00:30:48.720 --> 00:30:49.860
+see here that it's entering the new
+
+00:30:49.860 --> 00:30:52.500
+sequential chain and it ran Rome against
+
+00:30:52.500 --> 00:30:54.840
+the first prompt template and got me a
+
+00:30:54.840 --> 00:30:56.820
+classic dish which is really cool
+
+00:30:56.820 --> 00:31:00.059
+and then it gave me a recipe to on how
+
+00:31:00.059 --> 00:31:01.980
+to make that classic dish which is
+
+00:31:01.980 --> 00:31:04.200
+really cool so all of a sudden it just
+
+00:31:04.200 --> 00:31:06.240
+did two different runs for me all in one
+
+00:31:06.240 --> 00:31:07.679
+go and I didn't have to run any
+
+00:31:07.679 --> 00:31:09.000
+complicated code I could just use
+
+00:31:09.000 --> 00:31:11.760
+langtain for that it's pretty sweet
+
+00:31:11.760 --> 00:31:13.740
+now the next one that I want to show is
+
+00:31:13.740 --> 00:31:15.179
+one that I use quite often which is
+
+00:31:15.179 --> 00:31:17.700
+going to be the summarization chain the
+
+00:31:17.700 --> 00:31:19.200
+reason why this one was so cool is
+
+00:31:19.200 --> 00:31:21.419
+because if you have a long piece of text
+
+00:31:21.419 --> 00:31:23.820
+and you want it summarized or say you
+
+00:31:23.820 --> 00:31:25.620
+have an article you want summarized or a
+
+00:31:25.620 --> 00:31:27.419
+tweet thread or a Hacker News Post or
+
+00:31:27.419 --> 00:31:29.279
+whatever it may be you're going to want
+
+00:31:29.279 --> 00:31:33.000
+to Chunk Up Your longer piece of text
+
+00:31:33.000 --> 00:31:34.860
+and you're going to want to find you're
+
+00:31:34.860 --> 00:31:36.299
+going to want to find summaries of those
+
+00:31:36.299 --> 00:31:37.980
+different chunks and then get a final
+
+00:31:37.980 --> 00:31:40.919
+summary and in that case what we're
+
+00:31:40.919 --> 00:31:42.360
+going to do is we're going to load in
+
+00:31:42.360 --> 00:31:44.880
+load summarize chain and we're going to
+
+00:31:44.880 --> 00:31:47.399
+do Paul Graham's essay disk not even
+
+00:31:47.399 --> 00:31:48.899
+sure what that one's about then we're
+
+00:31:48.899 --> 00:31:50.279
+going to split it up into different
+
+00:31:50.279 --> 00:31:52.799
+texts right here the chunk size is going
+
+00:31:52.799 --> 00:31:54.899
+to be 700 and then I'm going to load
+
+00:31:54.899 --> 00:31:57.179
+summarize chain and the chain type that
+
+00:31:57.179 --> 00:31:59.159
+I'm going to do is going to be that one
+
+00:31:59.159 --> 00:32:00.600
+that I mentioned beforehand which is
+
+00:32:00.600 --> 00:32:02.340
+where you get the small summaries of the
+
+00:32:02.340 --> 00:32:04.200
+individual sections and then you get a
+
+00:32:04.200 --> 00:32:06.600
+summary of the small summaries I have a
+
+00:32:06.600 --> 00:32:08.100
+whole video on different chain types and
+
+00:32:08.100 --> 00:32:10.020
+so if you're curious go check out the
+
+00:32:10.020 --> 00:32:12.179
+video up above and you can go see it
+
+00:32:12.179 --> 00:32:14.159
+let me go ahead and run this and so as
+
+00:32:14.159 --> 00:32:16.140
+you can see here the language model is
+
+00:32:16.140 --> 00:32:20.340
+asking I'm sorry the chain or Lang chain
+
+00:32:20.340 --> 00:32:22.440
+is asking the language model to
+
+00:32:22.440 --> 00:32:24.419
+summarize this piece of text right here
+
+00:32:24.419 --> 00:32:26.039
+and then this piece of text right here
+
+00:32:26.039 --> 00:32:27.539
+because we only had two chunks that we
+
+00:32:27.539 --> 00:32:29.640
+wanted to summarize and then it's asking
+
+00:32:29.640 --> 00:32:32.279
+for a final concise summary so here's
+
+00:32:32.279 --> 00:32:33.840
+the summary of the chunk number one
+
+00:32:33.840 --> 00:32:36.059
+here's the summary of Chunk number two
+
+00:32:36.059 --> 00:32:37.679
+and it's asking for a summary of the
+
+00:32:37.679 --> 00:32:39.779
+summaries and we finally get a summary
+
+00:32:39.779 --> 00:32:41.340
+of the summaries which is really cool
+
+00:32:41.340 --> 00:32:45.059
+because all built into this one liner
+
+00:32:45.059 --> 00:32:46.980
+right here was all the different calls
+
+00:32:46.980 --> 00:32:48.720
+back and forth to figure out how to do
+
+00:32:48.720 --> 00:32:50.159
+the summary of the summaries which is
+
+00:32:50.159 --> 00:32:51.600
+one of the powers of Lane chain which is
+
+00:32:51.600 --> 00:32:53.039
+really sweet the last thing we're going
+
+00:32:53.039 --> 00:32:55.320
+to look at is agents and this is one of
+
+00:32:55.320 --> 00:32:56.880
+the most complicated Concepts within
+
+00:32:56.880 --> 00:32:58.260
+link chain which is why we're talking
+
+00:32:58.260 --> 00:33:00.419
+about it last here but I thought that
+
+00:33:00.419 --> 00:33:02.399
+the official link chain documentation
+
+00:33:02.399 --> 00:33:04.500
+did a great job describing what agents
+
+00:33:04.500 --> 00:33:05.520
+are
+
+00:33:05.520 --> 00:33:08.220
+some applications will not require just
+
+00:33:08.220 --> 00:33:11.100
+a predetermined chain of calls to llms
+
+00:33:11.100 --> 00:33:13.140
+and other tools what we did up above was
+
+00:33:13.140 --> 00:33:15.779
+a predetermined chain here but
+
+00:33:15.779 --> 00:33:18.000
+potentially an unknown chain that
+
+00:33:18.000 --> 00:33:20.580
+depends on the user input an unknown
+
+00:33:20.580 --> 00:33:23.100
+chain emphasis mine means that we're not
+
+00:33:23.100 --> 00:33:24.659
+really sure what route we want to take
+
+00:33:24.659 --> 00:33:26.700
+but we want the language model to tell
+
+00:33:26.700 --> 00:33:28.679
+us which route it thinks that it should
+
+00:33:28.679 --> 00:33:29.880
+take
+
+00:33:29.880 --> 00:33:31.620
+in these types of chains there is an
+
+00:33:31.620 --> 00:33:33.960
+agent which has an access to a suite of
+
+00:33:33.960 --> 00:33:36.899
+tools depending on the user input the
+
+00:33:36.899 --> 00:33:40.019
+agent can then decide which if any of
+
+00:33:40.019 --> 00:33:41.580
+these tools to call
+
+00:33:41.580 --> 00:33:44.340
+so for example hey you have two
+
+00:33:44.340 --> 00:33:46.440
+databases you could pick information
+
+00:33:46.440 --> 00:33:48.539
+from they're on completely different
+
+00:33:48.539 --> 00:33:50.580
+topics the user just asked you a
+
+00:33:50.580 --> 00:33:53.519
+question about uh trees
+
+00:33:53.519 --> 00:33:55.140
+which database should you go looking to
+
+00:33:55.140 --> 00:33:57.059
+find your tree information well an agent
+
+00:33:57.059 --> 00:33:59.279
+can decide that which is really sweet so
+
+00:33:59.279 --> 00:34:00.600
+I'm going to go over the vocabulary
+
+00:34:00.600 --> 00:34:01.860
+first and then we're going to look at an
+
+00:34:01.860 --> 00:34:04.080
+example so an agent is the language
+
+00:34:04.080 --> 00:34:05.700
+model that is going to be driving the
+
+00:34:05.700 --> 00:34:07.639
+decision making cool
+
+00:34:07.639 --> 00:34:10.200
+tools or tool is going to be a
+
+00:34:10.200 --> 00:34:12.419
+capability of the agent so you can think
+
+00:34:12.419 --> 00:34:14.580
+of this as similar to the open AI
+
+00:34:14.580 --> 00:34:16.440
+plugins that just came out you can also
+
+00:34:16.440 --> 00:34:18.540
+think of this as the ability to go
+
+00:34:18.540 --> 00:34:20.399
+search Google the ability to go lick
+
+00:34:20.399 --> 00:34:22.379
+your email whatever it may be
+
+00:34:22.379 --> 00:34:24.720
+a tool kit is going to be a collection
+
+00:34:24.720 --> 00:34:27.780
+of tools so an agent will have a toolkit
+
+00:34:27.780 --> 00:34:30.720
+of tools uh
+
+00:34:30.720 --> 00:34:32.220
+an agent will have a toolkit of tools
+
+00:34:32.220 --> 00:34:33.300
+and that's what that's what it's going
+
+00:34:33.300 --> 00:34:35.040
+to do there I'm going to import load
+
+00:34:35.040 --> 00:34:36.720
+tools I'm going to initialize the agent
+
+00:34:36.720 --> 00:34:39.240
+I'm going to import openai as well
+
+00:34:39.240 --> 00:34:40.560
+with that I'm going to create my
+
+00:34:40.560 --> 00:34:43.260
+language model now I've made I've insert
+
+00:34:43.260 --> 00:34:45.419
+my serp API key because that's the
+
+00:34:45.419 --> 00:34:46.320
+example that we're going to be running
+
+00:34:46.320 --> 00:34:47.820
+through here which is an easy way to
+
+00:34:47.820 --> 00:34:48.780
+search Google
+
+00:34:48.780 --> 00:34:50.460
+and then with the toolkit I'm going to
+
+00:34:50.460 --> 00:34:52.740
+go ahead and load the tools now in this
+
+00:34:52.740 --> 00:34:55.020
+case I'm only loading one tool and it's
+
+00:34:55.020 --> 00:34:57.180
+the server API however you could load in
+
+00:34:57.180 --> 00:34:59.040
+a lot of tools here and you may
+
+00:34:59.040 --> 00:35:00.420
+naturally think well let me just load it
+
+00:35:00.420 --> 00:35:02.400
+up with all the tools in the world you
+
+00:35:02.400 --> 00:35:03.660
+could it's just going to get difficult
+
+00:35:03.660 --> 00:35:06.119
+for the model or the agent to know which
+
+00:35:06.119 --> 00:35:07.740
+tool to use at which time so you kind of
+
+00:35:07.740 --> 00:35:09.060
+only want to use the ones that you know
+
+00:35:09.060 --> 00:35:10.619
+you're going to um
+
+00:35:10.619 --> 00:35:12.900
+be needing at that at that point so I'm
+
+00:35:12.900 --> 00:35:14.160
+going to pass in my language model and
+
+00:35:14.160 --> 00:35:16.079
+I'm going to pass in my serve API here
+
+00:35:16.079 --> 00:35:18.540
+API key then I'm going to create my
+
+00:35:18.540 --> 00:35:20.160
+agent so I'm going to pass in the
+
+00:35:20.160 --> 00:35:21.780
+toolkit that I just made I'm going to
+
+00:35:21.780 --> 00:35:23.400
+pass in the language model again I'm
+
+00:35:23.400 --> 00:35:25.260
+going to say what type of agent are you
+
+00:35:25.260 --> 00:35:27.240
+now there's different agent types for
+
+00:35:27.240 --> 00:35:29.220
+different types of tasks and I encourage
+
+00:35:29.220 --> 00:35:31.020
+you to go check out the language or the
+
+00:35:31.020 --> 00:35:32.880
+documentation to see which would be best
+
+00:35:32.880 --> 00:35:34.980
+for you I'm going to say verbose equals
+
+00:35:34.980 --> 00:35:36.660
+true so we can see it thinking I'm also
+
+00:35:36.660 --> 00:35:38.460
+going to return the intermediate steps
+
+00:35:38.460 --> 00:35:39.780
+which just means that we get more
+
+00:35:39.780 --> 00:35:41.040
+granularity into what it's actually
+
+00:35:41.040 --> 00:35:41.880
+doing
+
+00:35:41.880 --> 00:35:44.760
+with this I'm going to say response uh
+
+00:35:44.760 --> 00:35:46.380
+oh agent is not defined then what I'm
+
+00:35:46.380 --> 00:35:47.940
+going to do here is I'm going to pass in
+
+00:35:47.940 --> 00:35:51.180
+my query to the agent itself so what was
+
+00:35:51.180 --> 00:35:54.000
+the first album of the band that Natalie
+
+00:35:54.000 --> 00:35:56.339
+Bergman is a part of the reason why I
+
+00:35:56.339 --> 00:35:58.260
+asked this question specifically is
+
+00:35:58.260 --> 00:35:59.760
+because keep in mind I haven't uploaded
+
+00:35:59.760 --> 00:36:01.740
+any documents here so there's no
+
+00:36:01.740 --> 00:36:03.540
+information pre-loaded and it's kind of
+
+00:36:03.540 --> 00:36:05.460
+a complicated question that has multiple
+
+00:36:05.460 --> 00:36:07.320
+steps that need to be answered for it
+
+00:36:07.320 --> 00:36:09.060
+this is a perfect question for an agent
+
+00:36:09.060 --> 00:36:10.500
+here so let's go ahead and run this and
+
+00:36:10.500 --> 00:36:11.640
+let's see how the agent is thinking
+
+00:36:11.640 --> 00:36:13.859
+about it entering the new agent executor
+
+00:36:13.859 --> 00:36:15.720
+class and it said I should try to find
+
+00:36:15.720 --> 00:36:17.820
+out what band Natalie Bergman is a part
+
+00:36:17.820 --> 00:36:19.800
+of so it needs to it knows that it needs
+
+00:36:19.800 --> 00:36:21.900
+to go search which it has a Search tool
+
+00:36:21.900 --> 00:36:23.820
+up above which I gave it and it's saying
+
+00:36:23.820 --> 00:36:25.560
+Natalie Bergman banded so it's searching
+
+00:36:25.560 --> 00:36:27.359
+for that one and it says observation
+
+00:36:27.359 --> 00:36:29.220
+which is what it observed from its
+
+00:36:29.220 --> 00:36:31.220
+action Natalie Bergman is an American
+
+00:36:31.220 --> 00:36:33.359
+singer-songwriter she has one half the
+
+00:36:33.359 --> 00:36:36.960
+duo of wild Belle okay cool I should
+
+00:36:36.960 --> 00:36:39.960
+search for the debut album of wild Belle
+
+00:36:39.960 --> 00:36:42.060
+it understood the band that she's a part
+
+00:36:42.060 --> 00:36:43.680
+of and now it now it knows and needs to
+
+00:36:43.680 --> 00:36:45.540
+go search for that band so it's going to
+
+00:36:45.540 --> 00:36:47.400
+search again it's going to say wild
+
+00:36:47.400 --> 00:36:50.700
+Belle debut album and it observes that
+
+00:36:50.700 --> 00:36:52.859
+the debut album is Isles I know the
+
+00:36:52.859 --> 00:36:55.140
+final answer which is good we want it to
+
+00:36:55.140 --> 00:36:55.980
+know the finance
+
+00:36:55.980 --> 00:36:58.140
+uh Isles is the debut album of wild
+
+00:36:58.140 --> 00:37:00.359
+Belle the band that Natalie Bergman is a
+
+00:37:00.359 --> 00:37:02.339
+part of that is really cool because that
+
+00:37:02.339 --> 00:37:05.640
+is a multi-step question and uh the
+
+00:37:05.640 --> 00:37:07.200
+agent knew what it needed to go find out
+
+00:37:07.200 --> 00:37:09.780
+without me telling it the chain so this
+
+00:37:09.780 --> 00:37:11.040
+chain could have been a whole lot longer
+
+00:37:11.040 --> 00:37:13.500
+if it needed more steps with it but uh
+
+00:37:13.500 --> 00:37:15.180
+it dynamically figured that out along
+
+00:37:15.180 --> 00:37:17.400
+the way which is really really cool and
+
+00:37:17.400 --> 00:37:18.720
+so if we were to print out the
+
+00:37:18.720 --> 00:37:20.099
+intermediate steps you get more
+
+00:37:20.099 --> 00:37:21.720
+information about what it actually did
+
+00:37:21.720 --> 00:37:23.520
+and how it searched and all that good
+
+00:37:23.520 --> 00:37:25.200
+information from there
+
+00:37:25.200 --> 00:37:27.480
+um and if we were to confirm this let's
+
+00:37:27.480 --> 00:37:30.420
+go ahead and run this WOW yep wild Belle
+
+00:37:30.420 --> 00:37:32.099
+there's Natalie Bergman brother and
+
+00:37:32.099 --> 00:37:34.440
+sister Duo band
+
+00:37:34.440 --> 00:37:36.660
+um beautiful I would play their song If
+
+00:37:36.660 --> 00:37:37.800
+it wasn't going to give me copyright
+
+00:37:37.800 --> 00:37:39.420
+trouble but I encourage you to go look
+
+00:37:39.420 --> 00:37:42.060
+it up link to my favorite song of theirs
+
+00:37:42.060 --> 00:37:43.740
+is in the description well my friends
+
+00:37:43.740 --> 00:37:46.380
+that was a very broad overview of all of
+
+00:37:46.380 --> 00:37:48.300
+the nuts and bolts of lion chain the
+
+00:37:48.300 --> 00:37:50.579
+Tactical nuts and bolts I congratulate
+
+00:37:50.579 --> 00:37:52.020
+you for making it to the end of this
+
+00:37:52.020 --> 00:37:53.760
+video and if you have any questions
+
+00:37:53.760 --> 00:37:56.040
+please let me know I encourage you to
+
+00:37:56.040 --> 00:37:57.900
+subscribe to check out for part two when
+
+00:37:57.900 --> 00:37:59.760
+we go through actual use cases for these
+
+00:37:59.760 --> 00:38:01.859
+nuts and bolts and again I share a lot
+
+00:38:01.859 --> 00:38:03.480
+of tools on Twitter so I encourage you
+
+00:38:03.480 --> 00:38:05.760
+to follow me there like always please
+
+00:38:05.760 --> 00:38:06.900
+leave comments let me know what you
+
+00:38:06.900 --> 00:38:08.400
+think of the video and let me know if
+
+00:38:08.400 --> 00:38:09.900
+you have any questions we'll see you
+
+00:38:09.900 --> 00:38:12.020
+later

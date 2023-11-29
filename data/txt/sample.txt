@@ -1,0 +1,7 @@
+<v Yann>Why is my French accent?</v>
+<v Yann>I want to start doing this experiment where.</v>
+<v Yann>We have a conversation we record it's generating a VTT file.</v>
+<v Yann>And I have a parser. I developed a small app in Python that can retrieve the VTT file process it.</v>
+<v Yann>And then.</v>
+<v Yann>I want to feed it through the ChatGPT API and the API is amazing. I don't know if you've played around with it already.</v>
+<v Mike>No, I need to though. Yeah, the problem is I can't find time. Too many things, I promised people every day.</v>

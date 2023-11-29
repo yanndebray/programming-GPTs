@@ -1,0 +1,22 @@
+WEBVTT
+
+00:00:00.000 --> 00:00:01.500
+<v Yann>Why is my French accent?</v>
+
+00:00:03.060 --> 00:00:05.630
+<v Yann>I want to start doing this experiment where.</v>
+
+00:00:06.630 --> 00:00:12.420
+<v Yann>We have a conversation we record it's generating a VTT file.</v>
+
+00:00:13.670 --> 00:00:21.660
+<v Yann>And I have a parser. I developed a small app in Python that can retrieve the VTT file process it.</v>
+
+00:00:23.700 --> 00:00:24.370
+<v Yann>And then.</v>
+
+00:00:25.310 --> 00:00:32.010
+<v Yann>I want to feed it through the ChatGPT API and the API is amazing. I don't know if you've played around with it already.</v>
+
+00:00:32.880 --> 00:00:42.230
+<v Mike>No, I need to though. Yeah, the problem is I can't find time. Too many things, I promised people every day.</v>
