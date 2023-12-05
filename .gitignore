@@ -155,3 +155,5 @@ cython_debug/
 # Project specific
 .streamlit/
 archives/
+impromptu/
+storage/

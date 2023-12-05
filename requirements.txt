@@ -7,3 +7,10 @@ ipykernel
 bs4
 webvtt-py
 youtube-transcript-api
+pytube
+moviepy
+pydub
+chromadb 
+tiktoken
+pypdf
+llama-index
