@@ -12,10 +12,7 @@ Generative Pre-Trained Transformers are quite complicated general-purpose machin
 The blog is divided into 10 chapters, each covering a different topic and a different aspect of programming GPTs. The chapters are:
 - **Chapter 1: 🤖 Introduction to GPTs**. How they work and their evolution. 
 
-    *(Coming up next)*
-
-
-- **Chapter 2: 🐱💬 The Chat API.** In this chapter, you will learn how to use the Chat API, a simple way to create conversational agents with GPTs. You will learn how to create your own chatbot.
+- [**Chapter 2: 🐱💬 The Chat API.**](chap2/README.md) In this chapter, you will learn how to use the Chat API, a simple way to create conversational agents with GPTs. You will learn how to create your own chatbot.
 
     [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chat48.streamlit.app/)
 
