@@ -1,0 +1,13 @@
+Jeremy Howard from fast.ai presents a guide on how to understand and practically use language models with a code-first approach. Language models can predict the next word of a sentence or fill in missing words. To fully comprehend the content, prior knowledge of deep learning is beneficial, and Jeremy recommends his free course at course.fast.ai for basics. 
+
+He introduces language models using OpenAI's text DaVinci 003 as an example, explaining that these models predict the probability of the next words in a sentence. Since models predict tokens (which could be words, parts of words, or punctuation), users must use tokenization to create tokens from strings.
+
+Jeremy discusses the ULM fit approach, a three-step system involving pre-training, language model fine-tuning, and classifier fine-tuning, which he co-developed. Pre-training involves teaching a neural network to predict the next word in a sentence, such as Wikipedia articles. The pre-training makes the model learn a lot about the world to predict effectively, which is intrinsic to language models' functionality. The next steps fine-tune the neural network with more targeted data, gearing towards the tasks it's meant to accomplish.
+
+He argues that to be good at language modeling, one must be an effective user of such models, recommending the best one available - as of September 2023, GPT-4. Jeremy notes that despite criticisms, GPT-4 can perform reasoning tasks if properly prompted. Still, there are things language models like GPT-4 can't do, such as answering questions about themselves (due to the knowledge cutoff) or generating accurate URLs. 
+
+Moreover, he explores options for fine-tuning models for specific tasks or proprietary datasets and provides a brief overview of how to work with language models using the open-source library called Transformers and services like Google Colab or Kaggle for computing resources. Also, he highlights the possibility of doing fine-tuning on one's own computer, considering factors like GPU requirements and cost.
+
+Finally, Jeremy provides insights into running models on macOS and shares a practical demonstration of how to fine-tune a language model using a provided dataset, eventually creating a model capable of converting natural language questions into SQL queries.
+
+In conclusion, Jeremy emphasizes that the current stage of language model development involves many early-days challenges but sees it as an exciting time with substantial potential for growth and discovery, inviting viewers to join relevant communities for support.

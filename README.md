@@ -18,7 +18,7 @@ The blog is divided into 10 chapters, each covering a different topic and a diff
 
 <video src="https://github.com/slevin48/openai/assets/12418115/91b2c4c6-7338-4f51-9440-16e59626378d" controls="controls" style="max-width: 730px;"></video>
 
-- **Chapter 3: 🔗 Chaining & Summarization.** In this chapter, you will learn how to chain calls to a Large Language Model and use it to summarize texts, such as articles, books, or transcripts. You will learn how to use the Chat API together with the LangChain package to enhance GPTs.
+- [**Chapter 3: 🔗 Chaining & Summarization.**](chap3/README.md) In this chapter, you will learn how to chain calls to a Large Language Model and use it to summarize texts, such as articles, books, or transcripts. You will learn how to use the Chat API together with the LangChain package to enhance GPTs.
 
     [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://teams-summarizer.streamlit.app/)
 

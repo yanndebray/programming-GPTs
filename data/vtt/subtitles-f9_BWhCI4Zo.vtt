@@ -1,0 +1,1390 @@
+WEBVTT
+
+19:00:00.060 --> 19:00:04.020
+so you got yourself in a bit of trouble
+
+19:00:01.800 --> 19:00:06.420
+because open AI returns an error to you
+
+19:00:04.020 --> 19:00:09.720
+and that error says that you have
+
+19:00:06.420 --> 19:00:11.040
+exceeded the token length that's an
+
+19:00:09.720 --> 19:00:12.719
+issue and we're going to show you four
+
+19:00:11.040 --> 19:00:14.460
+different ways on how to fix that issue
+
+19:00:12.719 --> 19:00:16.440
+so first let's set up the problem here
+
+19:00:14.460 --> 19:00:19.080
+just one more time I'm going to copy and
+
+19:00:16.440 --> 19:00:20.640
+paste a short passage into the
+
+19:00:19.080 --> 19:00:22.140
+playground on open AI this is the same
+
+19:00:20.640 --> 19:00:24.420
+for the API and I'm going to say hey
+
+19:00:22.140 --> 19:00:25.800
+please summarize this thing for me and
+
+19:00:24.420 --> 19:00:29.099
+you'll notice it's thinking about it
+
+19:00:25.800 --> 19:00:31.380
+it's trying oh no the mock the model can
+
+19:00:29.099 --> 19:00:34.200
+only process a maximum of 4 000 token
+
+19:00:31.380 --> 19:00:35.940
+tokens in a single request this is an
+
+19:00:34.200 --> 19:00:37.739
+issue and if you're running a business
+
+19:00:35.940 --> 19:00:39.180
+or you're making a product based on open
+
+19:00:37.739 --> 19:00:41.460
+ad you're gonna have to work your way
+
+19:00:39.180 --> 19:00:44.520
+around this now there's word of them
+
+19:00:41.460 --> 19:00:47.100
+with open ai's Foundry to increase this
+
+19:00:44.520 --> 19:00:49.500
+model or this token length however it's
+
+19:00:47.100 --> 19:00:53.039
+going to cost five or six figures a year
+
+19:00:49.500 --> 19:00:54.239
+just to be able to use that one so I'm
+
+19:00:53.039 --> 19:00:56.760
+not holding my breath for it and
+
+19:00:54.239 --> 19:00:59.039
+regardless I imagine that model links
+
+19:00:56.760 --> 19:01:01.199
+will always be a problem so it's good to
+
+19:00:59.039 --> 19:01:02.699
+learn how to invest I'm going to learn
+
+19:01:01.199 --> 19:01:04.260
+how to figure these out right now now
+
+19:01:02.699 --> 19:01:05.339
+the way that I want to talk about these
+
+19:01:04.260 --> 19:01:07.680
+four different methods is actually
+
+19:01:05.339 --> 19:01:11.040
+starting off with a diagram first and I
+
+19:01:07.680 --> 19:01:13.920
+find that this is helpful because
+
+19:01:11.040 --> 19:01:15.540
+um well when you get the code it's kind
+
+19:01:13.920 --> 19:01:17.400
+of confusing sometimes and so let's
+
+19:01:15.540 --> 19:01:20.100
+let's go let's go into the diagram first
+
+19:01:17.400 --> 19:01:22.500
+and use some pictures I like pictures
+
+19:01:20.100 --> 19:01:25.619
+so let's reframe the problem one more
+
+19:01:22.500 --> 19:01:28.320
+time so open AI has a 4K token limit
+
+19:01:25.619 --> 19:01:30.299
+okay now scenario one you give a prompt
+
+19:01:28.320 --> 19:01:32.580
+it gives you a response and it's still
+
+19:01:30.299 --> 19:01:34.080
+below the 4K you're golden
+
+19:01:32.580 --> 19:01:35.880
+let's say that you have a short prompt
+
+19:01:34.080 --> 19:01:38.280
+and a longer response as long as it's
+
+19:01:35.880 --> 19:01:40.380
+under the 4K you're still golden now
+
+19:01:38.280 --> 19:01:42.299
+number three long prom short response
+
+19:01:40.380 --> 19:01:45.240
+you're still good to go the issue is
+
+19:01:42.299 --> 19:01:47.100
+going to be when you go from a long
+
+19:01:45.240 --> 19:01:48.840
+prompt and a long response or any
+
+19:01:47.100 --> 19:01:50.939
+combination of the two and you exceed
+
+19:01:48.840 --> 19:01:52.799
+the 4K all right so let's figure out how
+
+19:01:50.939 --> 19:01:55.259
+we're going to fix this here with
+
+19:01:52.799 --> 19:01:57.540
+solution number one
+
+19:01:55.259 --> 19:01:59.520
+it's what we call stuffing well I guess
+
+19:01:57.540 --> 19:02:01.439
+I shouldn't really call it a solution I
+
+19:01:59.520 --> 19:02:03.960
+should just call this a method to prompt
+
+19:02:01.439 --> 19:02:05.219
+uh management if you will so in this
+
+19:02:03.960 --> 19:02:06.540
+case we have our document and we're
+
+19:02:05.219 --> 19:02:08.759
+going to try to summarize this document
+
+19:02:06.540 --> 19:02:10.619
+our document is only 2K characters long
+
+19:02:08.759 --> 19:02:13.200
+so we can feed that right into open Ai
+
+19:02:10.619 --> 19:02:14.459
+and we can say hey uh please summarize
+
+19:02:13.200 --> 19:02:16.560
+this for me and it's going to give us
+
+19:02:14.459 --> 19:02:18.060
+the response and we're going to stay
+
+19:02:16.560 --> 19:02:20.760
+under the 4K limit which is a good thing
+
+19:02:18.060 --> 19:02:23.640
+however if our document is too long
+
+19:02:20.760 --> 19:02:25.800
+that's where we run into an issue
+
+19:02:23.640 --> 19:02:28.800
+again we have the 4K limit but our
+
+19:02:25.800 --> 19:02:33.599
+document or documents is 8k characters
+
+19:02:28.800 --> 19:02:36.180
+to 8 000 tokens long right we can't feed
+
+19:02:33.599 --> 19:02:38.040
+that all into open AI that's an issue
+
+19:02:36.180 --> 19:02:39.660
+and we won't be able to do it it's going
+
+19:02:38.040 --> 19:02:41.280
+to throw an error to us so how do we get
+
+19:02:39.660 --> 19:02:44.459
+around this well let's look at prompt
+
+19:02:41.280 --> 19:02:45.480
+management method number two which is
+
+19:02:44.459 --> 19:02:47.760
+called
+
+19:02:45.480 --> 19:02:49.980
+oh well first of all the pros of this
+
+19:02:47.760 --> 19:02:51.300
+one is you get one API call and all of
+
+19:02:49.980 --> 19:02:52.379
+your data is in the prompt which is a
+
+19:02:51.300 --> 19:02:53.780
+good thing because you have all the
+
+19:02:52.379 --> 19:02:56.640
+contacts that you need
+
+19:02:53.780 --> 19:02:58.920
+and the language model can uh can use it
+
+19:02:56.640 --> 19:03:00.360
+the cons is that there's going to be the
+
+19:02:58.920 --> 19:03:02.340
+limited context length you're going to
+
+19:03:00.360 --> 19:03:03.780
+run into that error limit
+
+19:03:02.340 --> 19:03:05.700
+the second method we're going to look at
+
+19:03:03.780 --> 19:03:07.739
+is called mapreduce this is an
+
+19:03:05.700 --> 19:03:10.500
+interesting one because again we still
+
+19:03:07.739 --> 19:03:13.860
+have our 4K token limit but our document
+
+19:03:10.500 --> 19:03:15.720
+is 8k tokens long so what do we do for
+
+19:03:13.860 --> 19:03:17.099
+this one well in this case what we're
+
+19:03:15.720 --> 19:03:19.500
+first going to do is we're first going
+
+19:03:17.099 --> 19:03:20.519
+to slice up our document into individual
+
+19:03:19.500 --> 19:03:22.680
+pieces
+
+19:03:20.519 --> 19:03:26.099
+and with those individual pieces we're
+
+19:03:22.680 --> 19:03:28.500
+going to pass each one over
+
+19:03:26.099 --> 19:03:31.140
+come on now
+
+19:03:28.500 --> 19:03:33.000
+we're going to pass each one over to
+
+19:03:31.140 --> 19:03:35.519
+open Ai and we're going to say hey
+
+19:03:33.000 --> 19:03:37.200
+here's your prompt and well here's your
+
+19:03:35.519 --> 19:03:39.000
+prompt uh right then and there and
+
+19:03:37.200 --> 19:03:40.620
+instead of just giving it one API call
+
+19:03:39.000 --> 19:03:43.080
+and one prompt we're going to give it
+
+19:03:40.620 --> 19:03:45.780
+four prompts in four separate API calls
+
+19:03:43.080 --> 19:03:47.400
+and we're going to say to open AI hey it
+
+19:03:45.780 --> 19:03:49.680
+would be great if you could please
+
+19:03:47.400 --> 19:03:50.640
+summarize this for me and in response
+
+19:03:49.680 --> 19:03:52.260
+we're going to get four different
+
+19:03:50.640 --> 19:03:54.120
+summaries because we split it up into
+
+19:03:52.260 --> 19:03:56.099
+four different chunks and then we're
+
+19:03:54.120 --> 19:03:58.379
+going to make a fifth call on top of
+
+19:03:56.099 --> 19:03:59.640
+that and we're going to say hey given
+
+19:03:58.379 --> 19:04:02.400
+all these summaries that you just have
+
+19:03:59.640 --> 19:04:04.379
+give me a final summary or give me a
+
+19:04:02.400 --> 19:04:06.959
+summary of the summaries in this case
+
+19:04:04.379 --> 19:04:09.000
+and so this is mapreduce now the pros
+
+19:04:06.959 --> 19:04:11.280
+about this one is you can scale it to
+
+19:04:09.000 --> 19:04:13.560
+pretty large documents which is cool not
+
+19:04:11.280 --> 19:04:16.019
+only that it can be parallelized meaning
+
+19:04:13.560 --> 19:04:18.720
+you can make all four of these API calls
+
+19:04:16.019 --> 19:04:20.100
+in parallel you don't they're not um you
+
+19:04:18.720 --> 19:04:22.560
+don't need to wait for one to return for
+
+19:04:20.100 --> 19:04:24.360
+you to make the next one now the cons of
+
+19:04:22.560 --> 19:04:26.400
+this one is you're going to start to
+
+19:04:24.360 --> 19:04:29.220
+increase uh more API calls compared to
+
+19:04:26.400 --> 19:04:30.780
+the stuffing method and you might lose a
+
+19:04:29.220 --> 19:04:32.520
+little bit of information because you're
+
+19:04:30.780 --> 19:04:34.259
+doing summaries on top of summaries on
+
+19:04:32.520 --> 19:04:36.780
+top of summaries in some cases
+
+19:04:34.259 --> 19:04:38.639
+yeah that's method number two let's go
+
+19:04:36.780 --> 19:04:41.160
+ahead and look at method number three
+
+19:04:38.639 --> 19:04:43.380
+and in this case there's the refine
+
+19:04:41.160 --> 19:04:44.520
+method now with this one what we're
+
+19:04:43.380 --> 19:04:46.560
+going to do is we're still going to
+
+19:04:44.520 --> 19:04:48.240
+split up our document but in this case
+
+19:04:46.560 --> 19:04:50.220
+we're just going to pass it chunk number
+
+19:04:48.240 --> 19:04:53.340
+one and we're going to say hey please
+
+19:04:50.220 --> 19:04:55.259
+generate me a summary okay cool well
+
+19:04:53.340 --> 19:04:56.820
+with chunk number two what we're gonna
+
+19:04:55.259 --> 19:04:58.199
+give it is we're gonna give it that
+
+19:04:56.820 --> 19:05:01.020
+summary number one that we've already
+
+19:04:58.199 --> 19:05:03.120
+gotten and then we're gonna say given
+
+19:05:01.020 --> 19:05:04.979
+this summary number one given this
+
+19:05:03.120 --> 19:05:07.320
+context from this chunk number two
+
+19:05:04.979 --> 19:05:09.300
+please combine the two and give us a new
+
+19:05:07.320 --> 19:05:10.740
+refined summary
+
+19:05:09.300 --> 19:05:12.780
+and then this is going to keep on going
+
+19:05:10.740 --> 19:05:14.820
+on and on and on until you get to the
+
+19:05:12.780 --> 19:05:16.979
+end of your chunks that you have there
+
+19:05:14.820 --> 19:05:19.680
+and then that final piece that you have
+
+19:05:16.979 --> 19:05:21.060
+would be the fully refined summary if
+
+19:05:19.680 --> 19:05:24.000
+you will and then that'll be your final
+
+19:05:21.060 --> 19:05:25.919
+output now the pros about this one
+
+19:05:24.000 --> 19:05:27.180
+is you get pretty relevant context
+
+19:05:25.919 --> 19:05:29.880
+because you can kind of carry the
+
+19:05:27.180 --> 19:05:33.180
+important parts across your chain there
+
+19:05:29.880 --> 19:05:36.300
+the cons is that they're all independent
+
+19:05:33.180 --> 19:05:37.860
+calls right and so it's a synchronous uh
+
+19:05:36.300 --> 19:05:39.419
+process here where you need to wait for
+
+19:05:37.860 --> 19:05:41.220
+one wait for the other wait for the
+
+19:05:39.419 --> 19:05:42.720
+other and so it could take a long time
+
+19:05:41.220 --> 19:05:45.780
+okay
+
+19:05:42.720 --> 19:05:48.000
+now method number four that we're gonna
+
+19:05:45.780 --> 19:05:50.940
+do is one that's gonna be called map
+
+19:05:48.000 --> 19:05:52.860
+re-rank and this one is more for uh
+
+19:05:50.940 --> 19:05:55.620
+specific questions rather than uh
+
+19:05:52.860 --> 19:05:57.539
+summaries and in fact the library that
+
+19:05:55.620 --> 19:05:59.100
+we're going to be using today uh doesn't
+
+19:05:57.539 --> 19:06:00.720
+even support this for some reason they
+
+19:05:59.100 --> 19:06:01.919
+only do questions and the way that this
+
+19:06:00.720 --> 19:06:03.720
+is going to work here is we're still
+
+19:06:01.919 --> 19:06:05.699
+going to split our documents but this
+
+19:06:03.720 --> 19:06:09.240
+time we're going to pose a question to
+
+19:06:05.699 --> 19:06:10.740
+our different chunks and what the um the
+
+19:06:09.240 --> 19:06:13.259
+method is going to do here is it's going
+
+19:06:10.740 --> 19:06:15.720
+to say hey how confident are you that
+
+19:06:13.259 --> 19:06:17.880
+this answer that you've given from the
+
+19:06:15.720 --> 19:06:20.039
+chunk is the final answer that we
+
+19:06:17.880 --> 19:06:21.360
+actually need so in this case we asked
+
+19:06:20.039 --> 19:06:22.979
+that on our first Chunk we asked that a
+
+19:06:21.360 --> 19:06:25.259
+question and it has an 80 confidence
+
+19:06:22.979 --> 19:06:27.180
+that this is the right answer then okay
+
+19:06:25.259 --> 19:06:30.360
+we do it for chunk number two and
+
+19:06:27.180 --> 19:06:32.940
+there's only a 25 chance that this is
+
+19:06:30.360 --> 19:06:34.380
+the right answer and this is all just
+
+19:06:32.940 --> 19:06:35.819
+the language model interpreting the
+
+19:06:34.380 --> 19:06:38.100
+right answer so this isn't a scientific
+
+19:06:35.819 --> 19:06:39.720
+process here and then what you do at the
+
+19:06:38.100 --> 19:06:41.940
+very end of that is you're going to rank
+
+19:06:39.720 --> 19:06:43.560
+whereas the re-rank part comes in you're
+
+19:06:41.940 --> 19:06:44.819
+going to rank the top scores that you
+
+19:06:43.560 --> 19:06:47.699
+have there and you're going to return
+
+19:06:44.819 --> 19:06:49.020
+the answer that had the highest score so
+
+19:06:47.699 --> 19:06:50.520
+it'd be difficult to do this as a
+
+19:06:49.020 --> 19:06:52.199
+summary which is why we don't do it you
+
+19:06:50.520 --> 19:06:53.340
+only do it for a question and answer
+
+19:06:52.199 --> 19:06:57.000
+there
+
+19:06:53.340 --> 19:06:59.460
+so the pros for this one is is it scales
+
+19:06:57.000 --> 19:07:02.220
+well and it's but it's better for single
+
+19:06:59.460 --> 19:07:04.740
+answer questions so not very complex
+
+19:07:02.220 --> 19:07:06.479
+questions and then the cons is you're
+
+19:07:04.740 --> 19:07:07.979
+not combining any information in between
+
+19:07:06.479 --> 19:07:09.780
+documents because when you compare
+
+19:07:07.979 --> 19:07:12.000
+prompt one and prompt two there's no
+
+19:07:09.780 --> 19:07:15.479
+sharing of that information across there
+
+19:07:12.000 --> 19:07:16.620
+all right now that is the four methods
+
+19:07:15.479 --> 19:07:18.660
+that we're going to look at in diagram
+
+19:07:16.620 --> 19:07:20.580
+form let's go ahead and check these out
+
+19:07:18.660 --> 19:07:22.080
+in code form
+
+19:07:20.580 --> 19:07:23.340
+all right let's look at some code here
+
+19:07:22.080 --> 19:07:25.800
+so we're going to be using the lane
+
+19:07:23.340 --> 19:07:27.419
+chain library now I don't think I need
+
+19:07:25.800 --> 19:07:29.340
+to tell you but link chain is extremely
+
+19:07:27.419 --> 19:07:31.199
+good at file loading document management
+
+19:07:29.340 --> 19:07:32.940
+prompt management chaining all these
+
+19:07:31.199 --> 19:07:35.280
+things together and it's really the
+
+19:07:32.940 --> 19:07:36.960
+magic behind how we're doing everything
+
+19:07:35.280 --> 19:07:38.340
+we're doing here so if you haven't
+
+19:07:36.960 --> 19:07:40.440
+checked it out please go check it out
+
+19:07:38.340 --> 19:07:42.360
+I'm going to load up some libraries for
+
+19:07:40.440 --> 19:07:43.740
+us this includes the file loader the
+
+19:07:42.360 --> 19:07:45.720
+summarize chain which is going to do the
+
+19:07:43.740 --> 19:07:47.160
+summarizing for us and then a QA chain
+
+19:07:45.720 --> 19:07:49.380
+which is going to do question answer for
+
+19:07:47.160 --> 19:07:51.300
+us let's load up some documents we have
+
+19:07:49.380 --> 19:07:55.039
+a John mere essay about Lake Tahoe and
+
+19:07:51.300 --> 19:07:55.039
+we have a Paul Graham essay about work
+
+19:07:55.860 --> 19:07:59.819
+exciting
+
+19:07:57.539 --> 19:08:01.259
+um no I like programming so we do a
+
+19:07:59.819 --> 19:08:03.000
+summary on our docs here I just made a
+
+19:08:01.259 --> 19:08:06.180
+quick function we have one document
+
+19:08:03.000 --> 19:08:09.240
+about 2200 2300 words and we have a
+
+19:08:06.180 --> 19:08:12.180
+preview the glory of the Sierra
+
+19:08:09.240 --> 19:08:13.979
+how beautiful how poetic and then let's
+
+19:08:12.180 --> 19:08:16.319
+look at Paul's essay we have one
+
+19:08:13.979 --> 19:08:18.599
+document it's about 22 and a half
+
+19:08:16.319 --> 19:08:20.520
+thousand or Twenty twelve and a half
+
+19:08:18.599 --> 19:08:24.479
+thousand words so it's quite quite
+
+19:08:20.520 --> 19:08:25.979
+bigger quite larger and a preview before
+
+19:08:24.479 --> 19:08:27.479
+College the two main things I worked on
+
+19:08:25.979 --> 19:08:30.780
+outside of school were writing and
+
+19:08:27.479 --> 19:08:32.520
+programming not quite as poetic as Mr
+
+19:08:30.780 --> 19:08:34.979
+mirror but uh we'll let it slide here
+
+19:08:32.520 --> 19:08:38.219
+let's load up our llm in this case we're
+
+19:08:34.979 --> 19:08:39.659
+doing open AI pass in our key okay cool
+
+19:08:38.219 --> 19:08:41.099
+and then we're going to load our
+
+19:08:39.659 --> 19:08:42.539
+summarize chain and this is going to be
+
+19:08:41.099 --> 19:08:44.099
+with the stuff method so the first
+
+19:08:42.539 --> 19:08:45.480
+method that we talked about and in this
+
+19:08:44.099 --> 19:08:47.160
+case we're going to take our entire
+
+19:08:45.480 --> 19:08:49.320
+document and we're going to stuff it
+
+19:08:47.160 --> 19:08:50.339
+into the prompt I like how visceral that
+
+19:08:49.320 --> 19:08:52.019
+one sounds
+
+19:08:50.339 --> 19:08:53.820
+and so let's do it for our small dock
+
+19:08:52.019 --> 19:08:55.200
+that we have here and I did verbose
+
+19:08:53.820 --> 19:08:57.000
+equals true because that's going to show
+
+19:08:55.200 --> 19:08:58.800
+us what's underneath the covers and what
+
+19:08:57.000 --> 19:09:00.899
+Lang chain is actually doing here so
+
+19:08:58.800 --> 19:09:03.480
+write a concise summary of the following
+
+19:09:00.899 --> 19:09:04.920
+which this is a lang chain prompt by the
+
+19:09:03.480 --> 19:09:07.740
+way and then the inserts our own text
+
+19:09:04.920 --> 19:09:10.019
+and then we give it a text okay cool
+
+19:09:07.740 --> 19:09:12.300
+and then Lange says give us a concise
+
+19:09:10.019 --> 19:09:13.860
+summary so in this article blah blah
+
+19:09:12.300 --> 19:09:15.660
+blah and so we have our summary about
+
+19:09:13.860 --> 19:09:17.820
+our small doc which is cool now if we
+
+19:09:15.660 --> 19:09:19.080
+did this with a large dock Well Lane
+
+19:09:17.820 --> 19:09:20.279
+chain is going to do the same exact
+
+19:09:19.080 --> 19:09:21.839
+thing and it's going to say write a
+
+19:09:20.279 --> 19:09:24.180
+concise summary of the following and
+
+19:09:21.839 --> 19:09:26.040
+then we have the following but this is
+
+19:09:24.180 --> 19:09:27.839
+quite large and this is where the issue
+
+19:09:26.040 --> 19:09:30.060
+is going to be because down at the
+
+19:09:27.839 --> 19:09:33.720
+bottom oh no this model's maximum
+
+19:09:30.060 --> 19:09:35.399
+context length is about 40 97 tokens now
+
+19:09:33.720 --> 19:09:37.740
+that's where issue is so how do we get
+
+19:09:35.399 --> 19:09:38.820
+the summary of this larger dock well
+
+19:09:37.740 --> 19:09:40.440
+that's where the other methods come in
+
+19:09:38.820 --> 19:09:42.300
+so let's talk about those first one
+
+19:09:40.440 --> 19:09:44.279
+we're going to look at is mapreduce so
+
+19:09:42.300 --> 19:09:46.019
+again I'm going to say chain type equals
+
+19:09:44.279 --> 19:09:48.600
+equals mapreduce and then we're going to
+
+19:09:46.019 --> 19:09:49.620
+say for both equals true okay now if
+
+19:09:48.600 --> 19:09:50.820
+we're going to run this on the small
+
+19:09:49.620 --> 19:09:53.580
+dock
+
+19:09:50.820 --> 19:09:54.720
+uh I mean no surprise here it's more or
+
+19:09:53.580 --> 19:09:55.920
+less the same exact thing that we have
+
+19:09:54.720 --> 19:09:57.839
+with the stuffing because stuffing
+
+19:09:55.920 --> 19:09:59.519
+worked and mapreduce just has one
+
+19:09:57.839 --> 19:10:01.740
+document to work with so let's not even
+
+19:09:59.519 --> 19:10:03.180
+worry about that but to prove it to you
+
+19:10:01.740 --> 19:10:04.680
+uh
+
+19:10:03.180 --> 19:10:06.800
+you can see down here at the bottom we
+
+19:10:04.680 --> 19:10:09.660
+get more or less the same summary
+
+19:10:06.800 --> 19:10:12.060
+now the problem with our large dock is
+
+19:10:09.660 --> 19:10:14.519
+that it's just one document or it's one
+
+19:10:12.060 --> 19:10:16.140
+big huge chunk and we need to split that
+
+19:10:14.519 --> 19:10:17.820
+into smaller chunks and the way I'm
+
+19:10:16.140 --> 19:10:20.240
+going to do that is with Lang chains of
+
+19:10:17.820 --> 19:10:22.920
+recursive text splitter
+
+19:10:20.240 --> 19:10:24.360
+and okay cool we're gonna set this up
+
+19:10:22.920 --> 19:10:26.220
+and I'm going to say chunk size equals
+
+19:10:24.360 --> 19:10:28.680
+400 I would normally make this much
+
+19:10:26.220 --> 19:10:30.480
+bigger but uh just to show you how it
+
+19:10:28.680 --> 19:10:31.860
+works I'm going to make it smaller chunk
+
+19:10:30.480 --> 19:10:33.260
+overlap I'm going to put it zero meaning
+
+19:10:31.860 --> 19:10:36.000
+I don't need any Venn diagram
+
+19:10:33.260 --> 19:10:38.880
+similarities going on there and I'm
+
+19:10:36.000 --> 19:10:40.080
+going to say hey split my documents the
+
+19:10:38.880 --> 19:10:42.600
+large stock and I'm going to put this
+
+19:10:40.080 --> 19:10:44.700
+into a large Docs I know it's not a
+
+19:10:42.600 --> 19:10:46.740
+wonderful way naming but that's what
+
+19:10:44.700 --> 19:10:49.920
+we're going to do let me do a summary of
+
+19:10:46.740 --> 19:10:52.019
+that so now I have 201 documents
+
+19:10:49.920 --> 19:10:54.420
+um with the same with roughly the same
+
+19:10:52.019 --> 19:10:56.519
+amount of words that which is too many
+
+19:10:54.420 --> 19:10:58.620
+from beforehand and we still have our
+
+19:10:56.519 --> 19:11:00.240
+preview okay cool but the important part
+
+19:10:58.620 --> 19:11:03.600
+is that we now have instead of one big
+
+19:11:00.240 --> 19:11:07.920
+dock we have 200 smaller docs right and
+
+19:11:03.600 --> 19:11:09.360
+if I were to run uh the mapreduce chain
+
+19:11:07.920 --> 19:11:11.100
+that we just made
+
+19:11:09.360 --> 19:11:13.079
+but I'm only gonna do it on the first
+
+19:11:11.100 --> 19:11:14.279
+five documents because 200 is way too
+
+19:11:13.079 --> 19:11:16.680
+many and I don't want to spend all that
+
+19:11:14.279 --> 19:11:18.060
+cash to query the API for that now
+
+19:11:16.680 --> 19:11:20.339
+here's where the cool part starts to
+
+19:11:18.060 --> 19:11:22.260
+happen so what Lang chain is doing is it
+
+19:11:20.339 --> 19:11:24.839
+saying write a concise summary of the
+
+19:11:22.260 --> 19:11:26.519
+following and then it gives it a shorter
+
+19:11:24.839 --> 19:11:28.320
+chunk so it's not passing the entire
+
+19:11:26.519 --> 19:11:30.240
+thing down there it's just this one
+
+19:11:28.320 --> 19:11:31.320
+chunk Okay cool so there's section
+
+19:11:30.240 --> 19:11:33.660
+number one
+
+19:11:31.320 --> 19:11:36.240
+here's section number two section number
+
+19:11:33.660 --> 19:11:37.800
+three section number four and section
+
+19:11:36.240 --> 19:11:39.660
+number five because I said just give it
+
+19:11:37.800 --> 19:11:41.399
+the first five sections and then what
+
+19:11:39.660 --> 19:11:43.380
+it's doing is it's taking all those
+
+19:11:41.399 --> 19:11:45.240
+summaries so here's summary One summary
+
+19:11:43.380 --> 19:11:47.820
+two summary three summary four summary
+
+19:11:45.240 --> 19:11:49.560
+five and it's saying write a concise
+
+19:11:47.820 --> 19:11:51.660
+summary of the following so give me a
+
+19:11:49.560 --> 19:11:54.180
+summary of the summaries and so we
+
+19:11:51.660 --> 19:11:55.620
+finally get a summary of our entire
+
+19:11:54.180 --> 19:11:56.579
+document that was way too big for the
+
+19:11:55.620 --> 19:11:58.500
+prompt
+
+19:11:56.579 --> 19:11:59.220
+um via the mapreduce method which is
+
+19:11:58.500 --> 19:12:01.560
+cool
+
+19:11:59.220 --> 19:12:03.899
+awesome so let's look at this one more
+
+19:12:01.560 --> 19:12:05.820
+time but let's use the refine method so
+
+19:12:03.899 --> 19:12:07.500
+in this case I'll do refined do verbose
+
+19:12:05.820 --> 19:12:09.779
+equals true and again I'm just going to
+
+19:12:07.500 --> 19:12:11.519
+do this on the first five documents
+
+19:12:09.779 --> 19:12:13.740
+and so this is where it gets kind of
+
+19:12:11.519 --> 19:12:15.540
+interesting the very first call that it
+
+19:12:13.740 --> 19:12:17.760
+makes remember this is uh not in
+
+19:12:15.540 --> 19:12:19.620
+parallel the first call that it makes is
+
+19:12:17.760 --> 19:12:21.660
+write a concise summary of the following
+
+19:12:19.620 --> 19:12:23.579
+and then we have all the different we
+
+19:12:21.660 --> 19:12:25.500
+have the first chunk here and then
+
+19:12:23.579 --> 19:12:27.720
+here's where it gets kind of interesting
+
+19:12:25.500 --> 19:12:28.380
+this is link chain inserting this prompt
+
+19:12:27.720 --> 19:12:31.500
+here
+
+19:12:28.380 --> 19:12:34.019
+in talking to open AI your job is to
+
+19:12:31.500 --> 19:12:36.480
+produce a final summary we have provided
+
+19:12:34.019 --> 19:12:38.640
+the existing summary up until a certain
+
+19:12:36.480 --> 19:12:40.500
+point so here is the summary that it
+
+19:12:38.640 --> 19:12:41.640
+pulled from chunk number one
+
+19:12:40.500 --> 19:12:44.579
+and then we have the opportunity
+
+19:12:41.640 --> 19:12:46.320
+opportunity to refine using this extra
+
+19:12:44.579 --> 19:12:48.120
+context
+
+19:12:46.320 --> 19:12:50.880
+and then given the new new context
+
+19:12:48.120 --> 19:12:52.500
+refine the summary all right cool so
+
+19:12:50.880 --> 19:12:54.839
+that's chunk number two well chunk
+
+19:12:52.500 --> 19:12:56.279
+number three oh interesting now we have
+
+19:12:54.839 --> 19:12:58.260
+a longer summary because it had two
+
+19:12:56.279 --> 19:12:59.940
+chunks to go off of and then it had part
+
+19:12:58.260 --> 19:13:01.740
+number three and it says give me a new
+
+19:12:59.940 --> 19:13:03.660
+summary give me a new summary give me a
+
+19:13:01.740 --> 19:13:05.880
+new summary blah blah blah and so now we
+
+19:13:03.660 --> 19:13:08.220
+have a longer summary between the two
+
+19:13:05.880 --> 19:13:09.480
+and you can see the last one and so we
+
+19:13:08.220 --> 19:13:11.100
+keep on refining and refining and
+
+19:13:09.480 --> 19:13:12.420
+refining this is why this one's a little
+
+19:13:11.100 --> 19:13:14.040
+bit longer here
+
+19:13:12.420 --> 19:13:15.899
+so that's the refine method on how you
+
+19:13:14.040 --> 19:13:17.399
+do it an alternative you're gonna have
+
+19:13:15.899 --> 19:13:18.779
+to see if it works for use case I
+
+19:13:17.399 --> 19:13:20.459
+suggest you try them out and see how it
+
+19:13:18.779 --> 19:13:21.360
+goes and then the final one we're going
+
+19:13:20.459 --> 19:13:22.740
+to do is we're going to switch over
+
+19:13:21.360 --> 19:13:24.600
+instead of summarization we're going to
+
+19:13:22.740 --> 19:13:27.000
+do a question and answer which is for
+
+19:13:24.600 --> 19:13:28.920
+map re-rank so again we'll say for both
+
+19:13:27.000 --> 19:13:30.540
+equals true but in this case I want to
+
+19:13:28.920 --> 19:13:32.459
+return the intermediate steps which is
+
+19:13:30.540 --> 19:13:34.920
+just a fancy way of saying hey show me
+
+19:13:32.459 --> 19:13:36.480
+even more what's underneath the hood
+
+19:13:34.920 --> 19:13:40.680
+so we got our chain there and we got our
+
+19:13:36.480 --> 19:13:43.620
+query so who oops uh who was the
+
+19:13:40.680 --> 19:13:47.880
+author's friend who got who he got
+
+19:13:43.620 --> 19:13:50.279
+permission from to use the IBM 1401
+
+19:13:47.880 --> 19:13:51.839
+um I saw this referenced in the document
+
+19:13:50.279 --> 19:13:53.579
+so which is why I'm pulling it out so
+
+19:13:51.839 --> 19:13:55.019
+I'm going to input my only the first
+
+19:13:53.579 --> 19:13:56.399
+five docs again I'm going to give it my
+
+19:13:55.019 --> 19:13:59.160
+question and I'm going to return the
+
+19:13:56.399 --> 19:14:01.860
+outputs so let's go ahead and run this
+
+19:13:59.160 --> 19:14:03.660
+so now it's going through and what it's
+
+19:14:01.860 --> 19:14:05.940
+doing is it's kind of a complicated
+
+19:14:03.660 --> 19:14:07.740
+prompt but it's cool to see
+
+19:14:05.940 --> 19:14:09.959
+use the following piece of context to
+
+19:14:07.740 --> 19:14:12.060
+help answer the question at the end in
+
+19:14:09.959 --> 19:14:15.120
+addition to the answer also return a
+
+19:14:12.060 --> 19:14:17.220
+score of how fully it answered the
+
+19:14:15.120 --> 19:14:18.720
+user's question and then so not only
+
+19:14:17.220 --> 19:14:20.760
+does it say hey here's the format we're
+
+19:14:18.720 --> 19:14:23.279
+going to use how to determine the score
+
+19:14:20.760 --> 19:14:25.079
+but then it also gives it examples about
+
+19:14:23.279 --> 19:14:26.519
+how to score which is kind of
+
+19:14:25.079 --> 19:14:29.700
+interesting so it gives it a couple
+
+19:14:26.519 --> 19:14:31.620
+examples here and then begin
+
+19:14:29.700 --> 19:14:33.839
+all right so just by the way this is
+
+19:14:31.620 --> 19:14:36.180
+pretty good prompt engineering if this
+
+19:14:33.839 --> 19:14:38.100
+is a fine example of it we have context
+
+19:14:36.180 --> 19:14:39.720
+right here about the question and then
+
+19:14:38.100 --> 19:14:41.880
+here's the final question who is the
+
+19:14:39.720 --> 19:14:43.139
+author's friend blah blah blah blah and
+
+19:14:41.880 --> 19:14:45.480
+then it does the same thing for chunk
+
+19:14:43.139 --> 19:14:48.180
+number two chunk number three blah blah
+
+19:14:45.480 --> 19:14:50.220
+blah blah blah blah and then we go down
+
+19:14:48.180 --> 19:14:51.540
+and it finished the chain so it went
+
+19:14:50.220 --> 19:14:53.519
+through all those different five chunks
+
+19:14:51.540 --> 19:14:54.959
+ask the question ranked the answer for
+
+19:14:53.519 --> 19:14:56.880
+each one of those questions and let's
+
+19:14:54.959 --> 19:14:58.860
+see what we got here what we got rich
+
+19:14:56.880 --> 19:15:00.660
+Draves which
+
+19:14:58.860 --> 19:15:03.060
+um I won't show but it is in the essay
+
+19:15:00.660 --> 19:15:06.000
+yes this is the right answer in fact I
+
+19:15:03.060 --> 19:15:07.740
+bet you could even go in yeah so my
+
+19:15:06.000 --> 19:15:10.019
+friend Rich Draves is pulled out of one
+
+19:15:07.740 --> 19:15:11.579
+of the chunks which is cool
+
+19:15:10.019 --> 19:15:14.040
+um cool now let's take a look at the
+
+19:15:11.579 --> 19:15:15.360
+intermediate steps so what it did was I
+
+19:15:14.040 --> 19:15:17.459
+went through the different five docs
+
+19:15:15.360 --> 19:15:18.600
+that we passed it and for the first DOC
+
+19:15:17.459 --> 19:15:20.519
+or for one of the docs I don't know
+
+19:15:18.600 --> 19:15:22.860
+which number this was this document does
+
+19:15:20.519 --> 19:15:24.240
+not answer the question score of zero it
+
+19:15:22.860 --> 19:15:26.040
+does not answer does not answer does not
+
+19:15:24.240 --> 19:15:28.139
+answer but for this document it did and
+
+19:15:26.040 --> 19:15:31.980
+it gave it a score of 100 which is why
+
+19:15:28.139 --> 19:15:35.220
+it was uh it returned that answer
+
+19:15:31.980 --> 19:15:38.820
+super cool that is the ref that is the
+
+19:15:35.220 --> 19:15:40.620
+map re-rank method so in the end there
+
+19:15:38.820 --> 19:15:41.760
+are four different methods of prompt
+
+19:15:40.620 --> 19:15:43.500
+management it's not it's kind of like
+
+19:15:41.760 --> 19:15:44.880
+query management if you will about how
+
+19:15:43.500 --> 19:15:46.920
+to chain your different commands
+
+19:15:44.880 --> 19:15:50.160
+together in order to fit your use case
+
+19:15:46.920 --> 19:15:53.660
+now have fun and uh let me know which
+
+19:15:50.160 --> 19:15:53.660
+ones work for you we'll see you later
