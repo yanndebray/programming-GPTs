@@ -393,6 +393,7 @@ also control a few other things:
 
 -   `add_start_index`: whether to include the starting position of each
     chunk within the original document in the metadata.
+
 ```python
 text_splitter = RecursiveCharacterTextSplitter(
     chunk_size = 1000,
