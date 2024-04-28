@@ -1,4 +1,5 @@
 openai
+requests
 streamlit
 tomli
 tiktoken

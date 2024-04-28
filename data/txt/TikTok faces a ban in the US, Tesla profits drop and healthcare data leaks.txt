@@ -1,0 +1,18 @@
+
+Welcome, folks, to Week in Review (WiR), TechCrunch’s regular newsletter covering this week’s noteworthy happenings in tech.
+TikTok’s fate in the U.S. looks uncertain after President Joe Biden signed a bill that included a deadline for ByteDance, TikTok’s parent company, to divest itself of TikTok within nine months or face a ban on distributing it in the U.S. Ivan writes about how the impact of TikTok bans in other countries could signal what’s to come stateside.
+Meanwhile, fallout from the Change Healthcare hack continues. Change, a subsidiary of health insurance giant UnitedHealth, confirmed this week that the ransomware attack targeting it earlier this year resulted in a huge theft of Americans’ private health info, possibly covering “a substantial proportion” of Americans.
+And Tesla profits dropped 55% as the EV company contends with increased pressure from hybrid carmakers. The automaker’s growth plan is centered around mysterious cheaper EVs scheduled to launch next year — as well as perhaps a robotaxi. But a recall on the Cybertruck for faulty accelerator pedals certainly won’t help in the interim.
+
+Lots else happened. We recap it all in this edition of WiR — but first, a reminder to sign up to receive the WiR newsletter in your inbox every Saturday.
+
+News
+Amazon grocery plan: Amazon launched a new unlimited grocery delivery subscription in the U.S. The plan, which costs $9.99 per month for Amazon Prime users, comes with free deliveries for grocery orders over $35 across Amazon Fresh, Whole Foods Market and other local grocery retailers.
+California drones grounded: In more Amazon news, the tech giant confirmed that it’s ending Prime Air drone delivery operations in Lockeford, California. The Central California town of 3,500 was the company’s second U.S. drone delivery site after College Station, Texas; Amazon didn’t offer any details around the setback.
+Fisker plans layoffs: Fisker says it’s planning more layoffs less than two months after cutting 15% of its workforce, as the EV startup scrambles to raise cash to stay alive. Fisker expects to seek bankruptcy protection within the next 30 days if it can’t come up with the money.
+Stripe expansion: Among a slew of other announcements at its Sessions conference in San Francisco, Stripe said that it’ll be de-coupling payments from the rest of its financial services stack. Given that Stripe previously required businesses to be payments customers in order to use any of its other products, that’s a big change.
+Analysis
+Rabbit hands on: Brian writes about the R1, the first gizmo from AI startup R1. The $199 price point, touchscreen and funky aesthetic from storied design firm Teenage Engineering make the R1 far more accessible than Humane’s Ai Pin, he concludes.
+Lab-grown diamonds: Pascal, an Andreessen Horowitz-backed startup, claims it can make high-end jewelry accessible by using lab-grown diamonds chemically and physically akin to natural diamonds but that cost one-twentieth of the price.
+AI poetry: An experiment called the Poetry Camera — an actual, physical camera — combines open source technology with playful design and artistic vision. Instead of merely capturing images, the Poetry Camera arranges thought-provoking, AI-generated stanzas based on the visuals it encounters.
+Rippling deep dive: Connie interviewed Parker Conrad, the CEO of workforce management startup Rippling, on the company’s new $200 million funding round, new San Francisco lease (the second biggest to be signed in the city this year) and more.

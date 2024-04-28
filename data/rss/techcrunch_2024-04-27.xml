@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>TechCrunch</title>
+	<atom:link href="https://techcrunch.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://techcrunch.com/</link>
+	<description>Startup and Technology News</description>
+	<lastBuildDate>Sat, 27 Apr 2024 20:20:46 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.5.2</generator>
+
+<image>
+	<url>https://techcrunch.com/wp-content/uploads/2015/02/cropped-cropped-favicon-gradient.png?w=32</url>
+	<title>TechCrunch</title>
+	<link>https://techcrunch.com/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+<site xmlns="com-wordpress:feed-additions:1">136296444</site>	<item>
+		<title>TikTok faces a ban in the US, Tesla profits drop and healthcare data leaks</title>
+		<link>https://techcrunch.com/2024/04/27/tiktok-faces-a-ban-in-the-us-tesla-profits-drop-and-healthcare-data-leaks/</link>
+		
+		<dc:creator><![CDATA[Kyle Wiggers]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2024 20:15:43 +0000</pubDate>
+				<category><![CDATA[Social]]></category>
+		<category><![CDATA[data breach]]></category>
+		<category><![CDATA[Layoffs]]></category>
+		<category><![CDATA[Tesla]]></category>
+		<category><![CDATA[TikTok ban]]></category>
+		<category><![CDATA[Week in Review]]></category>
+		<category><![CDATA[Week in Review newsletter]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2696325</guid>
+
+					<description><![CDATA[<p>Welcome, folks, to Week in Review (WiR), TechCrunch&#8217;s regular newsletter covering this week&#8217;s noteworthy happenings in tech. TikTok&#8217;s fate in the U.S. looks uncertain after President Joe Biden signed a bill that included a deadline for ByteDance, TikTok&#8217;s parent company, to divest itself of TikTok within nine months or face a ban on distributing it [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2696325</post-id>	</item>
+		<item>
+		<title>Will a TikTok ban impact creator economy startups? Not really, founders say</title>
+		<link>https://techcrunch.com/2024/04/27/will-a-tiktok-ban-impact-creator-economy-startups-not-really-founders-say/</link>
+		
+		<dc:creator><![CDATA[Amanda Silberling]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2024 20:15:38 +0000</pubDate>
+				<category><![CDATA[Government & Policy]]></category>
+		<category><![CDATA[Social]]></category>
+		<category><![CDATA[bump]]></category>
+		<category><![CDATA[creator economy]]></category>
+		<category><![CDATA[fanfix]]></category>
+		<category><![CDATA[Karat Financial]]></category>
+		<category><![CDATA[TikTok]]></category>
+		<category><![CDATA[TikTok ban]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697388</guid>
+
+					<description><![CDATA[<p>President Joe Biden signed a bill on Wednesday that could ban TikTok – for real this time. After so many false starts and stops, some creator economy founders and their clients are rolling their eyes. They’ve been through this before. “I think two years ago, this would have been devastating,” Karat Financial co-founder and co-CEO [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697388</post-id>	</item>
+		<item>
+		<title>Investors won&#8217;t give you the real reason they are passing on your startup</title>
+		<link>https://techcrunch.com/2024/04/27/your-team-sucks/</link>
+		
+		<dc:creator><![CDATA[Haje Jan Kamps]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2024 18:00:34 +0000</pubDate>
+				<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[fundraising]]></category>
+		<category><![CDATA[TechCrunch Early Stage 2024]]></category>
+		<category><![CDATA[Tom Blomfield]]></category>
+		<category><![CDATA[Y Combinator]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697520</guid>
+
+					<description><![CDATA[<p>&#8220;When an investor passes on you, they will not tell you the real reason,&#8221; said Tom Blomfield, group partner at Y Combinator. &#8220;At seed stage, frankly, no one knows what&#8217;s going to fucking happen. The future is so uncertain. All they&#8217;re judging is the perceived quality of the founder. When they pass, what they&#8217;re thinking [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697520</post-id>	</item>
+		<item>
+		<title>Deal Dive: Givebutter is turning a profit making tech for nonprofits</title>
+		<link>https://techcrunch.com/2024/04/27/deal-dive-givebutter-is-turning-a-profit-making-tech-for-nonprofits/</link>
+		
+		<dc:creator><![CDATA[Rebecca Szkutak]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2024 16:00:13 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[Givebutter]]></category>
+		<category><![CDATA[nonprofits]]></category>
+		<category><![CDATA[venture capital]]></category>
+		<category><![CDATA[Y Combinator]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697156</guid>
+
+					<description><![CDATA[<p>Givebutter recently raised $50 million for its CRM platform for nonprofits as startups building tech for that industry gain momentum.</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697156</post-id>	</item>
+		<item>
+		<title>The &#8216;valley of death&#8217; for climate lies between early-stage funding and scaling up</title>
+		<link>https://techcrunch.com/2024/04/27/climate-startup-valley-of-death/</link>
+		
+		<dc:creator><![CDATA[Tim De Chant]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2024 15:00:12 +0000</pubDate>
+				<category><![CDATA[Climate]]></category>
+		<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[climate tech vc]]></category>
+		<category><![CDATA[Financing]]></category>
+		<category><![CDATA[first of a kind]]></category>
+		<category><![CDATA[fundraising]]></category>
+		<category><![CDATA[scaling]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697306</guid>
+
+					<description><![CDATA[<p>It's easier for climate companies to get enough funding to get started. It's much harder once they need money to scale.</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697306</post-id>	</item>
+		<item>
+		<title>A wrestling match over who should control robotaxis is playing out in California</title>
+		<link>https://techcrunch.com/2024/04/27/a-wrestling-match-over-who-should-control-robotaxis-is-playing-out-in-california/</link>
+		
+		<dc:creator><![CDATA[Rebecca Bellan]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2024 14:00:01 +0000</pubDate>
+				<category><![CDATA[Transportation]]></category>
+		<category><![CDATA[autonomous vehicles]]></category>
+		<category><![CDATA[robotaxis]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697367</guid>
+
+					<description><![CDATA[<p>Cities around the country have long been crying out for more control over how autonomous vehicles are deployed on their streets. In California, they might finally get their wish. A handful of AV-related bills, which made progress this month in their long journey through the state legislature, could put more restrictions on companies like Cruise, [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697367</post-id>	</item>
+		<item>
+		<title>Creators of Sora-powered short explain AI-generated video&#8217;s strengths and limitations</title>
+		<link>https://techcrunch.com/2024/04/27/creators-of-sora-powered-short-explain-ai-generated-videos-strengths-and-limitations/</link>
+		
+		<dc:creator><![CDATA[Devin Coldewey]]></dc:creator>
+		<pubDate>Sat, 27 Apr 2024 13:31:08 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Generative AI]]></category>
+		<category><![CDATA[generative video]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[sora]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697272</guid>
+
+					<description><![CDATA[<p>OpenAI&#8217;s video generation tool Sora took the AI community by surprise in February with fluid, realistic video that seems miles ahead of competitors. But the carefully stage-managed debut left out a lot of details — details that have been filled in by a filmmaker given early access to create a short using Sora. Shy Kids [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697272</post-id>	</item>
+		<item>
+		<title>How Rubrik’s IPO paid off big for Greylock VC Asheem Chandna</title>
+		<link>https://techcrunch.com/2024/04/26/rubrik-ipo-paid-off-greylock-vc-asheem-chandna/</link>
+		
+		<dc:creator><![CDATA[Marina Temkin]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 22:36:54 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[Asheem Chandna]]></category>
+		<category><![CDATA[Greylock Partners]]></category>
+		<category><![CDATA[Rubrik IPO]]></category>
+		<category><![CDATA[venture capital]]></category>
+		<category><![CDATA[venture capital returns]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697415</guid>
+
+					<description><![CDATA[<p>Asheem Chandna says he was so impressed with founder Bipul Sinha's grit and tech, he led Rubrik's $40 million Series B in 2015.</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697415</post-id>	</item>
+		<item>
+		<title>Photo-sharing community EyeEm will license users&#8217; photos to train AI if they don&#8217;t delete them</title>
+		<link>https://techcrunch.com/2024/04/26/photo-sharing-community-eyeem-will-license-users-photos-to-train-ai-if-they-dont-delete-them/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 21:08:15 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[artificial intelligence]]></category>
+		<category><![CDATA[EyeEm]]></category>
+		<category><![CDATA[Freepik]]></category>
+		<category><![CDATA[Photography]]></category>
+		<category><![CDATA[photos]]></category>
+		<category><![CDATA[Startups]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697337</guid>
+
+					<description><![CDATA[<p>EyeEm, the Berlin-based photo-sharing community that exited last year to Spanish company Freepik after going bankrupt, is now licensing its users&#8217; photos to train AI models. Earlier this month, the company informed users via email that it was adding a new clause to its Terms &#38; Conditions that would grant it the rights to upload [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697337</post-id>	</item>
+		<item>
+		<title>Meta AI tested: Doesn&#8217;t quite justify its own existence, but free is free</title>
+		<link>https://techcrunch.com/2024/04/26/meta-ai-tested-doesnt-quite-justify-its-own-existence-but-free-is-free/</link>
+		
+		<dc:creator><![CDATA[Devin Coldewey]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 20:03:47 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[meta]]></category>
+		<category><![CDATA[meta ai]]></category>
+		<category><![CDATA[review]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2694803</guid>
+
+					<description><![CDATA[<p>Meta&#8217;s new large language model, Llama 3, powers the imaginatively named &#8220;Meta AI,&#8221; a newish chatbot that the social media and advertising company has installed in as many of its apps and interfaces as possible. How does this model stack up against other all-purpose conversational AIs? It tends to regurgitate a lot of web search [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2694803</post-id>	</item>
+		<item>
+		<title>So are we banning TikTok or what? Also: Can an influencer really tank an $800M company?</title>
+		<link>https://techcrunch.com/2024/04/26/ixnay-on-the-tiktok-and-the-power-of-influencers/</link>
+		
+		<dc:creator><![CDATA[Haje Jan Kamps]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 19:05:22 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Poetry Camera]]></category>
+		<category><![CDATA[Rippling]]></category>
+		<category><![CDATA[Startups Weekly]]></category>
+		<category><![CDATA[TikTok]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2696936</guid>
+
+					<description><![CDATA[<p>Welcome to Startups Weekly — your weekly recap of everything you can’t miss from the world of startups. Sign up here to get it in your inbox every Friday. Ticktock, TikTok: It&#8217;s been a wild week for TikTok. Even as the company starts testing its Twitter competitor in certain markets and launches its luxury secondhand shop [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2696936</post-id>	</item>
+		<item>
+		<title>The IBM-HashiCorp coupling could be more complicated than it seems</title>
+		<link>https://techcrunch.com/2024/04/26/the-ibm-hashicorp-coupling-could-be-more-complicated-than-it-seems/</link>
+		
+		<dc:creator><![CDATA[Ron Miller]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 17:39:49 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[HashiCorp]]></category>
+		<category><![CDATA[hybrid cloud]]></category>
+		<category><![CDATA[IBM]]></category>
+		<category><![CDATA[Mergers and Acquisitions]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697242</guid>
+
+					<description><![CDATA[<p>At a quick glance, the IBM-HashiCorp deal seems like a good one for both sides, but upon closer inspection, perhaps not.</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697242</post-id>	</item>
+		<item>
+		<title>Curio raises funds for Rio, an &#8216;AI news anchor&#8217; in an app</title>
+		<link>https://techcrunch.com/2024/04/26/curio-raises-funds-for-rio-an-ai-news-anchor-in-an-app/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 17:36:29 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[artificial intelligence]]></category>
+		<category><![CDATA[Curio]]></category>
+		<category><![CDATA[journalism]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[Rio]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697154</guid>
+
+					<description><![CDATA[<p>AI may be inching its way into the newsroom, as outlets like Newsweek, Sports Illustrated, Gizmodo, VentureBeat, CNET and others have experimented with articles written by AI. But while most respectable journalists will condemn this use case, there are a number of startups that think AI can enhance the news experience — at least on [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697154</post-id>	</item>
+		<item>
+		<title>TechCrunch Minute: Rabbit’s R1 vs Humane’s Ai Pin &#8212; which had the best launch?</title>
+		<link>https://techcrunch.com/2024/04/26/techcrunch-minute-rabbits-r1-vs-humanes-ai-pin-which-had-the-best-launch/</link>
+		
+		<dc:creator><![CDATA[Anthony Ha]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 16:00:30 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Hardware]]></category>
+		<category><![CDATA[humane AI]]></category>
+		<category><![CDATA[rabbit r1]]></category>
+		<category><![CDATA[the techcrunch minute]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2696894</guid>
+
+					<description><![CDATA[<p>After a successful unveiling at CES, Rabbit is letting journalists try out the R1 — a small orange gadget with an AI-powered voice interface. This comes just weeks after the launch of the Humane Ai Pin, which is similarly pitched as a new kind of mobile device with AI at its center. While we’re still [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2696894</post-id>	</item>
+		<item>
+		<title>Disrupt 2024 speaker applications close at midnight</title>
+		<link>https://techcrunch.com/2024/04/26/disrupt-2024-speaker-applications-close-at-midnight/</link>
+		
+		<dc:creator><![CDATA[Robert Frawley]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 16:00:07 +0000</pubDate>
+				<category><![CDATA[Startups]]></category>
+		<category><![CDATA[TechCrunch Disrupt]]></category>
+		<category><![CDATA[TechCrunch Disrupt 2024]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2694319</guid>
+
+					<description><![CDATA[<p>Act fast! Applications for our Call for Content close today, April 26 at 11:59 p.m. PT. If you’re a seasoned startup pro ready to lead a session at TechCrunch Disrupt on October 28-30, now’s your chance to apply! Send in your proposal to speak at TechCrunch Disrupt 2024 before the deadline hits. Your topic should [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2694319</post-id>	</item>
+		<item>
+		<title>Pitch Deck Teardown: NOQX&#8217;s $200K pre-seed deck</title>
+		<link>https://techcrunch.com/2024/04/26/sample-pre-seed-pitch-deck-noqx/</link>
+		
+		<dc:creator><![CDATA[Haje Jan Kamps]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 16:00:01 +0000</pubDate>
+				<category><![CDATA[Fundraising]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[fundraising]]></category>
+		<category><![CDATA[Pitch Deck Teardown]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2694909</guid>
+
+					<description><![CDATA[<p>Aside from the crucial omission of an Ask and Use of Funds slide, just about every slide in the deck felt almost very good — but then stumbled by overlooking an important detail.</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2694909</post-id>	</item>
+		<item>
+		<title>OpenAI Startup Fund quietly raises $15M</title>
+		<link>https://techcrunch.com/2024/04/26/openai-startup-fund-quietly-raises-15m/</link>
+		
+		<dc:creator><![CDATA[Kyle Wiggers]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 15:21:41 +0000</pubDate>
+				<category><![CDATA[AI]]></category>
+		<category><![CDATA[Startups]]></category>
+		<category><![CDATA[Venture]]></category>
+		<category><![CDATA[investment]]></category>
+		<category><![CDATA[OpenAI]]></category>
+		<category><![CDATA[OpenAI Startup Fund]]></category>
+		<category><![CDATA[SPV]]></category>
+		<category><![CDATA[startup]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697056</guid>
+
+					<description><![CDATA[<p>The OpenAI Startup Fund, a venture fund related to &#8212; but technically separate from &#8212; OpenAI that invests in early-stage, typically AI-related companies across education, law and the sciences, has quietly closed a $15 million tranche. According to a filing with the U.S. Securities and Exchange Commission, two unnamed investors contributed the $15 million in [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697056</post-id>	</item>
+		<item>
+		<title>Google&#8217;s new &#8216;Speaking practice&#8217; feature uses AI to help users improve their English skills</title>
+		<link>https://techcrunch.com/2024/04/26/google-improve-english-new-speaking-practice-feature/</link>
+		
+		<dc:creator><![CDATA[Aisha Malik]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 14:32:46 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[AI]]></category>
+		<category><![CDATA[artificial intelligence]]></category>
+		<category><![CDATA[duolingo]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[language learning]]></category>
+		<category><![CDATA[Translation]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697030</guid>
+
+					<description><![CDATA[<p>Google is testing a new “Speaking practice” feature in Search that helps users improve their conversational English skills. The company told TechCrunch that the feature is available to English learners in Argentina, Colombia, India, Indonesia, Mexico and Venezuela who have joined Search Labs, its program for users to experiment with early-stage Google Search experiences. The [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697030</post-id>	</item>
+		<item>
+		<title>Area man, Twilio co-founder Jeff Lawson, buys The Onion</title>
+		<link>https://techcrunch.com/2024/04/26/area-man-twilio-co-founder-jeff-lawson-buys-the-onion/</link>
+		
+		<dc:creator><![CDATA[Paul Sawers]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 14:29:48 +0000</pubDate>
+				<category><![CDATA[Enterprise]]></category>
+		<category><![CDATA[Media & Entertainment]]></category>
+		<category><![CDATA[Jeff Lawson]]></category>
+		<category><![CDATA[Mergers and Acquisitions]]></category>
+		<category><![CDATA[the-onion]]></category>
+		<category><![CDATA[Twilio]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697026</guid>
+
+					<description><![CDATA[<p>Jeff Lawson, co-founder and recently departed CEO of Twilio, is the proud new owner of satirical online newspaper The Onion.</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697026</post-id>	</item>
+		<item>
+		<title>Despite complaints, Apple hasn&#8217;t yet removed an obviously fake app pretending to be RockAuto</title>
+		<link>https://techcrunch.com/2024/04/26/apple-hasnt-yet-removed-obviously-fake-app-pretending-to-be-rockauto/</link>
+		
+		<dc:creator><![CDATA[Sarah Perez]]></dc:creator>
+		<pubDate>Fri, 26 Apr 2024 14:25:37 +0000</pubDate>
+				<category><![CDATA[Apps]]></category>
+		<category><![CDATA[Security]]></category>
+		<category><![CDATA[app-store]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[scammers]]></category>
+		<category><![CDATA[security]]></category>
+		<guid isPermaLink="false">https://techcrunch.com/?p=2697038</guid>
+
+					<description><![CDATA[<p>Apple&#8217;s App Store isn&#8217;t always as trustworthy as the company claims. The latest example comes from RockAuto, an auto parts dealer popular with home mechanics and other DIYers, which is upset that a fake app masquerading as its official app has not been removed from the App Store, despite numerous complaints to Apple. RockAuto co-founder [&#8230;]</p>
+<p>© 2024 TechCrunch. All rights reserved. For personal use only.</p>
+]]></description>
+		
+		
+		
+		<post-id xmlns="com-wordpress:feed-additions:1">2697038</post-id>	</item>
+	</channel>
+</rss>
