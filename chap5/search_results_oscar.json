@@ -1,0 +1,569 @@
+{
+    "search_metadata": {
+        "id": "663395a63c3fb2ce763442be",
+        "status": "Success",
+        "json_endpoint": "https://serpapi.com/searches/18624b25e65107ac/663395a63c3fb2ce763442be.json",
+        "created_at": "2024-05-02 13:31:18 UTC",
+        "processed_at": "2024-05-02 13:31:18 UTC",
+        "google_url": "https://www.google.com/search?q=What+movie+won+best+picture+in+2024%3F&oq=What+movie+won+best+picture+in+2024%3F&sourceid=chrome&ie=UTF-8",
+        "raw_html_file": "https://serpapi.com/searches/18624b25e65107ac/663395a63c3fb2ce763442be.html",
+        "total_time_taken": 1.16
+    },
+    "search_parameters": {
+        "engine": "google",
+        "q": "What movie won best picture in 2024?",
+        "google_domain": "google.com",
+        "device": "desktop"
+    },
+    "search_information": {
+        "query_displayed": "What movie won best picture in 2024?",
+        "total_results": 4160000000,
+        "time_taken_displayed": 0.39,
+        "organic_results_state": "Results for exact spelling"
+    },
+    "knowledge_graph": {
+        "title": "Oppenheimer",
+        "type": "2023 \u2027 Thriller/Historical drama \u2027 3 hours",
+        "entity_type": "film, tvm",
+        "kgmid": "/g/11rd5hm40n",
+        "knowledge_graph_search_link": "https://www.google.com/search?kgmid=/g/11rd5hm40n&hl=en-CA&q=Oppenheimer",
+        "serpapi_knowledge_graph_search_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en-CA&kgmid=%2Fg%2F11rd5hm40n&q=Oppenheimer",
+        "description": "During World War II, Lt. Gen. Leslie Groves Jr. appoints physicist J. Robert Oppenheimer to work on the top-secret Manhattan Project. Oppenheimer and a team of scientists spend years developing and designing the atomic bomb. Their work comes to fruition on July 16, 1945, as they witness the world's first nuclear explosion, forever changing the course of history.\u2026 MORE",
+        "release_date": "July 21, 2023 (Canada)",
+        "release_date_links": [
+            {
+                "text": "Canada",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Canada&stick=H4sIAAAAAAAAAOPgE-LVT9c3NCxKMc3INTHIU-LUz9U3SDEwM0jXMspOttJPy8zJBRNWJRmpiSVFmcmJOQpFqemZ-XkKieWJRalATk5qYnGqQkpiSeoiVjbnxLzElMQdrIy72Jk4GABMz_etYQAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQmxMoAHoECGYQAg"
+            }
+        ],
+        "director": "Christopher Nolan",
+        "director_links": [
+            {
+                "text": "Christopher Nolan",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Christopher+Nolan&si=AKbGX_oBDfquzodaRrfbb9img4kPQ4fCBZjeqAiaW1svvC8uXiWAvSYT65_ZSFOwsr5md7MICrkKM-kN884krei-pfJmLiCwc2GByyb3teCN1pceRT27Zg2ihBTH3Gq61H_-MR2e-ztd8uzQcK8l1SW4CXe5bOBfAcEYrN0XuzyD27XFBb_7zzlphrKMweh70qsePeygwAFBZagVAuoN2OArvvY4zvrPMg%3D%3D&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQmxMoAHoECGUQAg"
+            }
+        ],
+        "box_office": "953.8 million USD",
+        "awards": "Academy Award for Best Actor in a Leading Role",
+        "awards_links": [
+            {
+                "text": "Academy Award for Best Actor in a Leading Role",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Academy+Award+for+Best+Actor&si=AKbGX_paaCugDdYkuX2heTJMr0_FGRox2AzKVmiTg2eQr2d-rtX3RYduEf4XrQMjSGYk_OoOKG5WVBRjNNuPhsOJW3gm-YgfYPdkIlFKlBF23llp6qlJyOL9rPlcizbMpk5I8Yjn43sKBHMEtpTBsDXWQVX6ihjNQF3AvaO3PSaPid9atZ0HwvUHDnssf3h0tleR-PtOEnUTheMUw97SBl0cI-n4WW6RIeuDvtJInZVJlR__W-BRFsFN6mKUP3vRnh8lGc1bybdOxg4HzN7r9Ib72F90IzLXiUV8o0b_uuTF9LE5M7VNLxk%3D&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQmxMoAHoECGQQAg"
+            },
+            {
+                "text": "MORE",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=oppenheimer+awards&stick=H4sIAAAAAAAAAOPgE-LVT9c3NCxKMc3INTHI05LNTrbSTyxPLEqBkPHlmXl5qUVWYE7xIlah_IKC1LyM1Mzc1CIFiCAA86v3FUUAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ44YBKAF6BAhkEAM"
+            }
+        ],
+        "nominations": "Academy Award for Best Actor in a Leading Role",
+        "nominations_links": [
+            {
+                "text": "Academy Award for Best Actor in a Leading Role",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Academy+Award+for+Best+Actor&si=AKbGX_paaCugDdYkuX2heTJMr0_FGRox2AzKVmiTg2eQr2d-rtX3RYduEf4XrQMjSGYk_OoOKG5WVBRjNNuPhsOJW3gmzcRUcM_kSceeLgIErHg8lc_atDWO30giTbRbeiU1-_1bst0jrjXT95wYmv-gSkSV-naRklW9nNNPPS-ftJ9pTmQeIvVq2uHuhKQMSykvSwkV9ae4Zl_WPOtad2dCg4Ce4p59w4BMjO6rKc_OjLeI3_s_ZYKAAs0mJBupSR2-6XZDefzHpW-NZ8Ok0ymfX4D6rMH7K9uD4aK8UYRhWglN2tGTbCk%3D&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQmxMoAHoECGgQAg"
+            },
+            {
+                "text": "MORE",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=oppenheimer+nominations&stick=H4sIAAAAAAAAAOPgE-LVT9c3NCxKMc3INTHI01LKTrbSTyxPLEqBkPHlmXl5qUVWefm5mXmJJZn5ecWLWMXzCwpS8zJSM3NTixSQZADL_qBkTwAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ44YBKAF6BAhoEAM"
+            }
+        ],
+        "budget": "100 million USD",
+        "editorial_reviews": [
+            {
+                "title": "IMDb",
+                "rating": "8.3/10",
+                "link": "https://www.imdb.com/title/tt15398776/"
+            },
+            {
+                "title": "Metacritic",
+                "rating": "90%",
+                "link": "https://www.metacritic.com/movie/oppenheimer/critic-reviews/"
+            },
+            {
+                "title": "Rotten Tomatoes",
+                "rating": "93%",
+                "link": "https://www.rottentomatoes.com/m/oppenheimer_2023"
+            }
+        ],
+        "audience_reviews": [
+            {
+                "rating": 5.0,
+                "summary": "A non spoiler detail review: It's actually the best scientific Biopic made after The theory of everything!! A Cult classic cinema Christopher Nolan outshines in his technicality experimentation of direction with subjectives and objectives clearly shown in Black And ..."
+            },
+            {
+                "rating": 5.0,
+                "summary": "I Saw this Movie today with My elderly ( 069 Year old Mother and 068 year old father) Parents and it was good. but also some parts were very intense. it shows that sometimes those with the strongest opinions get crucified in a sense ( Politically or otherwise) and ..."
+            }
+        ],
+        "user_statistics": {
+            "platform": "Google users",
+            "statistic": "83% liked this movie"
+        },
+        "watch_now": [
+            {
+                "name": "Watch now Subscription",
+                "link": "https://www.primevideo.com/dp/amzn1.dv.gti.75c292da-2c42-41da-ae1d-d1ea16eeb311?autoplay=0&ref_=atv_cf_strg_wb",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/341cfeb49071ee5a51e1a4eea8325dfda2311ee76a170727cdbb61a1dda2fd4ab6776d5df987ad0e.png"
+            }
+        ],
+        "cast": [
+            {
+                "name": "Cillian Murphy (J. Robert Oppenheimer)",
+                "extensions": [
+                    "J. Robert Oppenheimer"
+                ],
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Cillian+Murphy&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU-LUz9U3MEorLE_S4vHNL8tMDcl3TC7JL1rEyuecmZOTmZin4FtaVJBRCQD1FTW2OwAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAhbEAM",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Cillian+Murphy&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU-LUz9U3MEorLE_S4vHNL8tMDcl3TC7JL1rEyuecmZOTmZin4FtaVJBRCQD1FTW2OwAAAA",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/341cfeb49071ee5a51e1a4eea8325dfd7206217d498bc22c81e6754791fd5a03.jpeg"
+            },
+            {
+                "name": "Florence Pugh (Jean Tatlock)",
+                "extensions": [
+                    "Jean Tatlock"
+                ],
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Florence+Pugh&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU4JwkyrS4tPNCgy1eHzzyzJTQ_Idk0vyixax8rrl5Bel5iWnKgSUpmcAANBRxY0-AAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAhbEAU",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Florence+Pugh&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU4JwkyrS4tPNCgy1eHzzyzJTQ_Idk0vyixax8rrl5Bel5iWnKgSUpmcAANBRxY0-AAAA",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/341cfeb49071ee5a51e1a4eea8325dfdcd4d39f5edde2559773e6b58b4751020.jpeg"
+            },
+            {
+                "name": "Robert Downey Jr. (Lewis Strauss)",
+                "extensions": [
+                    "Lewis Strauss"
+                ],
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Robert+Downey+Jr.&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU-LUz9U3MDSrMsrS4vHNL8tMDcl3TC7JL1rEKhiUn5RaVKLgkl-el1qp4FWkBwA2QbSrPgAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAhbEAc",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Robert+Downey+Jr.&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU-LUz9U3MDSrMsrS4vHNL8tMDcl3TC7JL1rEKhiUn5RaVKLgkl-el1qp4FWkBwA2QbSrPgAAAA",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/341cfeb49071ee5a51e1a4eea8325dfd52b611e9bbadd5366ee993a2f0e8bc02.jpeg"
+            },
+            {
+                "name": "Emily Blunt (Kitty Oppenheimer)",
+                "extensions": [
+                    "Kitty Oppenheimer"
+                ],
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Emily+Blunt&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU-LUz9U3MDEyMK3S4vHNL8tMDcl3TC7JL1rEyu2am5lTqeCUU5pXAgCSTgNwOAAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAhbEAk",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Emily+Blunt&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU-LUz9U3MDEyMK3S4vHNL8tMDcl3TC7JL1rEyu2am5lTqeCUU5pXAgCSTgNwOAAAAA",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/341cfeb49071ee5a51e1a4eea8325dfd82a7763c7e7539e4095ce9e10f2a41a8.jpeg"
+            }
+        ]
+    },
+    "inline_images_suggested_searches": [
+        {
+            "name": "al pacino",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=al+pacino+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbh-twkHP4iXl2H5V65nuzO4Yll1050CfsgjOnzoQ2G0frp8h7jegYYpuKmiluz8_VmSc7gwAJmiBmtIdM-Rk_utP1zbzpsFpCiCfYmGZ7StcJUL7j&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAB6BAhGEA0",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbh-twkHP4iXl2H5V65nuzO4Yll1050CfsgjOnzoQ2G0frp8h7jegYYpuKmiluz8_VmSc7gwAJmiBmtIdM-Rk_utP1zbzpsFpCiCfYmGZ7StcJUL7j",
+            "q": "al pacino what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=al+pacino+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbh-twkHP4iXl2H5V65nuzO4Yll1050CfsgjOnzoQ2G0frp8h7jegYYpuKmiluz8_VmSc7gwAJmiBmtIdM-Rk_utP1zbzpsFpCiCfYmGZ7StcJUL7j",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQgkl-debxPy5ET56OKTvNO8awc6cxMl1yyJ_ieLUNQpf7AAhzjuvEJ5ExQ1g&s"
+        },
+        {
+            "name": "oppenheimer",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=oppenheimer+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbrwXLWVtY7u2Bv4BJ34WgCKfmVsd-bTNIdSCQbiVdAQIGj1lJ0Uq_Jm3-l6EeSW49_tuBuwXEqT6BvoIdILuLbnwjCVfDqLR6dmmiuoGbZGdSXQCi&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAF6BAhGEBE",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbrwXLWVtY7u2Bv4BJ34WgCKfmVsd-bTNIdSCQbiVdAQIGj1lJ0Uq_Jm3-l6EeSW49_tuBuwXEqT6BvoIdILuLbnwjCVfDqLR6dmmiuoGbZGdSXQCi",
+            "q": "oppenheimer what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=oppenheimer+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbrwXLWVtY7u2Bv4BJ34WgCKfmVsd-bTNIdSCQbiVdAQIGj1lJ0Uq_Jm3-l6EeSW49_tuBuwXEqT6BvoIdILuLbnwjCVfDqLR6dmmiuoGbZGdSXQCi",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEb5nnXdl41IzjnaX1yVx4mPIpAW6_qBikEY8d9cXcN6zQhIjTccNy1NtEgg&s"
+        },
+        {
+            "name": "cillian murphy",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=cillian+murphy+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbQ90xRzaAh7IbiLk7fATWAAYYUySVxiL5fa03YdSlZto_cLKaNTvqZKxy4ZAXrbWdX2jeewEOx9zT-jCFn5LIsssxDMhZP5zDUj8KALRu_6pohQYz&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAJ6BAhGEBU",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbQ90xRzaAh7IbiLk7fATWAAYYUySVxiL5fa03YdSlZto_cLKaNTvqZKxy4ZAXrbWdX2jeewEOx9zT-jCFn5LIsssxDMhZP5zDUj8KALRu_6pohQYz",
+            "q": "cillian murphy what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=cillian+murphy+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbQ90xRzaAh7IbiLk7fATWAAYYUySVxiL5fa03YdSlZto_cLKaNTvqZKxy4ZAXrbWdX2jeewEOx9zT-jCFn5LIsssxDMhZP5zDUj8KALRu_6pohQYz",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJ1ptV_NkzDop6I8X1TQrK1cGJXNDnoCdoD8gCpMKlHcB7234hVaN53msU9A&s"
+        },
+        {
+            "name": "oscar nominations",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=oscar+nominations+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbztcufTi2yth42yCCGxJMN1hQLY4B_snVBtpgpoQ3Ql94GPrbNpef6LVL6qNT1g3k6Q4Ef5nA5BsCs2dlHubfWePa3DQBTqDVcZQMXejmNZs8SZ6A&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAN6BAhGEBk",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbztcufTi2yth42yCCGxJMN1hQLY4B_snVBtpgpoQ3Ql94GPrbNpef6LVL6qNT1g3k6Q4Ef5nA5BsCs2dlHubfWePa3DQBTqDVcZQMXejmNZs8SZ6A",
+            "q": "oscar nominations what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=oscar+nominations+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbztcufTi2yth42yCCGxJMN1hQLY4B_snVBtpgpoQ3Ql94GPrbNpef6LVL6qNT1g3k6Q4Ef5nA5BsCs2dlHubfWePa3DQBTqDVcZQMXejmNZs8SZ6A",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGmAlMa2lYBGMTNZcXPTz8bafXDuZNCF0RENEZVA93qHmVZk03uqL1ecapXQ&s"
+        },
+        {
+            "name": "emma stone",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=emma+stone+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzb1HkWSmoS5-Nhn-RgPfVFuZeQxECIq63mZMHhS3JWyRMiL3CX29shL1pbc-7cENOZmEkYLdrMSfDwkcgzmrZCQNMJ3Hhdro8pV5O-ylmZ-E6fvBoZ&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAR6BAhGEB0",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzb1HkWSmoS5-Nhn-RgPfVFuZeQxECIq63mZMHhS3JWyRMiL3CX29shL1pbc-7cENOZmEkYLdrMSfDwkcgzmrZCQNMJ3Hhdro8pV5O-ylmZ-E6fvBoZ",
+            "q": "emma stone what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=emma+stone+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzb1HkWSmoS5-Nhn-RgPfVFuZeQxECIq63mZMHhS3JWyRMiL3CX29shL1pbc-7cENOZmEkYLdrMSfDwkcgzmrZCQNMJ3Hhdro8pV5O-ylmZ-E6fvBoZ",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRehnxPkAWJTyfiIQjijxlxjgc1jjAuVjdOeVKmyN-PO8jm_UE9THsjyaejCA&s"
+        },
+        {
+            "name": "oscar predictions",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=oscar+predictions+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbztcufTi2yth42yCCGxJMN1hQLY4B_snVBtpgpoQ3Ql_ehPKFM8V3DYx0U5s7ClKmFyk-r75V-dbn2Iju_tip_YcZ4GYz-_nKnlwZh-t4RtkA5_8v&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAV6BAhGECE",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbztcufTi2yth42yCCGxJMN1hQLY4B_snVBtpgpoQ3Ql_ehPKFM8V3DYx0U5s7ClKmFyk-r75V-dbn2Iju_tip_YcZ4GYz-_nKnlwZh-t4RtkA5_8v",
+            "q": "oscar predictions what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=oscar+predictions+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbztcufTi2yth42yCCGxJMN1hQLY4B_snVBtpgpoQ3Ql_ehPKFM8V3DYx0U5s7ClKmFyk-r75V-dbn2Iju_tip_YcZ4GYz-_nKnlwZh-t4RtkA5_8v",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOXxJ8ta2qH4gT2uJ-UEPW5wdcwraA6pk8Fr3kMecvZmVT9zV5wX-jVek5voo&s"
+        },
+        {
+            "name": "oscar winner",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=oscar+winner+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbThmn0eHJsAtl-lf8nT_H29lbRvWrF4PgBfLMRegLd7O5Q594b51Y-qc71zBV9d40dZYCLfF2FwxDR7P2FRjB8G1kaJbW3FaLhMwu8VHtthuYdwsZ&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAZ6BAhGECU",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbThmn0eHJsAtl-lf8nT_H29lbRvWrF4PgBfLMRegLd7O5Q594b51Y-qc71zBV9d40dZYCLfF2FwxDR7P2FRjB8G1kaJbW3FaLhMwu8VHtthuYdwsZ",
+            "q": "oscar winner what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=oscar+winner+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbThmn0eHJsAtl-lf8nT_H29lbRvWrF4PgBfLMRegLd7O5Q594b51Y-qc71zBV9d40dZYCLfF2FwxDR7P2FRjB8G1kaJbW3FaLhMwu8VHtthuYdwsZ",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBSxGz6ChxXswpWzYO92S3_rQELzMJ_0GalZevafPEKt2aK6wx6TXO0XrqoA&s"
+        },
+        {
+            "name": "christopher nolan",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=christopher+nolan+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbztcufTi2yth42yCCGxJMN-q8vibjkOhHGAUD1gcPIn4kW8VRvMBowt07zpxcQiPk76gtHT9scTdvrvZuFCljXytSpZ7umAc_wSFZwe2DTPyU0V0Z&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAd6BAhGECk",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbztcufTi2yth42yCCGxJMN-q8vibjkOhHGAUD1gcPIn4kW8VRvMBowt07zpxcQiPk76gtHT9scTdvrvZuFCljXytSpZ7umAc_wSFZwe2DTPyU0V0Z",
+            "q": "christopher nolan what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=christopher+nolan+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbztcufTi2yth42yCCGxJMN-q8vibjkOhHGAUD1gcPIn4kW8VRvMBowt07zpxcQiPk76gtHT9scTdvrvZuFCljXytSpZ7umAc_wSFZwe2DTPyU0V0Z",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPm4vGnh-W4ErYTMTIJtnpQLy2tBhbPnYPHEZw6Xx3udNOB1_Weux7dyIFUQ&s"
+        },
+        {
+            "name": "oscar nominee",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=oscar+nominee+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbZzwsFHg4gsf5OTWg4EOqOdofN4ibGmJWK4rEqObU2p_HeYV6vWlIIkgfnsZdwT6jE4DFsHhao78iYiXmMMKIXPA19_8Sih31qHYX0lk513ZUYEkX&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAh6BAhGEC0",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbZzwsFHg4gsf5OTWg4EOqOdofN4ibGmJWK4rEqObU2p_HeYV6vWlIIkgfnsZdwT6jE4DFsHhao78iYiXmMMKIXPA19_8Sih31qHYX0lk513ZUYEkX",
+            "q": "oscar nominee what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=oscar+nominee+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbZzwsFHg4gsf5OTWg4EOqOdofN4ibGmJWK4rEqObU2p_HeYV6vWlIIkgfnsZdwT6jE4DFsHhao78iYiXmMMKIXPA19_8Sih31qHYX0lk513ZUYEkX"
+        },
+        {
+            "name": "oscars academy",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=oscars+academy+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbQ90xRzaAh7IbiLk7fATWAHXDGP7r2wBr3pAokO-aqbJ7baoG1epE01vsgp_3tx_PjG2li6EfRGyfpeWg4xbAdWju0C1AZ74LcWpUPlNM5HyS4_ZU&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAl6BAhGEDA",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbQ90xRzaAh7IbiLk7fATWAHXDGP7r2wBr3pAokO-aqbJ7baoG1epE01vsgp_3tx_PjG2li6EfRGyfpeWg4xbAdWju0C1AZ74LcWpUPlNM5HyS4_ZU",
+            "q": "oscars academy what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=oscars+academy+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbQ90xRzaAh7IbiLk7fATWAHXDGP7r2wBr3pAokO-aqbJ7baoG1epE01vsgp_3tx_PjG2li6EfRGyfpeWg4xbAdWju0C1AZ74LcWpUPlNM5HyS4_ZU",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7wTOshqa9oV27Jyqs5VXAXUreY50UehQtGd-tv2b7Kg&s"
+        },
+        {
+            "name": "academy award",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=academy+award+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbZzwsFHg4gsf5OTWg4EOqOamAxG6K2Uvxs50hvn95WbZSpRV0JSd8MP1fYgRKOMG12aB0RZvZ3geqVBmlnDR-zkdbsdemmDXNyuykGr943DinMjI-&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAp6BAhGEDQ",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbZzwsFHg4gsf5OTWg4EOqOamAxG6K2Uvxs50hvn95WbZSpRV0JSd8MP1fYgRKOMG12aB0RZvZ3geqVBmlnDR-zkdbsdemmDXNyuykGr943DinMjI-",
+            "q": "academy award what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=academy+award+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbZzwsFHg4gsf5OTWg4EOqOamAxG6K2Uvxs50hvn95WbZSpRV0JSd8MP1fYgRKOMG12aB0RZvZ3geqVBmlnDR-zkdbsdemmDXNyuykGr943DinMjI-",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmy_TGB67pL7mobaEXQrCoum6wmWut7W8ue1Jqh1Sneg&s"
+        },
+        {
+            "name": "picture nominees",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=picture+nominees+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbN13-emC1wzHLC3vddPkzk_mTvzEq3Bgpb2PxKTlqvcfbqx2Kpjr8FZD_NJh69kNwsW9pgCt04fuRqXsBLcjPmnJTUpc&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAt6BAhGEDg",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbN13-emC1wzHLC3vddPkzk_mTvzEq3Bgpb2PxKTlqvcfbqx2Kpjr8FZD_NJh69kNwsW9pgCt04fuRqXsBLcjPmnJTUpc",
+            "q": "picture nominees what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=picture+nominees+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbN13-emC1wzHLC3vddPkzk_mTvzEq3Bgpb2PxKTlqvcfbqx2Kpjr8FZD_NJh69kNwsW9pgCt04fuRqXsBLcjPmnJTUpc",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_6I7PBMm4_H-o1zEm59FcVP5mbCglgwf1JdNbZjCHTQ&s"
+        },
+        {
+            "name": "award winners",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=award+winners+what+movie+won+best+picture+in+2024&udm=2&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbZzwsFHg4gsf5OTWg4EOqOY6KTfCt6TsbutDu9YhytBJigJXn_Ed22oMKF5xpl2MlRFmy6Jdm-5Em32Uuiim4PaZY_7USaJXLkk1KpLtFE6qSeYcb&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQgIoDKAx6BAhGEDw",
+            "uds": "AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbZzwsFHg4gsf5OTWg4EOqOY6KTfCt6TsbutDu9YhytBJigJXn_Ed22oMKF5xpl2MlRFmy6Jdm-5Em32Uuiim4PaZY_7USaJXLkk1KpLtFE6qSeYcb",
+            "q": "award winners what movie won best picture in 2024",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_images&gl=us&google_domain=google.com&hl=en&q=award+winners+what+movie+won+best+picture+in+2024&uds=AMwkrPvWGpobriwTveP6VGUYGsU9zgWCg-l8WP7V25XEmjjDergQubpMjWYQ-x1n0ClrfA--NnjgIr45um-g2OxSqCzbZzwsFHg4gsf5OTWg4EOqOY6KTfCt6TsbutDu9YhytBJigJXn_Ed22oMKF5xpl2MlRFmy6Jdm-5Em32Uuiim4PaZY_7USaJXLkk1KpLtFE6qSeYcb",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-fuW_eEECQm5k2p4S8lAThpkvgKMGwmsJP8xZ7uu8Vw&s"
+        }
+    ],
+    "inline_images": [
+        {
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=What+movie+won+best+picture+in+2024%3F&udm=2&source=univ&fir=HlAgJkPjhln6zM%252CuMP4cvzphms7MM%252C_%253BBWZeOjD47lqE_M%252CgHjZbrIABobskM%252C_%253BKTP-rbZM73WPpM%252CLAw0BbPXq74BYM%252C_%253BP0CP15RX3eT4JM%252C9ujxJXmiX5sg9M%252C_%253Bin5vV7NF4CK3TM%252CNC-5n2-TfOWfxM%252C_%253BjRxexDPUZwGGDM%252C_6piVGGJaiqXXM%252C_%253BEmv_XVqzCwu9jM%252CnAqQa1peXEgLdM%252C_%253BIbhQrDmSA8JKRM%252CbKg_JTQ2uzfdjM%252C_%253BTUkSqh4zM4lzWM%252C80XqWWJDMflLpM%252C_%253BeiWQY2inE2uQiM%252C-5aSEOSdGACUGM%252C_&usg=AI4_-kSNFLmga8TSv87ch4j5ednYEJrRPA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ9AF6BAhBEAA#imgrc=HlAgJkPjhln6zM",
+            "source": "https://www.euronews.com/culture/2024/03/10/oscars-2024-live-coverage-of-the-96th-academy-awards",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2RQbEOk8mGr6_yT5_CpgqDwovfIKXZUsjk0LCc1a-rqQkeOc114-t-A6y4A&s",
+            "original": "https://static.euronews.com/articles/stories/08/29/75/80/1200x675_cmsv2_3c824662-1468-50b1-8e6d-dd365c65b2ba-8297580.jpg",
+            "title": "Oscars 2024: 'Oppenheimer' triumphs - Full results & viral moments",
+            "source_name": "Euronews.com"
+        },
+        {
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=What+movie+won+best+picture+in+2024%3F&udm=2&source=univ&fir=HlAgJkPjhln6zM%252CuMP4cvzphms7MM%252C_%253BBWZeOjD47lqE_M%252CgHjZbrIABobskM%252C_%253BKTP-rbZM73WPpM%252CLAw0BbPXq74BYM%252C_%253BP0CP15RX3eT4JM%252C9ujxJXmiX5sg9M%252C_%253Bin5vV7NF4CK3TM%252CNC-5n2-TfOWfxM%252C_%253BjRxexDPUZwGGDM%252C_6piVGGJaiqXXM%252C_%253BEmv_XVqzCwu9jM%252CnAqQa1peXEgLdM%252C_%253BIbhQrDmSA8JKRM%252CbKg_JTQ2uzfdjM%252C_%253BTUkSqh4zM4lzWM%252C80XqWWJDMflLpM%252C_%253BeiWQY2inE2uQiM%252C-5aSEOSdGACUGM%252C_&usg=AI4_-kSNFLmga8TSv87ch4j5ednYEJrRPA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ9AF6BAhFEAA#imgrc=BWZeOjD47lqE_M",
+            "source": "https://www.hollywoodreporter.com/movies/movie-news/oscars-2024-winners-list-1235847823/",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLYRFjMD4zduFdLyrEGmCbUsQKJEsufidrUhoTYqYESdBgZzTIBvog2Ol-uA&s",
+            "original": "https://www.hollywoodreporter.com/wp-content/uploads/2024/03/GettyImages-2074663619-copy.jpg",
+            "title": "Oscar 2024 Winners: The Full List",
+            "source_name": "The Hollywood Reporter"
+        },
+        {
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=What+movie+won+best+picture+in+2024%3F&udm=2&source=univ&fir=HlAgJkPjhln6zM%252CuMP4cvzphms7MM%252C_%253BBWZeOjD47lqE_M%252CgHjZbrIABobskM%252C_%253BKTP-rbZM73WPpM%252CLAw0BbPXq74BYM%252C_%253BP0CP15RX3eT4JM%252C9ujxJXmiX5sg9M%252C_%253Bin5vV7NF4CK3TM%252CNC-5n2-TfOWfxM%252C_%253BjRxexDPUZwGGDM%252C_6piVGGJaiqXXM%252C_%253BEmv_XVqzCwu9jM%252CnAqQa1peXEgLdM%252C_%253BIbhQrDmSA8JKRM%252CbKg_JTQ2uzfdjM%252C_%253BTUkSqh4zM4lzWM%252C80XqWWJDMflLpM%252C_%253BeiWQY2inE2uQiM%252C-5aSEOSdGACUGM%252C_&usg=AI4_-kSNFLmga8TSv87ch4j5ednYEJrRPA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ9AF6BAhHEAA#imgrc=KTP-rbZM73WPpM",
+            "source": "https://www.bbc.com/news/entertainment-arts-68530809",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz_7MpJyrcRcBkRct-5vsuvkFg05Jj5A4ayqb8sDTcy7EOBxczlsBtF5Fzng&s",
+            "original": "https://c.files.bbci.co.uk/B82C/production/_132884174_cr753e6e7a2a8687028f847cc655074a2d20daefbc.jpg",
+            "title": "Oscars 2024: Oppenheimer sweeps awards as Cillian Murphy ...",
+            "source_name": "BBC"
+        }
+    ],
+    "related_questions": [
+        {
+            "question": "Which movie won the most Oscars in 2024?",
+            "snippet": "The 96th Academy Awards were held at the Dolby Theater in Los Angeles and were once again hosted by Jimmy Kimmel. \u201cOppenheimer\u201d had the most wins of the night, taking home seven awards, including best picture, actor, supporting actor and director.",
+            "title": "Oppenheimer\u201d",
+            "date": "Mar 12, 2024",
+            "link": "https://www.nytimes.com/2024/03/10/movies/oscars-winners-list.html",
+            "displayed_link": "https://www.nytimes.com \u203a 2024/03/10 \u203a movies \u203a oscar...",
+            "source_logo": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/bec6dfe93c9219be20919bffc403014a795b7930d800a6b4ce1c02a2506237c7.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOc1dEVnZYM0JuWlc5R1ZsUkthVnBHWkV0RmEzVm5RVkpEVm1wQmNubGZTVWhrUzBnNE5VTmphRkkzVlc0NGFEZFJTRGR2TmxwdFQyeERZV1J0ZUVWQlNVWnBPRWhORWhkd05WVjZXbkF0ZWtGMlgzUndkRkZRZUhSbGRHOUJkeG9pUVZCWWFHMDFZVXRKTkVkS2QyWXRUVnByV1djek1Xd3hObVE0Y25BNVQyTkpVUSIsImZjdiI6IjMiLCJlaSI6InA1VXpacC16QXZfdHB0UVB4dGV0b0F3IiwicWMiOiJDaU4zYUdGMElHMXZkbWxsSUhkdmJpQmlaWE4wSUhCcFkzUjFjbVVnYVc0Z01qQXlOQkFBZlNIWk1EOCIsInF1ZXN0aW9uIjoiV2hpY2ggbW92aWUgd29uIHRoZSBtb3N0IE9zY2FycyBpbiAyMDI0PyIsImxrIjoiR2lSM2FHbGphQ0J0YjNacFpTQjNiMjRnZEdobElHMXZjM1FnYjNOallYSnpJREl3TWpRIiwiYnMiOiJjNDJQdlFyQ01CU0ZjYzNrV0RKZDBGYWhDaExjdS1nc0RpV3JzUVlTYUhPbGllWUpmQmdmd2JjemFSWVJpbzZYODUyZlMycXk1RW8zQ2pxOGF3a2VEVGdsdzJVZEhHd2plZ3ZhQU51d2JaVTlkNnlnY3otR1k4SWpTemdwdVVMd3dzSlpCdTNTUzJ2bEJZUWItT19rMTU3bGRPWkhISl9CUjFKd0pVMUtBSU9kTnNKcE5Fa0dyOXNXR3V4a3hSWTA5NUhFSHlRNWtSVlhvU1pXeDNHdENQWHBQeGNHaFpIRG9LdHUzSzJYVmZhbzJacVdfbl9MZFBJRyIsImlkIjoiZmNfMSJ9",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOc1dEVnZYM0JuWlc5R1ZsUkthVnBHWkV0RmEzVm5RVkpEVm1wQmNubGZTVWhrUzBnNE5VTmphRkkzVlc0NGFEZFJTRGR2TmxwdFQyeERZV1J0ZUVWQlNVWnBPRWhORWhkd05WVjZXbkF0ZWtGMlgzUndkRkZRZUhSbGRHOUJkeG9pUVZCWWFHMDFZVXRKTkVkS2QyWXRUVnByV1djek1Xd3hObVE0Y25BNVQyTkpVUSIsImZjdiI6IjMiLCJlaSI6InA1VXpacC16QXZfdHB0UVB4dGV0b0F3IiwicWMiOiJDaU4zYUdGMElHMXZkbWxsSUhkdmJpQmlaWE4wSUhCcFkzUjFjbVVnYVc0Z01qQXlOQkFBZlNIWk1EOCIsInF1ZXN0aW9uIjoiV2hpY2ggbW92aWUgd29uIHRoZSBtb3N0IE9zY2FycyBpbiAyMDI0PyIsImxrIjoiR2lSM2FHbGphQ0J0YjNacFpTQjNiMjRnZEdobElHMXZjM1FnYjNOallYSnpJREl3TWpRIiwiYnMiOiJjNDJQdlFyQ01CU0ZjYzNrV0RKZDBGYWhDaExjdS1nc0RpV3JzUVlTYUhPbGllWUpmQmdmd2JjemFSWVJpbzZYODUyZlMycXk1RW8zQ2pxOGF3a2VEVGdsdzJVZEhHd2plZ3ZhQU51d2JaVTlkNnlnY3otR1k4SWpTemdwdVVMd3dzSlpCdTNTUzJ2bEJZUWItT19rMTU3bGRPWkhISl9CUjFKd0pVMUtBSU9kTnNKcE5Fa0dyOXNXR3V4a3hSWTA5NUhFSHlRNWtSVlhvU1pXeDNHdENQWHBQeGNHaFpIRG9LdHUzSzJYVmZhbzJacVdfbl9MZFBJRyIsImlkIjoiZmNfMSJ9"
+        },
+        {
+            "question": "Who was best dressed at the Oscars in 2024?",
+            "snippet": "Sandra H\u00fcller in Schiaparelli Among the sensational black gowns at the 2024 Oscars, topping the list was Sandra H\u00fcller, a best actress nominee for Anatomy of a Fall. H\u00fcller's stunning gown was a custom design by Daniel Roseberry for Schiaparelli and was defined by its high-drama off-the-shoulder neckline.",
+            "title": "The Best Dressed Stars: Oscars 2024 - The Hollywood Reporter",
+            "date": "Mar 10, 2024",
+            "link": "https://www.hollywoodreporter.com/lifestyle/style/best-dressed-stars-oscars-2024-1235848448/",
+            "displayed_link": "https://www.hollywoodreporter.com \u203a lifestyle \u203a style",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHK1ST8Z-W-LiKxEhRVvfxpF3Uz_XFQAPcP69Zcbbj&s",
+            "source_logo": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/bec6dfe93c9219be20919bffc403014a2db4ba0c64c418961c7155646becc526.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOc1dEVnZYM0JuWlc5R1ZsUkthVnBHWkV0RmEzVm5RVkpEVm1wQmNubGZTVWhrUzBnNE5VTmphRkkzVlc0NGFEZFJTRGR2TmxwdFQyeERZV1J0ZUVWQlNVWnBPRWhORWhkd05WVjZXbkF0ZWtGMlgzUndkRkZRZUhSbGRHOUJkeG9pUVZCWWFHMDFZVXRKTkVkS2QyWXRUVnByV1djek1Xd3hObVE0Y25BNVQyTkpVUSIsImZjdiI6IjMiLCJlaSI6InA1VXpacC16QXZfdHB0UVB4dGV0b0F3IiwicWMiOiJDaU4zYUdGMElHMXZkbWxsSUhkdmJpQmlaWE4wSUhCcFkzUjFjbVVnYVc0Z01qQXlOQkFBZlNIWk1EOCIsInF1ZXN0aW9uIjoiV2hvIHdhcyBiZXN0IGRyZXNzZWQgYXQgdGhlIE9zY2FycyBpbiAyMDI0PyIsImxrIjoiR2lOM2FHOGdkMkZ6SUdKbGMzUWdaSEpsYzNObFpDQmhkQ0J2YzJOaGNuTWdNakF5TkEiLCJicyI6ImM0MlB2UXJDTUJTRmNjM2tXREpkMEZhaENoTGN1LWdzRGlXcnNRWVNhSE9saWVZSmZCZ2Z3YmN6YVJZUmlvNlg4NTJmUzJxeTVFbzNDanE4YXdrZURUZ2x3MlVkSEd3amVndmFBTnV3YlpVOWQ2eWdjei1HWThJalN6Z3B1VUx3d3NKWkJ1M1NTMnZsQllRYi1PX2sxNTdsZE9aSEhKX0JSMUp3SlUxS0FJT2ROc0pwTkVrR3I5c1dHdXhreFJZMDk1SEVIeVE1a1JWWG9TWld4M0d0Q1BYcFB4Y0doWkhEb0t0dTNLMlhWZmFvMlpxV19uX0xkUElHIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOc1dEVnZYM0JuWlc5R1ZsUkthVnBHWkV0RmEzVm5RVkpEVm1wQmNubGZTVWhrUzBnNE5VTmphRkkzVlc0NGFEZFJTRGR2TmxwdFQyeERZV1J0ZUVWQlNVWnBPRWhORWhkd05WVjZXbkF0ZWtGMlgzUndkRkZRZUhSbGRHOUJkeG9pUVZCWWFHMDFZVXRKTkVkS2QyWXRUVnByV1djek1Xd3hObVE0Y25BNVQyTkpVUSIsImZjdiI6IjMiLCJlaSI6InA1VXpacC16QXZfdHB0UVB4dGV0b0F3IiwicWMiOiJDaU4zYUdGMElHMXZkbWxsSUhkdmJpQmlaWE4wSUhCcFkzUjFjbVVnYVc0Z01qQXlOQkFBZlNIWk1EOCIsInF1ZXN0aW9uIjoiV2hvIHdhcyBiZXN0IGRyZXNzZWQgYXQgdGhlIE9zY2FycyBpbiAyMDI0PyIsImxrIjoiR2lOM2FHOGdkMkZ6SUdKbGMzUWdaSEpsYzNObFpDQmhkQ0J2YzJOaGNuTWdNakF5TkEiLCJicyI6ImM0MlB2UXJDTUJTRmNjM2tXREpkMEZhaENoTGN1LWdzRGlXcnNRWVNhSE9saWVZSmZCZ2Z3YmN6YVJZUmlvNlg4NTJmUzJxeTVFbzNDanE4YXdrZURUZ2x3MlVkSEd3amVndmFBTnV3YlpVOWQ2eWdjei1HWThJalN6Z3B1VUx3d3NKWkJ1M1NTMnZsQllRYi1PX2sxNTdsZE9aSEhKX0JSMUp3SlUxS0FJT2ROc0pwTkVrR3I5c1dHdXhreFJZMDk1SEVIeVE1a1JWWG9TWld4M0d0Q1BYcFB4Y0doWkhEb0t0dTNLMlhWZmFvMlpxV19uX0xkUElHIiwiaWQiOiJmY18xIn0%3D"
+        },
+        {
+            "question": "When Oscar nominations 2024 will come?",
+            "snippet": "",
+            "title": "March 10, 2024 at 4:00 p.m. PDT",
+            "info": "96th Academy Awards / Date",
+            "link": "https://www.google.com#",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOc1dEVnZYM0JuWlc5R1ZsUkthVnBHWkV0RmEzVm5RVkpEVm1wQmNubGZTVWhrUzBnNE5VTmphRkkzVlc0NGFEZFJTRGR2TmxwdFQyeERZV1J0ZUVWQlNVWnBPRWhORWhkd05WVjZXbkF0ZWtGMlgzUndkRkZRZUhSbGRHOUJkeG9pUVZCWWFHMDFZVXRKTkVkS2QyWXRUVnByV1djek1Xd3hObVE0Y25BNVQyTkpVUSIsImZjdiI6IjMiLCJlaSI6InA1VXpacC16QXZfdHB0UVB4dGV0b0F3IiwicWMiOiJDaU4zYUdGMElHMXZkbWxsSUhkdmJpQmlaWE4wSUhCcFkzUjFjbVVnYVc0Z01qQXlOQkFBZlNIWk1EOCIsInF1ZXN0aW9uIjoiV2hlbiBPc2NhciBub21pbmF0aW9ucyAyMDI0IHdpbGwgY29tZT8iLCJsayI6IkdpVjNhR1Z1SUc5elkyRnlJRzV2YldsdVlYUnBiMjV6SURJd01qUWdkMmxzYkNCamIyMWwiLCJicyI6ImM0MlB2UXJDTUJTRmNjM2tXREpkMEZhaENoTGN1LWdzRGlXcnNRWVNhSE9saWVZSmZCZ2Z3YmN6YVJZUmlvNlg4NTJmUzJxeTVFbzNDanE4YXdrZURUZ2x3MlVkSEd3amVndmFBTnV3YlpVOWQ2eWdjei1HWThJalN6Z3B1VUx3d3NKWkJ1M1NTMnZsQllRYi1PX2sxNTdsZE9aSEhKX0JSMUp3SlUxS0FJT2ROc0pwTkVrR3I5c1dHdXhreFJZMDk1SEVIeVE1a1JWWG9TWld4M0d0Q1BYcFB4Y0doWkhEb0t0dTNLMlhWZmFvMlpxV19uX0xkUElHIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOc1dEVnZYM0JuWlc5R1ZsUkthVnBHWkV0RmEzVm5RVkpEVm1wQmNubGZTVWhrUzBnNE5VTmphRkkzVlc0NGFEZFJTRGR2TmxwdFQyeERZV1J0ZUVWQlNVWnBPRWhORWhkd05WVjZXbkF0ZWtGMlgzUndkRkZRZUhSbGRHOUJkeG9pUVZCWWFHMDFZVXRKTkVkS2QyWXRUVnByV1djek1Xd3hObVE0Y25BNVQyTkpVUSIsImZjdiI6IjMiLCJlaSI6InA1VXpacC16QXZfdHB0UVB4dGV0b0F3IiwicWMiOiJDaU4zYUdGMElHMXZkbWxsSUhkdmJpQmlaWE4wSUhCcFkzUjFjbVVnYVc0Z01qQXlOQkFBZlNIWk1EOCIsInF1ZXN0aW9uIjoiV2hlbiBPc2NhciBub21pbmF0aW9ucyAyMDI0IHdpbGwgY29tZT8iLCJsayI6IkdpVjNhR1Z1SUc5elkyRnlJRzV2YldsdVlYUnBiMjV6SURJd01qUWdkMmxzYkNCamIyMWwiLCJicyI6ImM0MlB2UXJDTUJTRmNjM2tXREpkMEZhaENoTGN1LWdzRGlXcnNRWVNhSE9saWVZSmZCZ2Z3YmN6YVJZUmlvNlg4NTJmUzJxeTVFbzNDanE4YXdrZURUZ2x3MlVkSEd3amVndmFBTnV3YlpVOWQ2eWdjei1HWThJalN6Z3B1VUx3d3NKWkJ1M1NTMnZsQllRYi1PX2sxNTdsZE9aSEhKX0JSMUp3SlUxS0FJT2ROc0pwTkVrR3I5c1dHdXhreFJZMDk1SEVIeVE1a1JWWG9TWld4M0d0Q1BYcFB4Y0doWkhEb0t0dTNLMlhWZmFvMlpxV19uX0xkUElHIiwiaWQiOiJmY18xIn0%3D"
+        },
+        {
+            "question": "What was the last movie to win best picture?",
+            "title": "The full list of Oscar best picture winners:",
+            "date": "Mar 7, 2024",
+            "link": "https://www.today.com/popculture/complete-list-every-best-picture-oscar-winner-ever-t107617",
+            "list": [
+                "2023 - \"Everything Everywhere All at Once\"",
+                "2022 - \"CODA\"",
+                "2021 - \"Nomadland\"",
+                "2020 - \"Parasite\"",
+                "2019 - \"Green Book\"",
+                "2018 - \"The Shape of Water\"",
+                "2017 - \"Moonlight\"",
+                "2016 - \"Spotlight\""
+            ],
+            "displayed_link": "https://www.today.com \u203a popculture \u203a complete-list-ever...",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSRB3TbK0vgINfDPEzwfJaSOWbkPNkK1D33oiOq0R8jDw&s",
+            "source_logo": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/bec6dfe93c9219be20919bffc403014a7f17f4e98ee45e224c1201f63fab58d9.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOc1dEVnZYM0JuWlc5R1ZsUkthVnBHWkV0RmEzVm5RVkpEVm1wQmNubGZTVWhrUzBnNE5VTmphRkkzVlc0NGFEZFJTRGR2TmxwdFQyeERZV1J0ZUVWQlNVWnBPRWhORWhkd05WVjZXbkF0ZWtGMlgzUndkRkZRZUhSbGRHOUJkeG9pUVZCWWFHMDFZVXRKTkVkS2QyWXRUVnByV1djek1Xd3hObVE0Y25BNVQyTkpVUSIsImZjdiI6IjMiLCJlaSI6InA1VXpacC16QXZfdHB0UVB4dGV0b0F3IiwicWMiOiJDaU4zYUdGMElHMXZkbWxsSUhkdmJpQmlaWE4wSUhCcFkzUjFjbVVnYVc0Z01qQXlOQkFBZlNIWk1EOCIsInF1ZXN0aW9uIjoiV2hhdCB3YXMgdGhlIGxhc3QgbW92aWUgdG8gd2luIGJlc3QgcGljdHVyZT8iLCJsayI6IkdpdDNhR0YwSUhkaGN5QjBhR1VnYkdGemRDQnRiM1pwWlNCMGJ5QjNhVzRnWW1WemRDQndhV04wZFhKbCIsImJzIjoiYzQyUHZRckNNQlNGY2Mza1dESmQwRmFoQ2hMY3UtZ3NEaVdyc1FZU2FIT2xpZVlKZkJnZndiY3phUllSaW82WDg1MmZTMnF5NUVvM0NqcThhd2tlRFRnbHcyVWRIR3dqZWd2YUFOdXdiWlU5ZDZ5Z2N6LUdZOElqU3pncHVVTHd3c0paQnUzU1MydmxCWVFiLU9fazE1N2xkT1pISEpfQlIxSndKVTFLQUlPZE5zSnBORWtHcjlzV0d1eGt4UlkwOTVIRUh5UTVrUlZYb1NaV3gzR3RDUFhwUHhjR2haSERvS3R1M0syWFZmYW8yWnFXX25fTGRQSUciLCJpZCI6ImZjXzEifQ==",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOc1dEVnZYM0JuWlc5R1ZsUkthVnBHWkV0RmEzVm5RVkpEVm1wQmNubGZTVWhrUzBnNE5VTmphRkkzVlc0NGFEZFJTRGR2TmxwdFQyeERZV1J0ZUVWQlNVWnBPRWhORWhkd05WVjZXbkF0ZWtGMlgzUndkRkZRZUhSbGRHOUJkeG9pUVZCWWFHMDFZVXRKTkVkS2QyWXRUVnByV1djek1Xd3hObVE0Y25BNVQyTkpVUSIsImZjdiI6IjMiLCJlaSI6InA1VXpacC16QXZfdHB0UVB4dGV0b0F3IiwicWMiOiJDaU4zYUdGMElHMXZkbWxsSUhkdmJpQmlaWE4wSUhCcFkzUjFjbVVnYVc0Z01qQXlOQkFBZlNIWk1EOCIsInF1ZXN0aW9uIjoiV2hhdCB3YXMgdGhlIGxhc3QgbW92aWUgdG8gd2luIGJlc3QgcGljdHVyZT8iLCJsayI6IkdpdDNhR0YwSUhkaGN5QjBhR1VnYkdGemRDQnRiM1pwWlNCMGJ5QjNhVzRnWW1WemRDQndhV04wZFhKbCIsImJzIjoiYzQyUHZRckNNQlNGY2Mza1dESmQwRmFoQ2hMY3UtZ3NEaVdyc1FZU2FIT2xpZVlKZkJnZndiY3phUllSaW82WDg1MmZTMnF5NUVvM0NqcThhd2tlRFRnbHcyVWRIR3dqZWd2YUFOdXdiWlU5ZDZ5Z2N6LUdZOElqU3pncHVVTHd3c0paQnUzU1MydmxCWVFiLU9fazE1N2xkT1pISEpfQlIxSndKVTFLQUlPZE5zSnBORWtHcjlzV0d1eGt4UlkwOTVIRUh5UTVrUlZYb1NaV3gzR3RDUFhwUHhjR2haSERvS3R1M0syWFZmYW8yWnFXX25fTGRQSUciLCJpZCI6ImZjXzEifQ%3D%3D"
+        }
+    ],
+    "answer_box": {
+        "type": "organic_result",
+        "title": "Academy Award for Best Picture/Winners (2024)",
+        "link": "https://en.wikipedia.org/wiki/96th_Academy_Awards",
+        "displayed_link": "https://en.wikipedia.org \u203a wiki",
+        "snippet": "The nominations were announced on January 23, 2024. Oppenheimer led with 13 nominations, followed by Poor Things and Killers of the Flower Moon with 11 and 10, respectively. Oppenheimer won a leading seven awards, including Best Picture and Best Director.",
+        "snippet_highlighted_words": [
+            "Killers of the Flower Moon"
+        ],
+        "answer": "Oppenheimer",
+        "favicon": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/af2679f1070a4fef35b05d5d6c9ee0af3f21f781b77d7df9.png",
+        "source": "Wikipedia",
+        "thumbnail": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/af2679f1070a4fef58ba86a2ee23d2312c18692ea63403c7.jpeg",
+        "people_also_search_for": [
+            {
+                "name": "Dunkirk",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/af2679f1070a4fef1cb8f9fe4edbcadd3f499537cf157ea3796a00d27f609ecbaa9764fc6b26ada770e5f029a9b75966.jpeg",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Dunkirk&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU4JwkyrSytMqjYy1eH3zyzJTgzNTUssTK4sXsbK7lOZlZxZlAwCHPZgAOQAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAgkEAQ"
+            },
+            {
+                "name": "Tenet",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/af2679f1070a4fef1cb8f9fe4edbcadd3f499537cf157ea3796a00d27f609ecba3fc46221e0c2128e62ac25d990fcfb2.jpeg",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Tenet+(film)&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU4JwMwwtjZPik021eH3zyzJTgzNTUssTK4sXsfKEpOallihopGXm5GoCAJpDHPk-AAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAgkEAY"
+            },
+            {
+                "name": "Napoleon",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/af2679f1070a4fef1cb8f9fe4edbcadd3f499537cf157ea3796a00d27f609ecb43523cdb7667a2acc71741505b080d55.jpeg",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=napoleon.movie&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU4Jwc5MKTfLKyw21eH3zyzJTgzNTUssTK4sXsfLlJRbk56Tm5-nlgiQABRsP8EAAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAgkEAg"
+            },
+            {
+                "name": "Fat Man and Little Boy",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/af2679f1070a4fef1cb8f9fe4edbcadd3f499537cf157ea3796a00d27f609ecb1e10bd45db67c03bb71b3801a9c3bac5.jpeg",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Fat+Man+and+Little+Boy&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU-LUz9U3ME4qNEvX4vXNL8tMDc5MSS1PrCxexCrmllii4JuYp5CYl6Lgk1lSkpOq4JRfCQAE0bCyRAAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAgkEAo"
+            },
+            {
+                "name": "1917",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/af2679f1070a4fef1cb8f9fe4edbcadd3f499537cf157ea3796a00d27f609ecb3834b12b9b6162e8ed99db0857891caf.jpeg",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=1917&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU4Jw07ILyouTsi20eH3zyzJTgzNTUssTK4sXsbIYWhqaAwCsu2CFNgAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAgkEAw"
+            },
+            {
+                "name": "The Day After Trinity",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/af2679f1070a4fef1cb8f9fe4edbcadd3f499537cf157ea3796a00d27f609ecb38c1841debda9bd08a76ce16826bd35d.jpeg",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=The+Day+After+Trinity&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU-LSz9U3MKmKz4sv0uL1zS_LTA3OTEktT6wsXsQqGpKRquCSWKngmFaSWqQQUpSZl1lSCQCtLyuQRAAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAgkEA4"
+            },
+            {
+                "name": "To End All War: Oppenheimer & the Atomic Bomb",
+                "image": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/af2679f1070a4fef1cb8f9fe4edbcadd3f499537cf157ea3796a00d27f609ecb00ff383ea720ee274e7f3102e8c11196.jpeg",
+                "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=To+End+All+War:+Oppenheimer+%26+the+Atomic+Bomb&stick=H4sIAAAAAAAAAONgFuLVT9c3NCxKMc3INTHIU4Jwi8sKM3IyLM20eH3zyzJTgzNTUssTK4sXseqG5Cu45qUoOObkKIQnFlkp-BcUpOZlpGbmphYpqCmUZKQqOJbk52YmKzjl5yYBAHj_Z31fAAAA&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQxA16BAgkEBA"
+            }
+        ]
+    },
+    "organic_results": [
+        {
+            "position": 1,
+            "title": "The 96th Academy Awards | 2024",
+            "link": "https://www.oscars.org/oscars/ceremonies/2024",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.oscars.org/oscars/ceremonies/2024&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQFnoECDIQAQ&usg=AOvVaw2Xo7sEXz3_xHvg6JOdW3L0",
+            "displayed_link": "https://www.oscars.org \u203a oscars \u203a ceremonies \u203a 2024",
+            "favicon": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/c2752af6eff505d44605d265a3d48444b044453661eb06fa9705202313aff5fb.png",
+            "date": "Mar 10, 2024",
+            "snippet": "Oppenheimer. Ludwig G\u00f6ransson ; American Fiction. Laura Karpman ; Indiana Jones and the Dial of Destiny. John Williams ; Killers of the Flower Moon.",
+            "snippet_highlighted_words": [
+                "Killers of the Flower Moon"
+            ],
+            "source": "Academy of Motion Picture Arts and Sciences"
+        },
+        {
+            "position": 2,
+            "title": "Oscar 2024 Winners: The Full List",
+            "link": "https://www.hollywoodreporter.com/movies/movie-news/oscars-2024-winners-list-1235847823/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.hollywoodreporter.com/movies/movie-news/oscars-2024-winners-list-1235847823/&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQFnoECC8QAQ&usg=AOvVaw3D2vdtFz_JwlPWyx5IhdbJ",
+            "displayed_link": "https://www.hollywoodreporter.com \u203a movie-news \u203a osc...",
+            "favicon": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/c2752af6eff505d44605d265a3d48444a0432d81f4a852a80444803e261cfe62.png",
+            "date": "Mar 10, 2024",
+            "snippet": "'Oppenheimer' was named best picture, while Christopher Nolan, Emma Stone, Cillian Murphy, Robert Downey Jr., Da'Vine Joy Randolph and ...",
+            "snippet_highlighted_words": [
+                "Oppenheimer"
+            ],
+            "source": "The Hollywood Reporter"
+        },
+        {
+            "position": 3,
+            "title": "Oscar Winners 2024: Oppenheimer Wins Big, See The Full ...",
+            "link": "https://variety.com/2024/film/awards/oscar-winners-2024-list-1235932341/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://variety.com/2024/film/awards/oscar-winners-2024-list-1235932341/&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQFnoECDMQAQ&usg=AOvVaw3XuHNeNZnJhzbPsIdqXx1W",
+            "displayed_link": "https://variety.com \u203a oscar-winners-2024-list-1235932341",
+            "favicon": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/c2752af6eff505d44605d265a3d484443bd9e6f88e8c0041163bb15acbbb12d7.png",
+            "date": "Mar 10, 2024",
+            "snippet": "Here's the complete list of winners: \u00b7 Best Picture \u00b7 \u201cOppenheimer,\u201d Emma Thomas, Charles Roven and Christopher Nolan, producers (WINNER) \u00b7 Best ...",
+            "snippet_highlighted_words": [
+                "\u201cOppenheimer,\u201d"
+            ],
+            "source": "Variety"
+        },
+        {
+            "position": 4,
+            "title": "2024 Oscars: 'Oppenheimer' wins Best Picture, see ...",
+            "link": "https://ew.com/oscars-2024-full-winners-list-8603976",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://ew.com/oscars-2024-full-winners-list-8603976&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQFnoECDAQAQ&usg=AOvVaw3Db7EObCnj9xngRU0fhlDZ",
+            "displayed_link": "https://ew.com \u203a oscars-2024-full-winners-list-8603976",
+            "favicon": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/c2752af6eff505d44605d265a3d484445e984abde21eda66706982429a78b8cf.png",
+            "date": "Mar 10, 2024",
+            "snippet": "Cast and crew accept the Best Picture award for \"Oppenheimer\" onstage during the 96th. 'Oppenheimer' wins Best Picture at 2024 Oscars. Kevin ...",
+            "snippet_highlighted_words": [
+                "Oppenheimer"
+            ],
+            "source": "Entertainment Weekly"
+        },
+        {
+            "position": 5,
+            "title": "Oscars 2024: the full list of winners",
+            "link": "https://www.theguardian.com/film/2024/mar/10/oscars-winners-list-live-updates",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.theguardian.com/film/2024/mar/10/oscars-winners-list-live-updates&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQFnoECE8QAQ&usg=AOvVaw3X6gZmfgoG8h8xUfZhBZDa",
+            "displayed_link": "https://www.theguardian.com \u203a film \u203a 2024 \u203a mar \u203a osc...",
+            "favicon": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/c2752af6eff505d44605d265a3d48444e935d4fa892561a96fbf07ef894d502a.png",
+            "date": "Mar 11, 2024",
+            "snippet": "News: Oppenheimer wins best picture \u00b7 American Fiction \u00b7 Anatomy of a Fall \u00b7 Barbie \u00b7 The Holdovers \u00b7 Killers of the Flower Moon",
+            "snippet_highlighted_words": [
+                "Oppenheimer"
+            ],
+            "source": "The Guardian"
+        },
+        {
+            "position": 6,
+            "title": "Oscars 2024 winners list: 'Oppenheimer' dominates the ...",
+            "link": "https://globalnews.ca/news/10345422/oscars-2024-winner-list-academy-awards/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://globalnews.ca/news/10345422/oscars-2024-winner-list-academy-awards/&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQFnoECDQQAQ&usg=AOvVaw31B81AgeLSzhdjfG8ixcOO",
+            "displayed_link": "https://globalnews.ca \u203a news \u203a oscars-2024-winner-list-...",
+            "favicon": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/c2752af6eff505d44605d265a3d48444b2125d76fdd7bedf7d380270dc80b061.png",
+            "date": "Mar 10, 2024",
+            "snippet": "The film won seven awards in total. Actor Cillian Murphy of Oppenheimer won the coveted Best Actor trophy for his titular portrayal of the \u201c ...",
+            "snippet_highlighted_words": [
+                "Oppenheimer"
+            ],
+            "source": "Global News"
+        },
+        {
+            "position": 7,
+            "title": "Who won Oscars for 2024? See the full list of Academy ...",
+            "link": "https://www.cbsnews.com/news/oscar-winners-2024-list/",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cbsnews.com/news/oscar-winners-2024-list/&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQFnoECDEQAQ&usg=AOvVaw1MyR9weuP4ISvPGze1PT1D",
+            "displayed_link": "https://www.cbsnews.com \u203a Entertainment",
+            "favicon": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/c2752af6eff505d44605d265a3d48444225794f5dd60dabddc4182b62ec05b32.png",
+            "date": "Mar 11, 2024",
+            "snippet": "Best picture \u00b7 \"Oppenheimer\" \u2014 Winner \u00b7 \"American Fiction\" \u00b7 \"Anatomy of a Fall\" \u00b7 \"Barbie\" \u00b7 \"The Holdovers\" \u00b7 \"Killers of the Flower Moon\" \u00b7 \"Maestro ...",
+            "snippet_highlighted_words": [
+                "Oppenheimer"
+            ],
+            "source": "CBS News"
+        },
+        {
+            "position": 8,
+            "title": "'Oppenheimer' Wins Best Picture and Other Oscars 2024 ...",
+            "link": "https://www.nytimes.com/live/2024/03/10/movies/oscars-academy-awards",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nytimes.com/live/2024/03/10/movies/oscars-academy-awards&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQFnoECC4QAQ&usg=AOvVaw128UbTrN5uTbvsvoYx0wHp",
+            "displayed_link": "https://www.nytimes.com \u203a live \u203a oscars-academy-awards",
+            "favicon": "https://serpapi.com/searches/663395a63c3fb2ce763442be/images/c2752af6eff505d44605d265a3d484446ed417bb5ac801c627d870d68720958b.png",
+            "date": "Mar 10, 2024",
+            "snippet": "Oscars 2024 Highlights: 'Oppenheimer' Wins Best Picture, and Emma Stone Wins Best Actress for 'Poor Things' ; \"Oppenheimer\" cast and crew. Winner ...",
+            "snippet_highlighted_words": [
+                "Oppenheimer"
+            ],
+            "source": "The New York Times"
+        }
+    ],
+    "related_searches": [
+        {
+            "block_position": 1,
+            "query": "What movie won best picture in 2024 oscars",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=What+movie+won+best+picture+in+2024+oscars&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ1QJ6BAhSEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=What+movie+won+best+picture+in+2024+oscars"
+        },
+        {
+            "block_position": 1,
+            "query": "oscar nominations 2024 best picture",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Oscar+nominations+2024+Best+Picture&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ1QJ6BAhREAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Oscar+nominations+2024+Best+Picture"
+        },
+        {
+            "block_position": 1,
+            "query": "oscar movies 2024",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Oscar+movies+2024&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ1QJ6BAhQEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Oscar+movies+2024"
+        },
+        {
+            "block_position": 1,
+            "query": "oscar nominations 2024 announcement",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Oscar+nominations+2024+announcement&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ1QJ6BAhOEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Oscar+nominations+2024+announcement"
+        },
+        {
+            "block_position": 1,
+            "query": "when are the oscars 2024",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=When+are+the+Oscars+2024&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ1QJ6BAhNEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=When+are+the+Oscars+2024"
+        },
+        {
+            "block_position": 1,
+            "query": "oscars 2024 host",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Oscars+2024+host&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ1QJ6BAhMEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Oscars+2024+host"
+        },
+        {
+            "block_position": 1,
+            "query": "oscar winners 2024",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Oscar+winners+2024&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ1QJ6BAhKEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Oscar+winners+2024"
+        },
+        {
+            "block_position": 1,
+            "query": "oscar nominations 2024 predictions",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&sca_upv=1&q=Oscar+nominations+2024+predictions&sa=X&ved=2ahUKEwjfopDyie-FAxX_tokEHcZrC8QQ1QJ6BAhLEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Oscar+nominations+2024+predictions"
+        }
+    ],
+    "pagination": {
+        "current": 1,
+        "next": "https://www.google.com/search?q=What+movie+won+best+picture+in+2024%3F&oq=What+movie+won+best+picture+in+2024%3F&start=10&sourceid=chrome&ie=UTF-8",
+        "other_pages": {
+            "2": "https://www.google.com/search?q=What+movie+won+best+picture+in+2024%3F&oq=What+movie+won+best+picture+in+2024%3F&start=10&sourceid=chrome&ie=UTF-8",
+            "3": "https://www.google.com/search?q=What+movie+won+best+picture+in+2024%3F&oq=What+movie+won+best+picture+in+2024%3F&start=20&sourceid=chrome&ie=UTF-8",
+            "4": "https://www.google.com/search?q=What+movie+won+best+picture+in+2024%3F&oq=What+movie+won+best+picture+in+2024%3F&start=30&sourceid=chrome&ie=UTF-8",
+            "5": "https://www.google.com/search?q=What+movie+won+best+picture+in+2024%3F&oq=What+movie+won+best+picture+in+2024%3F&start=40&sourceid=chrome&ie=UTF-8"
+        }
+    },
+    "serpapi_pagination": {
+        "current": 1,
+        "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=What+movie+won+best+picture+in+2024%3F&start=10",
+        "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=What+movie+won+best+picture+in+2024%3F&start=10",
+        "other_pages": {
+            "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=What+movie+won+best+picture+in+2024%3F&start=10",
+            "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=What+movie+won+best+picture+in+2024%3F&start=20",
+            "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=What+movie+won+best+picture+in+2024%3F&start=30",
+            "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=What+movie+won+best+picture+in+2024%3F&start=40"
+        }
+    }
+}

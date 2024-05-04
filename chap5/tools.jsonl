@@ -1,0 +1,11 @@
+[
+    {"name":"search",
+    "desc" : "Useful for when you need to answer questions about current events.",
+    "example" : "What movie won best picture in 2023?"
+    }
+    ,
+    {"name":"python",
+    "desc" : "Useful for when performing computing and trying to solve mathematical problems",
+    "example" : "What is the 10th element of the Fibonacci suite"
+    }
+]

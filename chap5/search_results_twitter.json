@@ -1,0 +1,321 @@
+{
+    "search_metadata": {
+        "id": "66339310a3f4ef9903bc2306",
+        "status": "Success",
+        "json_endpoint": "https://serpapi.com/searches/6e713060844fcb9d/66339310a3f4ef9903bc2306.json",
+        "created_at": "2024-05-02 13:20:16 UTC",
+        "processed_at": "2024-05-02 13:20:16 UTC",
+        "google_url": "https://www.google.com/search?q=Who+is+the+CEO+of+Twitter%3F&oq=Who+is+the+CEO+of+Twitter%3F&sourceid=chrome&ie=UTF-8",
+        "raw_html_file": "https://serpapi.com/searches/6e713060844fcb9d/66339310a3f4ef9903bc2306.html",
+        "total_time_taken": 0.47
+    },
+    "search_parameters": {
+        "engine": "google",
+        "q": "Who is the CEO of Twitter?",
+        "google_domain": "google.com",
+        "device": "desktop"
+    },
+    "search_information": {
+        "query_displayed": "Who is the CEO of Twitter?",
+        "total_results": 1320000000,
+        "time_taken_displayed": 0.28,
+        "organic_results_state": "Results for exact spelling"
+    },
+    "related_questions": [
+        {
+            "question": "Who is the new CEO of Twitter now?",
+            "snippet": "When Elon Musk announced last month that he had hired Linda Yaccarino as Twitter's chief executive, he said he was \u201cexcited\u201d to bring on someone who could \u201cfocus primarily on business operations.\u201d",
+            "title": "Linda Yaccarino",
+            "date": "Jun 29, 2023",
+            "link": "https://www.nytimes.com/2023/06/29/technology/twitter-ceo-linda-yaccarino.html#:~:text=When%20Elon%20Musk%20announced%20last,focus%20primarily%20on%20business%20operations.%E2%80%9D",
+            "displayed_link": "https://www.nytimes.com \u203a 2023/06/29 \u203a technology",
+            "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYGv3rv-_VbWPIKvVehTy9fY7GQP6qbI8wRxVjxGjVpw&s",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdVptaExNR3QzT1Uxc2NsRmxjbHAxWkV0MWRtNVRRVEpyY1VkV1NGZzFUWFJCZEVwNVJVY3hYM0p1YUdKblVUQXhkRVpIYlRWQ1UzWk1NRzR6WlhOMGVIZG1YMEUwRWhkRlNrMTZXbkJsTjBsamNrSndPRFJRYldSUFJqUkJPQm9pUVZCWWFHMDFZVTlLYm0wMlVEWXRiRll5TVdvM04wTldOMUpWVlhvNGJsUkhadyIsImZjdiI6IjMiLCJlaSI6IkVKTXpacGU3SWNyQnA4NFBtZE9GNEE4IiwicWMiOiJDaGwzYUc4Z2FYTWdkR2hsSUdObGJ5QnZaaUIwZDJsMGRHVnlFQUI5b0tndFB3IiwicXVlc3Rpb24iOiJXaG8gaXMgdGhlIG5ldyBDRU8gb2YgVHdpdHRlciBub3c/IiwibGsiOiJHaUYzYUc4Z2FYTWdkR2hsSUc1bGR5QmpaVzhnYjJZZ2RIZHBkSFJsY2lCdWIzYyIsImJzIjoiYzJYUHV3ckNNQlNBWVZ3ek9aWk9weFYxRlBvQ0djUkZDaTZGNmhoeXNRY2tCMklnZFBJOTlBVjlCaWVwbDByaV92SER6MnBXdGgwQm5zRjNHcXdPc043c2dBdzBBYjNYRGl3Rm5sMU5OY3VMRUVPcGFZRC1CMWxjay1TY2xqNHA4dXl4U21wZkdCZFp3eFp0MXctb1Jxc0VISVNVd3FHbHYtSnRYeTN6ZVhqajB3djNJMDZxVzFZTVZZVXFYVDJTQjROT0s1N2RMMVdaUV9pNDVIUjAwOGtUIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdVptaExNR3QzT1Uxc2NsRmxjbHAxWkV0MWRtNVRRVEpyY1VkV1NGZzFUWFJCZEVwNVJVY3hYM0p1YUdKblVUQXhkRVpIYlRWQ1UzWk1NRzR6WlhOMGVIZG1YMEUwRWhkRlNrMTZXbkJsTjBsamNrSndPRFJRYldSUFJqUkJPQm9pUVZCWWFHMDFZVTlLYm0wMlVEWXRiRll5TVdvM04wTldOMUpWVlhvNGJsUkhadyIsImZjdiI6IjMiLCJlaSI6IkVKTXpacGU3SWNyQnA4NFBtZE9GNEE4IiwicWMiOiJDaGwzYUc4Z2FYTWdkR2hsSUdObGJ5QnZaaUIwZDJsMGRHVnlFQUI5b0tndFB3IiwicXVlc3Rpb24iOiJXaG8gaXMgdGhlIG5ldyBDRU8gb2YgVHdpdHRlciBub3c%2FIiwibGsiOiJHaUYzYUc4Z2FYTWdkR2hsSUc1bGR5QmpaVzhnYjJZZ2RIZHBkSFJsY2lCdWIzYyIsImJzIjoiYzJYUHV3ckNNQlNBWVZ3ek9aWk9weFYxRlBvQ0djUkZDaTZGNmhoeXNRY2tCMklnZFBJOTlBVjlCaWVwbDByaV92SER6MnBXdGgwQm5zRjNHcXdPc043c2dBdzBBYjNYRGl3Rm5sMU5OY3VMRUVPcGFZRC1CMWxjay1TY2xqNHA4dXl4U21wZkdCZFp3eFp0MXctb1Jxc0VISVNVd3FHbHYtSnRYeTN6ZVhqajB3djNJMDZxVzFZTVZZVXFYVDJTQjROT0s1N2RMMVdaUV9pNDVIUjAwOGtUIiwiaWQiOiJmY18xIn0%3D"
+        },
+        {
+            "question": "Who is the correct CEO of Twitter?",
+            "snippet": "The correct answer is Parag Agrawal. Current CEO (2022) of Twitter Parag Agrawal.",
+            "title": "Parag Agrawal",
+            "link": "https://testbook.com/question-answer/who-among-the-following-is-the-ceo-of-twitter--5cdc0c93fdb8bb425c1900e9#:~:text=The%20correct%20answer%20is%20Parag%20Agrawal.&text=Current%20CEO%20(2022)%20of%20Twitter%20Parag%20Agrawal.",
+            "displayed_link": "https://testbook.com \u203a question-answer \u203a who-among-the...",
+            "source_logo": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/c0a270c08a685349300e660874da36079e5c6497f363f2364a4236a8d657d4b0.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdVptaExNR3QzT1Uxc2NsRmxjbHAxWkV0MWRtNVRRVEpyY1VkV1NGZzFUWFJCZEVwNVJVY3hYM0p1YUdKblVUQXhkRVpIYlRWQ1UzWk1NRzR6WlhOMGVIZG1YMEUwRWhkRlNrMTZXbkJsTjBsamNrSndPRFJRYldSUFJqUkJPQm9pUVZCWWFHMDFZVTlLYm0wMlVEWXRiRll5TVdvM04wTldOMUpWVlhvNGJsUkhadyIsImZjdiI6IjMiLCJlaSI6IkVKTXpacGU3SWNyQnA4NFBtZE9GNEE4IiwicWMiOiJDaGwzYUc4Z2FYTWdkR2hsSUdObGJ5QnZaaUIwZDJsMGRHVnlFQUI5b0tndFB3IiwicXVlc3Rpb24iOiJXaG8gaXMgdGhlIGNvcnJlY3QgQ0VPIG9mIFR3aXR0ZXI/IiwibGsiOiJHaUYzYUc4Z2FYTWdkR2hsSUdOdmNuSmxZM1FnWTJWdklHOW1JSFIzYVhSMFpYSSIsImJzIjoiYzJYUHV3ckNNQlNBWVZ3ek9aWk9weFYxRlBvQ0djUkZDaTZGNmhoeXNRY2tCMklnZFBJOTlBVjlCaWVwbDByaV92SER6MnBXdGgwQm5zRjNHcXdPc043c2dBdzBBYjNYRGl3Rm5sMU5OY3VMRUVPcGFZRC1CMWxjay1TY2xqNHA4dXl4U21wZkdCZFp3eFp0MXctb1Jxc0VISVNVd3FHbHYtSnRYeTN6ZVhqajB3djNJMDZxVzFZTVZZVXFYVDJTQjROT0s1N2RMMVdaUV9pNDVIUjAwOGtUIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdVptaExNR3QzT1Uxc2NsRmxjbHAxWkV0MWRtNVRRVEpyY1VkV1NGZzFUWFJCZEVwNVJVY3hYM0p1YUdKblVUQXhkRVpIYlRWQ1UzWk1NRzR6WlhOMGVIZG1YMEUwRWhkRlNrMTZXbkJsTjBsamNrSndPRFJRYldSUFJqUkJPQm9pUVZCWWFHMDFZVTlLYm0wMlVEWXRiRll5TVdvM04wTldOMUpWVlhvNGJsUkhadyIsImZjdiI6IjMiLCJlaSI6IkVKTXpacGU3SWNyQnA4NFBtZE9GNEE4IiwicWMiOiJDaGwzYUc4Z2FYTWdkR2hsSUdObGJ5QnZaaUIwZDJsMGRHVnlFQUI5b0tndFB3IiwicXVlc3Rpb24iOiJXaG8gaXMgdGhlIGNvcnJlY3QgQ0VPIG9mIFR3aXR0ZXI%2FIiwibGsiOiJHaUYzYUc4Z2FYTWdkR2hsSUdOdmNuSmxZM1FnWTJWdklHOW1JSFIzYVhSMFpYSSIsImJzIjoiYzJYUHV3ckNNQlNBWVZ3ek9aWk9weFYxRlBvQ0djUkZDaTZGNmhoeXNRY2tCMklnZFBJOTlBVjlCaWVwbDByaV92SER6MnBXdGgwQm5zRjNHcXdPc043c2dBdzBBYjNYRGl3Rm5sMU5OY3VMRUVPcGFZRC1CMWxjay1TY2xqNHA4dXl4U21wZkdCZFp3eFp0MXctb1Jxc0VISVNVd3FHbHYtSnRYeTN6ZVhqajB3djNJMDZxVzFZTVZZVXFYVDJTQjROT0s1N2RMMVdaUV9pNDVIUjAwOGtUIiwiaWQiOiJmY18xIn0%3D"
+        },
+        {
+            "question": "Why is Linda Yaccarino CEO of Twitter?",
+            "snippet": "Yaccarino, a longtime advertising executive, took the helm of Twitter in May. Her appointment came after months of controversial decisions from Musk, who bought Twitter for $44bn in October 2022 and proceeded quickly to lay off the majority of its staff and alienate advertisers with new policies.",
+            "title": "Linda Yaccarino: does Twitter's CEO have the most difficult job ...",
+            "date": "Jul 27, 2023",
+            "link": "https://www.theguardian.com/technology/2023/jul/27/linda-yaccarino-twitter-x-ceo-elon-musk#:~:text=Yaccarino%2C%20a%20longtime%20advertising%20executive,alienate%20advertisers%20with%20new%20policies.",
+            "displayed_link": "https://www.theguardian.com \u203a technology \u203a jul \u203a linda...",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdVptaExNR3QzT1Uxc2NsRmxjbHAxWkV0MWRtNVRRVEpyY1VkV1NGZzFUWFJCZEVwNVJVY3hYM0p1YUdKblVUQXhkRVpIYlRWQ1UzWk1NRzR6WlhOMGVIZG1YMEUwRWhkRlNrMTZXbkJsTjBsamNrSndPRFJRYldSUFJqUkJPQm9pUVZCWWFHMDFZVTlLYm0wMlVEWXRiRll5TVdvM04wTldOMUpWVlhvNGJsUkhadyIsImZjdiI6IjMiLCJlaSI6IkVKTXpacGU3SWNyQnA4NFBtZE9GNEE4IiwicWMiOiJDaGwzYUc4Z2FYTWdkR2hsSUdObGJ5QnZaaUIwZDJsMGRHVnlFQUI5b0tndFB3IiwicXVlc3Rpb24iOiJXaHkgaXMgTGluZGEgWWFjY2FyaW5vIENFTyBvZiBUd2l0dGVyPyIsImxrIjoiR2lWM2FIa2dhWE1nYkdsdVpHRWdlV0ZqWTJGeWFXNXZJR05sYnlCdlppQjBkMmwwZEdWeSIsImJzIjoiYzJYUHV3ckNNQlNBWVZ3ek9aWk9weFYxRlBvQ0djUkZDaTZGNmhoeXNRY2tCMklnZFBJOTlBVjlCaWVwbDByaV92SER6MnBXdGgwQm5zRjNHcXdPc043c2dBdzBBYjNYRGl3Rm5sMU5OY3VMRUVPcGFZRC1CMWxjay1TY2xqNHA4dXl4U21wZkdCZFp3eFp0MXctb1Jxc0VISVNVd3FHbHYtSnRYeTN6ZVhqajB3djNJMDZxVzFZTVZZVXFYVDJTQjROT0s1N2RMMVdaUV9pNDVIUjAwOGtUIiwiaWQiOiJmY18xIn0=",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdVptaExNR3QzT1Uxc2NsRmxjbHAxWkV0MWRtNVRRVEpyY1VkV1NGZzFUWFJCZEVwNVJVY3hYM0p1YUdKblVUQXhkRVpIYlRWQ1UzWk1NRzR6WlhOMGVIZG1YMEUwRWhkRlNrMTZXbkJsTjBsamNrSndPRFJRYldSUFJqUkJPQm9pUVZCWWFHMDFZVTlLYm0wMlVEWXRiRll5TVdvM04wTldOMUpWVlhvNGJsUkhadyIsImZjdiI6IjMiLCJlaSI6IkVKTXpacGU3SWNyQnA4NFBtZE9GNEE4IiwicWMiOiJDaGwzYUc4Z2FYTWdkR2hsSUdObGJ5QnZaaUIwZDJsMGRHVnlFQUI5b0tndFB3IiwicXVlc3Rpb24iOiJXaHkgaXMgTGluZGEgWWFjY2FyaW5vIENFTyBvZiBUd2l0dGVyPyIsImxrIjoiR2lWM2FIa2dhWE1nYkdsdVpHRWdlV0ZqWTJGeWFXNXZJR05sYnlCdlppQjBkMmwwZEdWeSIsImJzIjoiYzJYUHV3ckNNQlNBWVZ3ek9aWk9weFYxRlBvQ0djUkZDaTZGNmhoeXNRY2tCMklnZFBJOTlBVjlCaWVwbDByaV92SER6MnBXdGgwQm5zRjNHcXdPc043c2dBdzBBYjNYRGl3Rm5sMU5OY3VMRUVPcGFZRC1CMWxjay1TY2xqNHA4dXl4U21wZkdCZFp3eFp0MXctb1Jxc0VISVNVd3FHbHYtSnRYeTN6ZVhqajB3djNJMDZxVzFZTVZZVXFYVDJTQjROT0s1N2RMMVdaUV9pNDVIUjAwOGtUIiwiaWQiOiJmY18xIn0%3D"
+        },
+        {
+            "question": "Why did CEO of Twitter got fired?",
+            "snippet": "Tesla and SpaceX CEO Elon Musk fired former Indian-origin Twitter CEO Parag Agrawal because he was not \"a fire-breathing dragon\" which the social network wanted in order to thrive, according to a new biography of one of the richest billionaires on Earth.",
+            "title": "Musk fired Twitter CEO Parag Agrawal because he was 'no fire-breathing ...",
+            "date": "Sep 7, 2023",
+            "link": "https://hrsea.economictimes.indiatimes.com/news/industry/musk-fired-twitter-ceo-parag-agrawal-because-he-was-no-fire-breathing-dragon/103463143#:~:text=Tesla%20and%20SpaceX%20CEO%20Elon,the%20richest%20billionaires%20on%20Earth.",
+            "displayed_link": "https://hrsea.economictimes.indiatimes.com \u203a industry",
+            "source_logo": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/c0a270c08a685349300e660874da3607f7aee474b93908c2c6d55c4f37dc8246.png",
+            "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdVptaExNR3QzT1Uxc2NsRmxjbHAxWkV0MWRtNVRRVEpyY1VkV1NGZzFUWFJCZEVwNVJVY3hYM0p1YUdKblVUQXhkRVpIYlRWQ1UzWk1NRzR6WlhOMGVIZG1YMEUwRWhkRlNrMTZXbkJsTjBsamNrSndPRFJRYldSUFJqUkJPQm9pUVZCWWFHMDFZVTlLYm0wMlVEWXRiRll5TVdvM04wTldOMUpWVlhvNGJsUkhadyIsImZjdiI6IjMiLCJlaSI6IkVKTXpacGU3SWNyQnA4NFBtZE9GNEE4IiwicWMiOiJDaGwzYUc4Z2FYTWdkR2hsSUdObGJ5QnZaaUIwZDJsMGRHVnlFQUI5b0tndFB3IiwicXVlc3Rpb24iOiJXaHkgZGlkIENFTyBvZiBUd2l0dGVyIGdvdCBmaXJlZD8iLCJsayI6IkdpQjNhSGtnWkdsa0lHTmxieUJ2WmlCMGQybDBkR1Z5SUdkdmRDQm1hWEpsWkEiLCJicyI6ImMyWFB1d3JDTUJTQVlWd3pPWlpPcHhWMUZQb0NHY1JGQ2k2RjZoaHlzUWNrQjJJZ2RQSTk5QVY5QmllcGwwcmlfdkhEejJwV3RoMEJuc0YzR3F3T3NON3NnQXcwQWIzWERpd0ZubDFOTmN1TEVFT3BhWUQtQjFsY2stU2NsajRwOHV5eFNtcGZHQmRad3hadDF3LW9ScXNFSElTVXdxR2x2LUp0WHkzemVYamowd3YzSTA2cVcxWU1WWVVxWFQyU0I0Tk9LNTdkTDFXWlFfaTQ1SFIwMDhrVCIsImlkIjoiZmNfMSJ9",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJUblZYYUdOdVptaExNR3QzT1Uxc2NsRmxjbHAxWkV0MWRtNVRRVEpyY1VkV1NGZzFUWFJCZEVwNVJVY3hYM0p1YUdKblVUQXhkRVpIYlRWQ1UzWk1NRzR6WlhOMGVIZG1YMEUwRWhkRlNrMTZXbkJsTjBsamNrSndPRFJRYldSUFJqUkJPQm9pUVZCWWFHMDFZVTlLYm0wMlVEWXRiRll5TVdvM04wTldOMUpWVlhvNGJsUkhadyIsImZjdiI6IjMiLCJlaSI6IkVKTXpacGU3SWNyQnA4NFBtZE9GNEE4IiwicWMiOiJDaGwzYUc4Z2FYTWdkR2hsSUdObGJ5QnZaaUIwZDJsMGRHVnlFQUI5b0tndFB3IiwicXVlc3Rpb24iOiJXaHkgZGlkIENFTyBvZiBUd2l0dGVyIGdvdCBmaXJlZD8iLCJsayI6IkdpQjNhSGtnWkdsa0lHTmxieUJ2WmlCMGQybDBkR1Z5SUdkdmRDQm1hWEpsWkEiLCJicyI6ImMyWFB1d3JDTUJTQVlWd3pPWlpPcHhWMUZQb0NHY1JGQ2k2RjZoaHlzUWNrQjJJZ2RQSTk5QVY5QmllcGwwcmlfdkhEejJwV3RoMEJuc0YzR3F3T3NON3NnQXcwQWIzWERpd0ZubDFOTmN1TEVFT3BhWUQtQjFsY2stU2NsajRwOHV5eFNtcGZHQmRad3hadDF3LW9ScXNFSElTVXdxR2x2LUp0WHkzemVYamowd3YzSTA2cVcxWU1WWVVxWFQyU0I0Tk9LNTdkTDFXWlFfaTQ1SFIwMDhrVCIsImlkIjoiZmNfMSJ9"
+        }
+    ],
+    "answer_box": {
+        "type": "organic_result",
+        "title": "Twitter's new CEO is Linda Yaccarino - The Verge",
+        "link": "https://www.theverge.com/2023/5/12/23721107/twitter-ceo-linda-yaccarino-elon-musk-nbc#:~:text=Elon%20Musk%20announced%20her%20appointment,of%20Twitter!%E2%80%9D%20Musk%20writes.",
+        "displayed_link": "https://www.theverge.com \u203a twitter-ceo-linda-yaccarino...",
+        "date": "May 12, 2023",
+        "snippet": "Elon Musk announced her appointment in a tweet, saying she \u201cwill focus primarily on business operations, while I focus on product design & new technology.\u201d \u201cI am excited to welcome Linda Yaccarino as the new CEO of Twitter!\u201d Musk writes.",
+        "snippet_highlighted_words": [
+            "Linda Yaccarino"
+        ],
+        "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/42b7f929e38f1c2f0004a79e127bee9d7b9c7b42bb1b1d50.png",
+        "source": "The Verge",
+        "images": [
+            "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/42b7f929e38f1c2f4c8bc65b2ccbd25f2aa92ad890d29e82.jpeg",
+            "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/42b7f929e38f1c2f4c8bc65b2ccbd25f9e82b274e814eff2.jpeg"
+        ]
+    },
+    "organic_results": [
+        {
+            "position": 1,
+            "title": "Twitter, Inc.",
+            "link": "https://en.wikipedia.org/wiki/Twitter,_Inc.",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Twitter,_Inc.&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQFnoECCwQAQ",
+            "displayed_link": "https://en.wikipedia.org \u203a wiki \u203a Twitter,_Inc",
+            "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/deb2ea2244778d03c1fe2842503df6d80eda5b1c6317ec8648fdbc4acb90f3e7.png",
+            "snippet": "List of CEOs edit ; Jack Dorsey (2006\u20132008); first term ; Evan Williams (2008\u20132010) ; Dick Costolo (2010\u20132015) ; Jack Dorsey (2015\u20132021); second term ; Parag Agrawal ...",
+            "snippet_highlighted_words": [
+                "Jack Dorsey"
+            ],
+            "sitelinks": {
+                "inline": [
+                    {
+                        "title": "X Corp.",
+                        "link": "https://en.wikipedia.org/wiki/X_Corp."
+                    },
+                    {
+                        "title": "Noah Glass",
+                        "link": "https://en.wikipedia.org/wiki/Noah_Glass"
+                    },
+                    {
+                        "title": "Biz Stone",
+                        "link": "https://en.wikipedia.org/wiki/Biz_Stone"
+                    },
+                    {
+                        "title": "Periscope (service)",
+                        "link": "https://en.wikipedia.org/wiki/Periscope_(service)"
+                    }
+                ]
+            },
+            "source": "Wikipedia"
+        },
+        {
+            "position": 2,
+            "title": "Twitter's New CEO, Linda Yaccarino, Eases Into the Hot Seat",
+            "link": "https://www.nytimes.com/2023/06/29/technology/twitter-ceo-linda-yaccarino.html",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.nytimes.com/2023/06/29/technology/twitter-ceo-linda-yaccarino.html&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQFnoECCoQAQ",
+            "displayed_link": "https://www.nytimes.com \u203a 2023/06/29 \u203a technology",
+            "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/deb2ea2244778d03c1fe2842503df6d8e8c76686a1c3629d296f980e517bd649.png",
+            "date": "Jun 29, 2023",
+            "snippet": "Ms. Yaccarino began as Twitter's chief executive on June 5. Two days earlier, the native Long Islander and longtime New Yorker tweeted a photo ...",
+            "snippet_highlighted_words": [
+                "Ms. Yaccarino"
+            ],
+            "source": "The New York Times"
+        },
+        {
+            "position": 3,
+            "title": "Linda Yaccarino: does Twitter's CEO have the most difficult ...",
+            "link": "https://www.theguardian.com/technology/2023/jul/27/linda-yaccarino-twitter-x-ceo-elon-musk",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.theguardian.com/technology/2023/jul/27/linda-yaccarino-twitter-x-ceo-elon-musk&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQFnoECCcQAQ",
+            "displayed_link": "https://www.theguardian.com \u203a technology \u203a jul \u203a linda...",
+            "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/deb2ea2244778d03c1fe2842503df6d87d6cfbf12da0c02270e4e2f6ade6ec18.png",
+            "date": "Jul 27, 2023",
+            "snippet": "Yaccarino, 59, began her media career as an intern at NBC Universal, and spent two decades at Turner Broadcasting, before returning to NBC ...",
+            "snippet_highlighted_words": [
+                "Yaccarino"
+            ],
+            "source": "The Guardian"
+        },
+        {
+            "position": 4,
+            "title": "Elon Musk is no longer the CEO of Twitter. Linda Yaccarino ...",
+            "link": "https://www.cnn.com/2023/06/05/tech/linda-yaccarino-twitter-ceo-elon-musk/index.html",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cnn.com/2023/06/05/tech/linda-yaccarino-twitter-ceo-elon-musk/index.html&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQFnoECCYQAQ",
+            "displayed_link": "https://www.cnn.com \u203a 2023/06/05 \u203a tech \u203a linda-yacca...",
+            "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/deb2ea2244778d03c1fe2842503df6d84bf987911dec521e61cdcc903f3295a7.png",
+            "date": "Jun 5, 2023",
+            "snippet": "Linda Yaccarino, a former NBCUniversal marketing executive, on Monday officially took over the CEO role at Twitter from Elon Musk, ...",
+            "snippet_highlighted_words": [
+                "Linda Yaccarino"
+            ],
+            "source": "CNN"
+        },
+        {
+            "position": 5,
+            "title": "Twitter",
+            "link": "https://en.wikipedia.org/wiki/Twitter",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Twitter&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQFnoECC0QAQ",
+            "displayed_link": "https://en.wikipedia.org \u203a wiki \u203a Twitter",
+            "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/deb2ea2244778d03c1fe2842503df6d813d48e7b4c0a05b286b8eb9636899038.png",
+            "snippet": "Linda Yaccarino succeeded Musk as CEO on June 5, 2023, with Musk remaining as the chairman and the chief technology officer. ... In July 2023, Musk announced that ...",
+            "snippet_highlighted_words": [
+                "Linda Yaccarino"
+            ],
+            "sitelinks": {
+                "inline": [
+                    {
+                        "title": "Twitter, Inc.",
+                        "link": "https://en.wikipedia.org/wiki/Twitter,_Inc."
+                    },
+                    {
+                        "title": "Timeline of Twitter",
+                        "link": "https://en.wikipedia.org/wiki/Timeline_of_Twitter"
+                    },
+                    {
+                        "title": "Twitter usage",
+                        "link": "https://en.wikipedia.org/wiki/Twitter_usage"
+                    },
+                    {
+                        "title": "Twitter verification",
+                        "link": "https://en.wikipedia.org/wiki/Twitter_verification"
+                    }
+                ]
+            },
+            "source": "Wikipedia"
+        },
+        {
+            "position": 6,
+            "title": "Twitter's new CEO is an NBCUniversal executive with deep ...",
+            "link": "https://apnews.com/article/twitter-musk-new-ceo-a5df68e9a1e5f982368390c73aeabb50",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://apnews.com/article/twitter-musk-new-ceo-a5df68e9a1e5f982368390c73aeabb50&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQFnoECCgQAQ",
+            "displayed_link": "https://apnews.com \u203a article \u203a twitter-musk-new-ceo-a5...",
+            "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/deb2ea2244778d03c1fe2842503df6d87153c601c4961373ab49c0f9dc89beca.png",
+            "date": "May 12, 2023",
+            "snippet": "Elon Musk has confirmed that the new CEO for Twitter, will be NBCUniversal's Linda Yaccarino, an executive with deep ties to the advertising ...",
+            "snippet_highlighted_words": [
+                "NBCUniversal's Linda Yaccarino"
+            ],
+            "source": "AP News"
+        },
+        {
+            "position": 7,
+            "title": "Elon Musk reveals who is Twitter's new CEO",
+            "link": "https://www.aljazeera.com/economy/2023/5/12/elon-musk-reveals-who-is-twitters-new-ceo",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.aljazeera.com/economy/2023/5/12/elon-musk-reveals-who-is-twitters-new-ceo&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQFnoECCkQAQ",
+            "displayed_link": "https://www.aljazeera.com \u203a economy \u203a elon-musk-rev...",
+            "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/deb2ea2244778d03c1fe2842503df6d8c310a5e9f70ebf2c697cd47fd3dab724.png",
+            "date": "May 12, 2023",
+            "snippet": "Musk has hired former NBCUniversal advertising chief Linda Yaccarino, who modernised the ad business at the media firm.",
+            "snippet_highlighted_words": [
+                "Linda Yaccarino"
+            ],
+            "source": "Al Jazeera"
+        },
+        {
+            "position": 8,
+            "title": "Who is Linda Yaccarino, the new CEO of Twitter?",
+            "link": "https://m.economictimes.com/tech/technology/who-is-linda-yaccarino-touted-to-be-elon-musks-replacement-as-twitter-ceo/articleshow/100178600.cms",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://m.economictimes.com/tech/technology/who-is-linda-yaccarino-touted-to-be-elon-musks-replacement-as-twitter-ceo/articleshow/100178600.cms&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQFnoECCsQAQ",
+            "displayed_link": "https://m.economictimes.com \u203a Tech \u203a Tech & Internet",
+            "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/deb2ea2244778d03c1fe2842503df6d8316303084f248a7e910f63af64d6c316.png",
+            "date": "May 14, 2023",
+            "snippet": "Linda Yaccarino, NBCUniversal's former head of advertising, will be the new CEO of social media site Twitter, its current chief Elon Musk ...",
+            "snippet_highlighted_words": [
+                "Linda Yaccarino"
+            ],
+            "source": "The Economic Times"
+        },
+        {
+            "position": 9,
+            "title": "Elon Musk",
+            "link": "https://twitter.com/elonmusk/status/1657050349608501249?lang=en",
+            "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://twitter.com/elonmusk/status/1657050349608501249%3Flang%3Den&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQFnoECC4QAQ",
+            "displayed_link": "220.4K+ likes \u00b7 11 months ago",
+            "favicon": "https://serpapi.com/searches/66339310a3f4ef9903bc2306/images/deb2ea2244778d03c1fe2842503df6d86ec54452e024903584e7f78405c44039.png",
+            "snippet": "I am excited to welcome Linda Yaccarino as the new CEO of Twitter! @LindaYacc will focus primarily on business operations, while I focus on ...",
+            "snippet_highlighted_words": [
+                "Linda Yaccarino"
+            ],
+            "source": "X \u00b7 elonmusk"
+        }
+    ],
+    "related_searches": [
+        {
+            "block_position": 1,
+            "query": "Who is the ceo of twitter today",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&q=Who+is+the+ceo+of+twitter+today&sa=X&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQ1QJ6BAhNEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+is+the+ceo+of+twitter+today"
+        },
+        {
+            "block_position": 1,
+            "query": "who is the owner of twitter",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&q=Who+is+the+owner+of+Twitter&sa=X&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQ1QJ6BAhMEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+is+the+owner+of+Twitter"
+        },
+        {
+            "block_position": 1,
+            "query": "twitter ceo salary",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&q=Twitter+CEO+salary&sa=X&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQ1QJ6BAhLEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Twitter+CEO+salary"
+        },
+        {
+            "block_position": 1,
+            "query": "ceo of x",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&q=CEO+of+X&sa=X&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQ1QJ6BAhKEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=CEO+of+X"
+        },
+        {
+            "block_position": 1,
+            "query": "who owned twitter before elon musk",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&q=Who+owned+Twitter+before+Elon+Musk&sa=X&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQ1QJ6BAhJEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+owned+Twitter+before+Elon+Musk"
+        },
+        {
+            "block_position": 1,
+            "query": "who is the new ceo of twitter",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&q=Who+is+the+new+CEO+of+Twitter&sa=X&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQ1QJ6BAhIEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+is+the+new+CEO+of+Twitter"
+        },
+        {
+            "block_position": 1,
+            "query": "linda yaccarino twitter",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&q=Linda+Yaccarino+Twitter&sa=X&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQ1QJ6BAhHEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Linda+Yaccarino+Twitter"
+        },
+        {
+            "block_position": 1,
+            "query": "ceo of twitter dog",
+            "link": "https://www.google.com/search?sca_esv=f977441fd745688c&q=CEO+of+Twitter+dog&sa=X&ved=2ahUKEwiXg522h--FAxXK4MkDHZlpAfwQ1QJ6BAhGEAE",
+            "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=CEO+of+Twitter+dog"
+        }
+    ],
+    "pagination": {
+        "current": 1,
+        "next": "https://www.google.com/search?q=Who+is+the+CEO+of+Twitter%3F&oq=Who+is+the+CEO+of+Twitter%3F&start=10&sourceid=chrome&ie=UTF-8",
+        "other_pages": {
+            "2": "https://www.google.com/search?q=Who+is+the+CEO+of+Twitter%3F&oq=Who+is+the+CEO+of+Twitter%3F&start=10&sourceid=chrome&ie=UTF-8",
+            "3": "https://www.google.com/search?q=Who+is+the+CEO+of+Twitter%3F&oq=Who+is+the+CEO+of+Twitter%3F&start=20&sourceid=chrome&ie=UTF-8",
+            "4": "https://www.google.com/search?q=Who+is+the+CEO+of+Twitter%3F&oq=Who+is+the+CEO+of+Twitter%3F&start=30&sourceid=chrome&ie=UTF-8",
+            "5": "https://www.google.com/search?q=Who+is+the+CEO+of+Twitter%3F&oq=Who+is+the+CEO+of+Twitter%3F&start=40&sourceid=chrome&ie=UTF-8"
+        }
+    },
+    "serpapi_pagination": {
+        "current": 1,
+        "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+is+the+CEO+of+Twitter%3F&start=10",
+        "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+is+the+CEO+of+Twitter%3F&start=10",
+        "other_pages": {
+            "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+is+the+CEO+of+Twitter%3F&start=10",
+            "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+is+the+CEO+of+Twitter%3F&start=20",
+            "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+is+the+CEO+of+Twitter%3F&start=30",
+            "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Who+is+the+CEO+of+Twitter%3F&start=40"
+        }
+    }
+}

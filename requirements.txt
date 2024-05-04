@@ -4,6 +4,7 @@ streamlit
 tomli
 tiktoken
 langchain
+langchain-experimental
 ipykernel
 bs4
 webvtt-py
@@ -15,4 +16,6 @@ chromadb
 tiktoken
 pypdf
 llama-index
+google-search-results
+duckduckgo_search
 # elevenlabs
