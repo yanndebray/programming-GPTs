@@ -2,8 +2,8 @@ import requests, datetime, openai, os, re
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from pydub import AudioSegment
-# from elevenlabs.client import ElevenLabs
-# from elevenlabs import save
+from elevenlabs.client import ElevenLabs
+from elevenlabs import save
 
 # import tomli
 # with open(".streamlit/secrets.toml","rb") as f:
@@ -11,8 +11,8 @@ from pydub import AudioSegment
 # os.environ["OPENAI_API_KEY"] = secrets["OPENAI_API_KEY"]
 # os.environ["ELEVEN_API_KEY"] = secrets["ELEVEN_API_KEY"]
 
-# client11 = ElevenLabs()
-# voices_list = list(client11.voices.get_all())
+client11 = ElevenLabs(api_key=os.environ["ELEVEN_API_KEY"])
+voices_list = list(client11.voices.get_all())
 
 def rss(url,episode,date):
   response = requests.get(url)    
@@ -31,7 +31,7 @@ def scrape_article(item,episode):
   html = requests.get(link).text
   soup = BeautifulSoup(html, "html.parser")
   # extract only the text from the class article-content
-  text = soup.find(class_="article-content").get_text()
+  text = soup.find(class_="entry-content").get_text() # TODO: check if the content is not NoneType
   # Save the text to file
   with open(f"podcast/{episode}/text/{title}.txt", "w", encoding="utf-8") as f:
       f.write(text)
@@ -77,15 +77,18 @@ def merge_audio_files(files, output_file):
     combined.export(output_file, format="mp3")
 
 if __name__ == "__main__":
-   
-  # voice = 'enYann'
-  voice = "alloy"
+
+  voice = 'enYann'
   url = "https://techcrunch.com/feed"
   date = datetime.datetime.now().strftime("%Y-%m-%d") # date in format YYYY-MM-DD
-
-  episode_number = 42
+  # depending on the day of the month, rotate voice
+  # voices_list = ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
+  # voice = "alloy"
+  # voice = voices_list[int(date[-2:])//6]
+  # episode_number = 42
   # episode_number = int(episode_number)
-  episode = 'tech' + '{:03d}'.format(episode_number)
+  # episode = 'tech_' + '{:03d}'.format(episode_number)
+  episode = f'tech_{date}'
   # Set the directory for the episode
   directory = 'podcast/' + episode 
   if not os.path.exists('podcast'):
@@ -113,5 +116,6 @@ if __name__ == "__main__":
     (title,link,text) = scrape_article(item,episode)
     # TTS
     speech_file_path = f"podcast/{episode}/audio/{title}.mp3"
-    split_tts(text,speech_file_path)
+    # split_tts(text,speech_file_path)
+    elevenlabs_tts(text,speech_file_path)
     print(f"New episode: {speech_file_path}")
