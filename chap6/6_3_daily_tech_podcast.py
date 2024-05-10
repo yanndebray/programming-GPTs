@@ -46,13 +46,16 @@ def openai_tts(text,speech_file_path):
   response.stream_to_file(speech_file_path)
 
 def elevenlabs_tts(text,speech_file_path):
-   # Generate audio for the content
+  # Generate audio for the content
+  try:
     audio = client11.generate(
         text=text,
         voice=voice,
         model="eleven_multilingual_v2"
     )
     save(audio,speech_file_path)
+  except Exception as e:
+    print(f"Error: {e}")
 
 def text_splitter(text):
   # Split text into chunks of 4000 characters 
