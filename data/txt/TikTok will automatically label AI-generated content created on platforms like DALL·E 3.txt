@@ -1,0 +1,26 @@
+
+TikTok is starting to automatically label AI-generated content that was made on other platforms, the company announced on Thursday. With this change, if a creator posts content on TikTok that was created with a service like OpenAI’s DALL·E 3, it will automatically have an “AI-generated” label attached to it to notify viewers that it was created with AI.
+The social video platform is doing so by implementing Content Credentials, a technology from the Coalition for Content Provenance and Authenticity (C2PA), which was co-founded by Microsoft and Adobe. Content Credentials attach specific metadata to content, which TikTok can then use to instantly recognize and label AI-generated content. 
+As a result, TikTok will start automatically labeling AI-generated content that is uploaded to the platform with Content Credentials attached. The change is rolling out on Thursday and will apply to all users globally in the coming weeks. 
+
+
+
+
+
+
+While TikTok already labels content that was made with TikTok AI effects, it will now label content that was created on other platforms that have implemented Content Credentials, like OpenAI’s DALL·E 3 and Microsoft’s Bing Image Creator. While Microsoft, Adobe and OpenAI are already on board with Content Credentials, Google has pledged to support Content Credentials as well. 
+Image Credits: TikTok
+Although TikTok already requires creators to disclose when they are posting content that has been created or enhanced with AI, the company told TechCrunch that it sees the new change as an additional way of ensuring that AI-generated content is being labeled, while also taking the pressure off of creators. 
+In the coming months, TikTok will also start attaching Content Credentials to AI-generated content created on the platform using TikTok AI effects. The Content Credentials metadata will include details on where and how the AI-generated content was made or edited and will remain attached to the content when downloaded. Other platforms that adopt Content Credentials will be able to automatically label the content as AI-generated.
+
+
+
+
+
+
+So, while TikTok committed to labeling AI content on its own service, it’s also seeking to help ensure that AI content that was made in TikTok is also accurately labeled when posted on another platform.
+
+
+“AI-generated content is an incredible creative outlet, but transparency for viewers is critical,” Adam Presser, Head of Operations and Trust & Safety at TikTok, said in a press release. “By partnering with peers to label content across platforms, we’re making it easy for creators to responsibly explore AI-generated content, while continuing to deter the harmful or misleading AIGC that is prohibited on TikTok.”
+TikTok is touting that it’s the first video-sharing platform to implement Content Credentials. It’s worth mentioning that Meta announced back in February that it plans to build on the C2PA’s solution for adding provenance to content.
+As part of Thursday’s announcement, TikTok said that it’s committed to combating the use of deceptive AI in elections and that its policies firmly prohibit harmfully misleading AI-generated content—whether it’s labeled or not. 
