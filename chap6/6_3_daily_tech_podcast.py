@@ -2,8 +2,8 @@ import requests, datetime, openai, os, re
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 from pydub import AudioSegment
-from elevenlabs.client import ElevenLabs
-from elevenlabs import save
+# from elevenlabs.client import ElevenLabs
+# from elevenlabs import save
 
 # import tomli
 # with open(".streamlit/secrets.toml","rb") as f:
@@ -11,8 +11,8 @@ from elevenlabs import save
 # os.environ["OPENAI_API_KEY"] = secrets["OPENAI_API_KEY"]
 # os.environ["ELEVEN_API_KEY"] = secrets["ELEVEN_API_KEY"]
 
-client11 = ElevenLabs(api_key=os.environ["ELEVEN_API_KEY"])
-voices_list = list(client11.voices.get_all())
+# client11 = ElevenLabs(api_key=os.environ["ELEVEN_API_KEY"])
+# voices_list = list(client11.voices.get_all())
 
 def rss(url,episode,date):
   response = requests.get(url)    
@@ -81,13 +81,13 @@ def merge_audio_files(files, output_file):
 
 if __name__ == "__main__":
 
-  voice = 'enYann'
+  # voice = 'enYann'
   url = "https://techcrunch.com/feed"
   date = datetime.datetime.now().strftime("%Y-%m-%d") # date in format YYYY-MM-DD
   # depending on the day of the month, rotate voice
-  # voices_list = ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
+  voices_list = ['alloy', 'echo', 'fable', 'onyx', 'nova', 'shimmer']
+  voice = voices_list[int(date[-2:])//6]
   # voice = "alloy"
-  # voice = voices_list[int(date[-2:])//6]
   # episode_number = 42
   # episode_number = int(episode_number)
   # episode = 'tech_' + '{:03d}'.format(episode_number)
@@ -119,6 +119,6 @@ if __name__ == "__main__":
     (title,link,text) = scrape_article(item,episode)
     # TTS
     speech_file_path = f"podcast/{episode}/audio/{title}.mp3"
-    # split_tts(text,speech_file_path)
-    elevenlabs_tts(text,speech_file_path)
+    split_tts(text,speech_file_path)
+    # elevenlabs_tts(text,speech_file_path)
     print(f"New episode: {speech_file_path}")
