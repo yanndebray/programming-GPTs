@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Joke Website</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+  }
+  .container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .joke {
+    margin: 20px 0;
+    padding: 10px;
+    border-left: 5px solid #7FDBFF;
+  }
+  .punchline {
+    display: none;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #FF4136;
+  }
+  button {
+    background-color: #0074D9;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  button:hover {
+    background-color: #001F3F;
+  }
+  .footer {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 0.8em;
+    color: #999;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>My Joke Website</h1>
+  <div class="joke">
+    <p>Why don't scientists trust atoms?</p>
+    <p class="punchline">Because they make up everything!</p>
+    <button onclick="revealPunchline(this)">Push to reveal punchline</button>
+  </div>
+  <div class="joke">
+    <p>What's orange and sounds like a parrot?</p>
+    <p class="punchline">A carrot!</p>
+    <button onclick="revealPunchline(this)">Push to reveal punchline</button>
+  </div>
+</div>
+<div class="footer">
+  &copy; OpenAI 2023
+</div>
+<script>
+  function revealPunchline(button) {
+    var punchline
