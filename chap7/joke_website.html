@@ -1,70 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Joke Website</title>
-<style>
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
-  }
-  .container {
-    max-width: 600px;
-    margin: 0 auto;
-    background: white;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  .joke {
-    margin: 20px 0;
-    padding: 10px;
-    border-left: 5px solid #7FDBFF;
-  }
-  .punchline {
-    display: none;
-    margin-top: 10px;
-    font-weight: bold;
-    color: #FF4136;
-  }
-  button {
-    background-color: #0074D9;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    text-transform: uppercase;
-  }
-  button:hover {
-    background-color: #001F3F;
-  }
-  .footer {
-    text-align: center;
-    margin-top: 50px;
-    font-size: 0.8em;
-    color: #999;
-  }
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Joke Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f8ff;
+            color: #333;
+        }
+        .container {
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 600px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            background-color: #fff;
+        }
+        .joke {
+            margin: 20px 0;
+        }
+        .punchline {
+            display: none;
+            color: #007BFF;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #218838;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #555;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <h1>My Joke Website</h1>
-  <div class="joke">
-    <p>Why don't scientists trust atoms?</p>
-    <p class="punchline">Because they make up everything!</p>
-    <button onclick="revealPunchline(this)">Push to reveal punchline</button>
-  </div>
-  <div class="joke">
-    <p>What's orange and sounds like a parrot?</p>
-    <p class="punchline">A carrot!</p>
-    <button onclick="revealPunchline(this)">Push to reveal punchline</button>
-  </div>
-</div>
-<div class="footer">
-  &copy; OpenAI 2023
-</div>
-<script>
-  function revealPunchline(button) {
-    var punchline
+    <div class="container">
+        <h1>My Joke Website</h1>
+        
+        <div class="joke">
+            <p>Why don't scientists trust atoms?</p>
+            <button onclick="showPunchline(1)">Push to reveal punchline</button>
+            <p id="punchline1" class="punchline">Because they make up everything!</p>
+        </div>
+
+        <div class="joke">
+            <p>Why did the scarecrow win an award?</p>
+            <button onclick="showPunchline(2)">Push to reveal punchline</button>
+            <p id="punchline2" class="punchline">Because he was outstanding in his field!</p>
+        </div>
+
+        <footer>
+            &copy; OpenAI 2023
+        </footer>
+    </div>
+
+    <script>
+        function showPunchline(id) {
+            document.getElementById('punchline' + id).style.display = '
