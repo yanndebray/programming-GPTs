@@ -1,6 +1,6 @@
-# 🥳🎂🎉 One year of Programming GPTs 🤖
+# 🤖 Programming GPTs 🦜
 
-It has been a year since [ChatGPT got released](https://openai.com/blog/chatgpt) (November 30th, 2022). What a year! Some were skeptical at first. As Dwight Schrute said himself: “the internet is a fad”. But with 100 million weekly active users a year later, I’m confident stating that this is the beginning of a new internet.
+It has been over a year since [ChatGPT got released](https://openai.com/blog/chatgpt) (November 30th, 2022). What a year! Some were skeptical at first. As Dwight Schrute said himself: “the internet is a fad”. But with 100 million weekly active users a year later, I’m confident stating that this is the beginning of a new internet.
 
 ![](img/dwight-internet.jpg)
 
@@ -43,16 +43,18 @@ The blog is divided into 10 chapters, each covering a different topic and a diff
 <video src="https://github.com/slevin48/ami/assets/12418115/6d12b2dd-b349-48be-bdf9-4efafae4e0bf" controls="controls" style="max-width: 730px;"></video>
 
 
-- **Chapter 6: 👀 Vision API.** In this chapter, you will learn how to use GPTs to process and analyze images, such as mock-ups or drawings. You will learn how to use the Vision API, to perform various tasks with GPTs, such as text recognition, or video captioning.
+- [**Chapter 7: 👀 Vision API.**](chap7/README.md) In this chapter, you will learn how to use GPTs to process and analyze images, such as mock-ups or drawings. You will learn how to use the Vision API, to perform various tasks with GPTs, such as text recognition, or video captioning.
 
     [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chat-vision.streamlit.app/)
 
 <video src="https://github.com/slevin48/openai/assets/12418115/1a83c37c-b105-42cf-b2d7-b25656824e13" controls="controls" style="max-width: 730px;"></video>
 
-- **Chapter 8: 🎨🖌️ Dall-E image generation.** In this chapter, you will learn how to use Dall-E 2 & 3, which can create stunning and creative images from any text input. You will also learn how to use the outpainting, inpainting and variations APIs, which can complete or modify existing images.
+- [**Chapter 8: 🎨🖌️ Dall-E image generation.**](chap8/README.md) In this chapter, you will learn how to use Dall-E 2 & 3, which can create stunning and creative images from any text input. You will also learn how to use the outpainting, inpainting and variations APIs, which can complete or modify existing images.
 
     [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://openai-image.streamlit.app/)
 
 <video src="https://github.com/slevin48/openai/assets/12418115/3726aa2c-67e0-474c-909f-5cb54eaa39db" controls="controls" style="max-width: 730px;"></video>
 
 - **Chapter 9: 📌 Conclusion.** In this chapter, you will review what you have learned, and reflect on the potential and challenges of programming GPTs. You will also learn how to keep up with the latest developments and innovations in the field of GPTs and OpenAI with additional resources.
+
+- **Chapter 10: 📚 Appendix.** In this chapter, you will find additional resources, such as a glossary of terms, and a list of references and further readings. You will also find some applications I developed to support some of my work.
