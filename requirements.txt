@@ -1,6 +1,9 @@
 openai
 requests
 streamlit
+streamlit-cropper
+streamlit-drawable-canvas
+# flask
 tomli
 tiktoken
 langchain
