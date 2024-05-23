@@ -2,14 +2,14 @@ import streamlit as st
 from openai import OpenAI
 import time
 import datetime
+from assistant import *
 
-st.sidebar.title('🤖 GPTs')
+st.sidebar.title('Code Interpreter 🐍')
 avatar = {"assistant": "🤖", "user": "🐱"}
 tools = {"code_interpreter": "🐍", "file_search": "🔎"}
 client = OpenAI(
     api_key=st.secrets['OPENAI_API_KEY'],
 )
-
 
 if 'thread' not in st.session_state:
     thread = client.beta.threads.create()
@@ -22,25 +22,20 @@ if 'messages' not in st.session_state:
     st.session_state.messages = messages
 messages = st.session_state.messages
 # if 'run' not in st.session_state:
-#     st.session_state.run = None
+#     st.session_state.run = []
+if 'code' not in st.session_state:
+    st.session_state.code = ''
     
-st.sidebar.write('## Assistants')
-list_of_assistants = client.beta.assistants.list()
-# st.write(list(list_of_assistants))
-
-# assistant_id = st.sidebar.selectbox('Select Assistant', [assistant.id for assistant in list_of_assistants])
-assistant = st.sidebar.selectbox('Select Assistant', list_of_assistants, format_func=lambda assistant: assistant.name)
+assistant = load_assistant("asst_5zjj3Cp5W2DOT6sRLeT6Cf23")
 # st.sidebar.write(assistant)
-# my_assistant = client.beta.assistants.retrieve(assistant.id)
-# st.sidebar.write(my_assistant)
 assistant_tools = [tool.type for tool in assistant.tools]
 assistant_tools_emojis = [tools[tool.type] for tool in assistant.tools]
 
-# st.write(f'# {assistant.name}')
+# st.sidebar.write(f'# {assistant.name}')
 st.sidebar.write(f'*({assistant.id})*')
 st.sidebar.write(f'**Instructions**:\n{assistant.instructions}')
 st.sidebar.write(f'**Model**:\n{assistant.model}')
-st.sidebar.write(f'**Tools**:\n{list(zip(assistant_tools, assistant_tools_emojis))}')
+# st.sidebar.write(f'**Tools**:\n{list(zip(assistant_tools, assistant_tools_emojis))}')
 
 ## 1 - Create Thread
 # if st.sidebar.button('Create Thread'):
@@ -57,12 +52,12 @@ st.sidebar.write(f'Created at {datetime.datetime.fromtimestamp(thread.created_at
 if prompt := st.chat_input():
     # with st.sidebar.status('Processing...', expanded=True) as status:
     with st.spinner('Wait for it...'):
-        
         messages = client.beta.threads.messages.create(
             thread_id=thread.id,
             role="user",
             content=prompt,
         )
+        # st.chat_message('user',avatar=avatar['user']).write(messages.content[0].text.value)
         st.session_state.messages = messages
         # st.write(messages)
         st.toast('Adding message...')
@@ -77,18 +72,30 @@ if prompt := st.chat_input():
         st.toast(run.status)
 
 ## 4 - Get run's status and steps
+        previous_step = None
+        st.session_state.code = ''
         while run.status != 'completed':
             run_steps = client.beta.threads.runs.steps.list(
                 thread_id=thread.id,
                 run_id=run.id
             )
-            st.toast(run_steps)
+            if run_steps.data:
+                # check if the step is a tool call
+                if run_steps.data[0].step_details.type == 'tool_calls':
+                # check if the code interpreter is selected
+                    if run_steps.data[0].step_details.tool_calls != []:
+                    # check if the step is different
+                        if run_steps.data[0].id != previous_step:
+                            previous_step = run_steps.data[0].id
+                            # st.toast(run_steps.data[0])
+                            st.toast(run_steps.data[0].step_details.tool_calls[0].code_interpreter.input)
+                            st.session_state.code = run_steps.data[0].step_details.tool_calls[0].code_interpreter.input
             time.sleep(1)
             run = client.beta.threads.runs.retrieve(
                 thread_id=thread.id,
                 run_id=run.id
             )
-            # st.session_state.run = run
+            store_run_steps(thread.id,run.id)
             st.toast(run.status)
 
 ## 5 - Get messages
@@ -101,8 +108,13 @@ if prompt := st.chat_input():
     st.toast('Dairy🥛!')
 
     for line in messages.data[::-1]:
-        st.chat_message(line.role,avatar=avatar[line.role]).write(line.content[0].text.value)
-            
+        # st.chat_message(line.role,avatar=avatar[line.role]).write(line.content[0].text.value)
+        if line.role == 'user':
+            st.chat_message('user',avatar=avatar['user']).write(line.content[0].text.value)
+        elif line.role == 'assistant':
+            st.chat_message('assistant',avatar=avatar['assistant']).write(line.content[0].text.value)
+    if st.session_state.code:
+        st.expander('code').write('```python\n'+st.session_state.code+'\n```')
 
 ## X - More
 
@@ -110,6 +122,7 @@ if prompt := st.chat_input():
 # st.sidebar.expander('Run').write(st.session_state.run)
 
 st.sidebar.write('## Prompt examples')
-st.sidebar.write("How to write text in string arrays with MATLAB?")
+st.sidebar.write("1+1")
 st.sidebar.write("How to solve the equation `3x + 11 = 14`?")
 st.sidebar.write("What is the 42nd element of Fibonacci?")
+st.sidebar.write("What is the 10th element?")
