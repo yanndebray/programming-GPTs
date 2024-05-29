@@ -88,14 +88,14 @@ if prompt := st.chat_input():
                         if run_steps.data[0].id != previous_step:
                             previous_step = run_steps.data[0].id
                             # st.toast(run_steps.data[0])
-                            st.toast(run_steps.data[0].step_details.tool_calls[0].code_interpreter.input)
+                            st.toast(f'code\n```python\n{run_steps.data[0].step_details.tool_calls[0].code_interpreter.input}\n```')
                             st.session_state.code = run_steps.data[0].step_details.tool_calls[0].code_interpreter.input
             time.sleep(1)
             run = client.beta.threads.runs.retrieve(
                 thread_id=thread.id,
                 run_id=run.id
             )
-            store_run_steps(thread.id,run.id)
+            # store_run_steps(thread.id,run.id)
             st.toast(run.status)
 
 ## 5 - Get messages
@@ -103,7 +103,7 @@ if prompt := st.chat_input():
             thread_id=thread.id
         )
         st.session_state.messages = messages
-        # st.write(messages.data)
+        # st.sidebar.write(messages.data) #[-1]
         # status.update(label="Processed", state="complete", expanded=False)
     st.toast('Dairy🥛!')
 
@@ -112,7 +112,14 @@ if prompt := st.chat_input():
         if line.role == 'user':
             st.chat_message('user',avatar=avatar['user']).write(line.content[0].text.value)
         elif line.role == 'assistant':
-            st.chat_message('assistant',avatar=avatar['assistant']).write(line.content[0].text.value)
+            with st.chat_message('assistant',avatar=avatar['assistant']):
+                for c in line.content:
+                    if c.type == 'text':
+                        st.write(c.text.value)
+                    elif c.type == 'image_file':
+                        image_data = client.files.content(c.image_file.file_id)
+                        image_data_bytes = image_data.read()
+                        st.image(image_data_bytes)
     if st.session_state.code:
         st.expander('code').write('```python\n'+st.session_state.code+'\n```')
 
@@ -122,7 +129,15 @@ if prompt := st.chat_input():
 # st.sidebar.expander('Run').write(st.session_state.run)
 
 st.sidebar.write('## Prompt examples')
-st.sidebar.write("1+1")
-st.sidebar.write("How to solve the equation `3x + 11 = 14`?")
-st.sidebar.write("What is the 42nd element of Fibonacci?")
-st.sidebar.write("What is the 10th element?")
+examples = [
+    "1+1",
+    "How to solve the equation `3x + 11 = 14`?",
+    "What is the 42nd element of Fibonacci?",
+    "What is the 10th element?",
+    "plot function 1/sin(x)",
+    "zoom in to range of x values between 0 and 1",
+    "plot a tangent line to the graph at x=0.3",
+    "zoom in to the point of tangency"
+]
+for ex in examples:
+    st.sidebar.write(ex)
