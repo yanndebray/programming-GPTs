@@ -25,7 +25,17 @@ messages = st.session_state.messages
 #     st.session_state.run = []
 if 'code' not in st.session_state:
     st.session_state.code = ''
-    
+if 'toggle_file' not in st.session_state:
+    st.session_state.toggle_file = False
+
+def toggle_on():
+    if not st.session_state.toggle_file:
+        st.session_state.toggle_file = True
+
+def toggle_off():
+    if st.session_state.toggle_file:
+        st.session_state.toggle_file = False
+
 assistant = load_assistant("asst_5zjj3Cp5W2DOT6sRLeT6Cf23")
 # st.sidebar.write(assistant)
 assistant_tools = [tool.type for tool in assistant.tools]
@@ -37,7 +47,7 @@ st.sidebar.write(f'**Instructions**:\n{assistant.instructions}')
 st.sidebar.write(f'**Model**:\n{assistant.model}')
 # st.sidebar.write(f'**Tools**:\n{list(zip(assistant_tools, assistant_tools_emojis))}')
 
-## 1 - Create Thread
+## 0 - Create Thread
 # if st.sidebar.button('Create Thread'):
 #     thread = client.beta.threads.create()
 #     st.session_state.thread = thread
@@ -48,14 +58,38 @@ st.sidebar.write('## Thread')
 st.sidebar.write(f'*{thread.id}*')
 st.sidebar.write(f'Created at {datetime.datetime.fromtimestamp(thread.created_at)}')
 
+## 1 - Add a file
+st.sidebar.button('upload file', on_click=toggle_on)
+
+if st.session_state.toggle_file:
+    file = st.file_uploader('Upload a file')
+    if file:
+        with st.spinner('Uploading file...'):
+            file = client.files.create(
+                file=file.getvalue(),
+                purpose='assistants'
+                )
+            file_id = file.id
+    else:
+        file_id = None
+else:
+    file_id = None
+
+# st.write("file_id",file_id)
+
 ## 2 - Add a message
 if prompt := st.chat_input():
     # with st.sidebar.status('Processing...', expanded=True) as status:
     with st.spinner('Wait for it...'):
+        if file_id:
+            attachments = [{"file_id": file_id,"tools": [{"type": "code_interpreter"}]}]
+        else:
+            attachments = []
         messages = client.beta.threads.messages.create(
             thread_id=thread.id,
             role="user",
             content=prompt,
+            attachments=attachments
         )
         # st.chat_message('user',avatar=avatar['user']).write(messages.content[0].text.value)
         st.session_state.messages = messages
@@ -98,6 +132,9 @@ if prompt := st.chat_input():
             # store_run_steps(thread.id,run.id)
             st.toast(run.status)
 
+        # Filp back the "add file" switch
+        toggle_off()
+
 ## 5 - Get messages
         messages = client.beta.threads.messages.list(
             thread_id=thread.id
@@ -128,16 +165,34 @@ if prompt := st.chat_input():
 # st.sidebar.expander('Messages').write(st.session_state.messages)
 # st.sidebar.expander('Run').write(st.session_state.run)
 
-st.sidebar.write('## Prompt examples')
 examples = [
-    "1+1",
-    "How to solve the equation `3x + 11 = 14`?",
-    "What is the 42nd element of Fibonacci?",
-    "What is the 10th element?",
-    "plot function 1/sin(x)",
-    "zoom in to range of x values between 0 and 1",
-    "plot a tangent line to the graph at x=0.3",
-    "zoom in to the point of tangency"
-]
-for ex in examples:
-    st.sidebar.write(ex)
+    {"Basics":
+        [
+            "1+1",
+            "How to solve the equation `3x + 11 = 14`?",
+            "What is the 42nd element of Fibonacci?",
+            "What is the 10th element?"
+        ]}
+    ,
+    {"Plotting":
+        [
+            "plot function 1/sin(x)",
+            "zoom in to range of x values between 0 and 1",
+            "plot a tangent line to the graph at x=0.3",
+            "zoom in to the point of tangency"
+        ]},
+    {"Data Analysis":
+        [
+            "[titanic.csv](https://raw.githubusercontent.com/yanndebray/programming-GPTs/main/chap5/titanic.csv)",
+            "[iris.csv](https://raw.githubusercontent.com/mwaskom/seaborn-data/master/iris.csv)",
+            "What's in the dataset?",
+            "Plot it",
+            # "Explore relationships between different features"
+        ]}
+    ]
+st.sidebar.write('## Prompt examples')
+for cat in examples:
+    for key in cat:
+        with st.sidebar.expander(f'### {key}'):
+            for ex in cat[key]:
+                st.write(ex)
