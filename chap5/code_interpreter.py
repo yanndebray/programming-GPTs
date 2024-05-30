@@ -2,7 +2,6 @@ import streamlit as st
 from openai import OpenAI
 import time
 import datetime
-from assistant import *
 
 st.sidebar.title('Code Interpreter 🐍')
 avatar = {"assistant": "🤖", "user": "🐱"}
@@ -36,7 +35,7 @@ def toggle_off():
     if st.session_state.toggle_file:
         st.session_state.toggle_file = False
 
-assistant = load_assistant("asst_5zjj3Cp5W2DOT6sRLeT6Cf23")
+assistant = client.beta.assistants.retrieve("asst_5zjj3Cp5W2DOT6sRLeT6Cf23")
 # st.sidebar.write(assistant)
 assistant_tools = [tool.type for tool in assistant.tools]
 assistant_tools_emojis = [tools[tool.type] for tool in assistant.tools]

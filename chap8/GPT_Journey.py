@@ -1,6 +1,9 @@
 import openai
 import re
 import streamlit as st
+import os
+
+os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
 # Define a function to generate an image using the OpenAI API
 def get_img(prompt):

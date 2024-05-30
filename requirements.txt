@@ -3,6 +3,7 @@ requests
 streamlit
 streamlit-cropper
 streamlit-drawable-canvas
+streamlit-audiorec
 # flask
 tomli
 tiktoken
