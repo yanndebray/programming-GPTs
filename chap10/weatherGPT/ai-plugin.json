@@ -1,0 +1,17 @@
+{
+    "schema_version": "v1",
+    "name_for_human": "Weather Data",
+    "name_for_model": "WeatherData",
+    "description_for_human": "Get weather for a given city.",
+    "description_for_model": "Get weather for a given city. Always display results using markdown tables.",
+    "auth": {
+        "type": "none"
+    },
+    "api": {
+        "type": "openapi",
+        "url": "https://weather-plugin-yanndebray.replit.app/openapi.yaml"
+    },
+    "logo_url": "https://weather-plugin-yanndebray.replit.app/logo.png",
+    "contact_email": "support@example.com",
+    "legal_info_url": "https://weather-plugin-yanndebray.replit.app/legal"
+}
