@@ -8,6 +8,7 @@ streamlit-audiorec
 tomli
 tiktoken
 langchain
+langchain-openai
 langchain-experimental
 ipykernel
 bs4
