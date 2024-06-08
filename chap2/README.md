@@ -224,18 +224,11 @@ option).
 ## 2.3. Prices of the API
 
 The [prices](https://openai.com/pricing ) have evolved quite a bit since the introduction of the
-ChatGPT API. As of November 2023:
+ChatGPT API. As of June 2024:
 
--   GPT 3.5 turbo costs $0.001 / 1k input tokens, $0.002 / 1k output
-    tokens.
-    This model was introduced at 1/10 of the price of the davinci legacy
-    GPT 3 model.
+-   GPT 3.5 turbo costs $0.5 / 1M input tokens, $1.5 / 1M output tokens.
+-	GPT-4o costs $5 / 1M input tokens, $15 / 1M output tokens.
 
--   GPT 4 (8k version) costs $0.03 / 1k input tokens, $0.06 / 1k
-    output tokens.
-    The 32k version costs twice as much.
-
--   GPT 4 turbo (introduced in November 2023) cost 1/3 of GPT 4.
 
 ## 2.4.  Build your first chatbot app
 
@@ -288,7 +281,7 @@ The basic elements that are useful for any basic app are the
 We can gradually increase the complexity of the app, by adding a
 [**selectbox**](https://docs.streamlit.io/library/api-reference/widgets/st.selectbox) to choose the model:
 ```python
-models_name = ['gpt-3.5-turbo', 'gpt-4']
+models_name = ['gpt-3.5-turbo', 'gpt-4o']
 selected_model = st.sidebar.selectbox('Select OpenAI model', models_name)
 ```
 Notice that Streamlit provides you with a way to store your OpenAI key
@@ -369,9 +362,6 @@ os.listdir('chat'))
 # st.sidebar.write(convo_file)
 convo = load_chat(convo_file)
 st.sidebar.write(convo)
-# Display the response in the Streamlit app
-for line in convo:
-    st.chat_message(line['role']).write(line['content'])
 ```
 Second let's save the new elements of the conversation, with a function
 called **save_chat**:

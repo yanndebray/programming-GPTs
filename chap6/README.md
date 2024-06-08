@@ -378,7 +378,7 @@ def summarize(text):
     inst = '''Summarize the following article in less than 4000
 characters.'''
     completion = openai.chat.completions.create(
-        model='gpt-3.5-turbo-1106',
+        model='gpt-3.5-turbo',
         messages= [
             {'role': 'system', 'content': inst },
             {'role': 'user', 'content': text }]
@@ -441,7 +441,7 @@ jobs:  
         uses: actions/upload-artifact@v4
         with:
           name: podcast
-          path: podcast/tech[0-9][0-9][0-9]/
+          path: podcast/tech[0-9][0-9][0-9][0-9]-[0-9][0-9]-[0-9][0-9]/
 env:
   OPENAI_API_KEY: \${{secrets.OPENAI_API_KEY}}
   # ELEVEN_API_KEY: \${{secrets.ELEVEN_API_KEY}}

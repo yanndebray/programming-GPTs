@@ -259,7 +259,6 @@ the API for summarization. This method is straightforward but limited by
 the maximum context length.
 
 ![](img/media/image6.png) 
-![](img/media/image7.png)
 
 This is how the code would look like with LangChain:
 
