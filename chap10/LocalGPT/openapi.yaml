@@ -1,0 +1,21 @@
+openapi: 3.1.0
+info:
+  title: Weather
+  description: Get weather data for a given city.
+  version: v1
+servers:
+  - url: https://4564-71-192-208-255.ngrok-free.app
+paths:
+  /weather:
+    get:
+      operationId: getWeatherData
+      summary: Retrieves the weather data.
+      parameters:
+        - in: query
+          name: city
+          schema:
+            type: string
+          description: The city to get the weather from. For example, London,uk.
+      responses:
+        "200":
+          description: OK

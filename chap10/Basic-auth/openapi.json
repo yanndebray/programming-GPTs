@@ -1,0 +1,42 @@
+{
+    "openapi": "3.1.0",
+    "info": {
+      "title": "Get weather data",
+      "description": "Retrieves current weather data for a given city.",
+      "version": "v1.0.0"
+    },
+    "servers": [
+      {
+        "url": "https://weather-gpt.replit.app"
+      }
+    ],
+    "paths": {
+      "/weather": {
+        "get": {
+          "description": "Get temperature for a specific location",
+          "operationId": "GetCurrentWeather",
+          "parameters": [
+            {
+              "name": "city",
+              "in": "query",
+              "description": "The city and state to retrieve the weather for",
+              "required": true,
+              "schema": {
+                "type": "string"
+              }
+            }
+          ],
+          "deprecated": false
+        }
+      }
+    },
+    "components": {
+    "securitySchemes": {
+      "basicAuth": {
+        "type": "http",
+        "scheme": "basic"
+      }
+    },
+    "schemas": {}
+    }
+  }
