@@ -1,8 +1,8 @@
-# 🤖 Programming GPTs 🦜
+# Programming GPTs 🦜
 
-It has been over a year since [ChatGPT got released](https://openai.com/blog/chatgpt) (November 30th, 2022). What a year! Some were skeptical at first. As Dwight Schrute said himself: “the internet is a fad”. But with 100 million weekly active users a year later, I’m confident stating that this is the beginning of a new internet.
+A year after [ChatGPT got released](https://openai.com/blog/chatgpt) (November 30th, 2022), I started writing this book: 
 
-![](img/dwight-internet.jpg)
+<img align="right" src="./book/cover.png" height="400px"/>
 
 For the better part of 2023, my hobby has been programming and experimenting with it. What I mean by programming GPTs does not mean that I am recreating the AI behind GPT 3.5 or 4 from scratch. I have tried to fine tune an open-source pretrained AI model like LLaMa2 (from Meta), or start from scratch with much smaller models, but the results you get with such an approach are not as good as what OpenAI provides. And it takes way more skill to reinvent the service that OpenAI offers at a price that is very competitive. So instead, I am focusing here on building on top of the OpenAI giants.
 
@@ -55,6 +55,6 @@ The blog is divided into 10 chapters, each covering a different topic and a diff
 
 <video src="https://github.com/slevin48/openai/assets/12418115/3726aa2c-67e0-474c-909f-5cb54eaa39db" controls="controls" style="max-width: 730px;"></video>
 
-- **Chapter 9: 📌 Conclusion.** In this chapter, you will review what you have learned, and reflect on the potential and challenges of programming GPTs. You will also learn how to keep up with the latest developments and innovations in the field of GPTs and OpenAI with additional resources.
+- [**Chapter 9: 📌 Conclusion.**](chap9/README.md) In this chapter, you will review what you have learned, and reflect on the potential and challenges of programming GPTs. You will also learn how to keep up with the latest developments and innovations in the field of GPTs and OpenAI with additional resources.
 
-- **Chapter 10: 📚 Appendix.** In this chapter, you will find additional resources, such as a glossary of terms, and a list of references and further readings. You will also find some applications I developed to support some of my work.
+- [**Chapter 10: 📚 Appendix.**](chap10/README.md) In this chapter, you will find additional resources, such as a glossary of terms, and a list of references and further readings. You will also find some applications I developed to support some of my work.
