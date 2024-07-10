@@ -157,7 +157,7 @@ cython_debug/
 archives/
 impromptu/
 storage/
-chroma/
+# chroma/
 yolo/
 darknet/
 runs/
