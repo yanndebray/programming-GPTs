@@ -1,8 +1,6 @@
 # Programming GPTs 🦜
 
-A year after [ChatGPT got released](https://openai.com/blog/chatgpt) (November 30th, 2022), I started writing this book: 
-
-<img align="right" src="./book/cover.png" height="400px"/>
+<img align="right" src="./img/parrot.png" height="400px"/>
 
 For the better part of 2023, my hobby has been programming and experimenting with it. What I mean by programming GPTs does not mean that I am recreating the AI behind GPT 3.5 or 4 from scratch. I have tried to fine tune an open-source pretrained AI model like LLaMa2 (from Meta), or start from scratch with much smaller models, but the results you get with such an approach are not as good as what OpenAI provides. And it takes way more skill to reinvent the service that OpenAI offers at a price that is very competitive. So instead, I am focusing here on building on top of the OpenAI giants.
 
@@ -10,7 +8,7 @@ In this blog, you will learn how to program GPTs primarily leveraging OpenAI’s
 Generative Pre-Trained Transformers are quite complicated general-purpose machines that can do a lot of different things, like handling sequences of text, images, and sounds. You will learn the basic concepts and principles behind GPTs, and how they work under the hood. But more importantly, you will learn how to integrate them inside of your applications.
 
 The blog is divided into 10 chapters, each covering a different topic and a different aspect of programming GPTs. The chapters are:
-- **Chapter 1: 🤖 Introduction to GPTs**. How they work and their evolution. 
+- [**Chapter 1: 🤖 Introduction to GPTs**](chap1/README.md). How they work and their evolution. 
 
 - [**Chapter 2: 🐱💬 The Chat API.**](chap2/README.md) In this chapter, you will learn how to use the Chat API, a simple way to create conversational agents with GPTs. You will learn how to create your own chatbot.
 
