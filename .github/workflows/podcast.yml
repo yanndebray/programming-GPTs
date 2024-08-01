@@ -1,8 +1,8 @@
 name: daily tech podcast
 on:   
   # Triggers the workflow on a schedule, every day at 00:00 UTC
-  schedule:    
-    - cron: "0 0 * * *"  
+  # schedule:    
+  #   - cron: "0 0 * * *"  
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 jobs:  
