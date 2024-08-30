@@ -7,7 +7,7 @@ client = OpenAI(
     api_key=st.secrets['OPENAI_API_KEY'],
 )
 
-def chat(messages,model='gpt-3.5-turbo'):
+def chat(messages,model='gpt-4o-mini'):
   # Generate a response from the ChatGPT model
   completion = client.chat.completions.create(
         model=model,

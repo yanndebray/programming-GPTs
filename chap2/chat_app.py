@@ -34,7 +34,7 @@ def dumb_chat():
   st.write(dummy[1]['content'])
   return dummy[1]['content']
 
-def chat_stream(messages,model='gpt-3.5-turbo'):
+def chat_stream(messages,model='gpt-4o-mini'):
   # Generate a response from the ChatGPT model
   completion = client.chat.completions.create(
         model=model,
@@ -67,7 +67,7 @@ id = st.session_state.id
 
 st.sidebar.title('ChatGPT-like bot 🤖')
 
-models_name = ['gpt-3.5-turbo', 'gpt-4']
+models_name = ['gpt-4o-mini', 'gpt-4o']
 selected_model = st.sidebar.selectbox('Select OpenAI model', models_name)
 
 if st.sidebar.button('New Chat 🐱'):
