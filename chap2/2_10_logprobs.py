@@ -14,10 +14,6 @@ def get_logprobs(top_logprobs=3):
         logprobs=True,
         top_logprobs=top_logprobs,
     )
-    # zero = response.choices[0].logprobs.content[0].top_logprobs
-    # st.sidebar.write(zero)
-    # df0 = pd.DataFrame(response.choices[0].logprobs.content[:3])
-    # st.sidebar.write(df0)
     token = [l.token for l in response.choices[0].logprobs.content]
     logprobs = [c.top_logprobs for c in response.choices[0].logprobs.content]
     return token,logprobs
