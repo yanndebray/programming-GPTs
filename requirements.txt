@@ -24,3 +24,4 @@ llama-index
 google-search-results
 duckduckgo_search
 # elevenlabs
+plotly
