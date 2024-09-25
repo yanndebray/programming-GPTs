@@ -1,9 +1,6 @@
-import json
-import time
-
 import streamlit as st
 import plotly.graph_objects as go
-
+import json, time
 from openai import OpenAI
 
 #######################################
@@ -18,9 +15,15 @@ st.set_page_config(
 )
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
-
 assistant_id = st.secrets["OPENAI_ASSISTANT_ID"]
+mapbox_token = st.secrets["MAPBOX_TOKEN"]
 
+chat_config = {
+    "user":"😊",
+    "assistant":"🗺️"
+}
+
+height = 500
 assistant_state = "assistant"
 thread_state = "thread"
 conversation_state = "conversation"
@@ -46,13 +49,14 @@ if last_openai_run_state not in st.session_state:
 
 if map_state not in st.session_state:
     st.session_state[map_state] = {
-        "latitude": 39.949610,
-        "longitude": -75.150282,
-        "zoom": 16,
+        "latitude": 48.8588548,
+        "longitude": 2.347035,
+        "zoom": 12,
     }
 
 if markers_state not in st.session_state:
     st.session_state[markers_state] = None
+
 
 #######################################
 # TOOLS SETUP
@@ -185,18 +189,25 @@ with st.sidebar:
 
     st.button("Reset Thread", on_click=on_reset_thread)
 
+
 #######################################
 # MAIN
 #######################################
 
-st.title("Wanderlust")
+# st.write("## Mappy 🗺️")
 left_col, right_col = st.columns(2)
 
 with left_col:
-    with st.container():
-        for role, message in st.session_state[conversation_state]:
-            with st.chat_message(role):
-                st.write(message)
+    # Create a container with a fixed height
+    chat_container = st.container(height= height)     
+    with chat_container:
+        if not st.session_state[conversation_state]:
+            with st.chat_message("assistant", avatar=chat_config["assistant"]):
+                st.write("Hello, my name is Thomas, travel agent at Wanderlust. I'm here to help you plan your trip. Ask me about a location (like Paris), I can take you there and point you to interesting sights to see.")
+        else:
+            for role, message in reversed(st.session_state[conversation_state]):
+                with st.chat_message(role, avatar=chat_config[role]):
+                    st.write(message)
     status_placeholder = st.empty()
 
 with right_col:
@@ -221,7 +232,7 @@ with right_col:
     fig.update_layout(
         margin=dict(l=0, r=0, t=0, b=0),
         mapbox=dict(
-            accesstoken=st.secrets["MAPBOX_TOKEN"],
+            accesstoken=mapbox_token,
             center=go.layout.mapbox.Center(
                 lat=st.session_state[map_state]["latitude"],
                 lon=st.session_state[map_state]["longitude"],
@@ -229,14 +240,14 @@ with right_col:
             pitch=0,
             zoom=st.session_state[map_state]["zoom"],
         ),
-        height=600,
+        height=height,
     )
     st.plotly_chart(
         fig, config={"displayModeBar": False}, use_container_width=True, key="plotly"
     )
 
 st.chat_input(
-    placeholder="Ask your question here",
+    placeholder="Ask your question to Thomas, our travel agent",
     key=user_msg_input_key,
     on_submit=on_text_input,
     args=(status_placeholder,),
