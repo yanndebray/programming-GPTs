@@ -107,7 +107,7 @@ def get_run_id():
     return st.session_state[last_openai_run_state].id
 
 
-def on_text_input(status_placeholder):
+def on_text_input():
     """Callback method for any chat_input value change
     """
     if st.session_state[user_msg_input_key] == "":
@@ -126,45 +126,42 @@ def on_text_input(status_placeholder):
     completed = False
 
     # Polling
-    with status_placeholder.status("Computing Assistant answer") as status_container:
-        st.write(f"Launching run {get_run_id()}")
+    st.toast("Computing Assistant answer", icon="🤖")
 
-        while not completed:
-            run = client.beta.threads.runs.retrieve(
+    while not completed:
+        run = client.beta.threads.runs.retrieve(
+            thread_id=get_thread_id(),
+            run_id=get_run_id(),
+        )
+
+        if run.status == "requires_action":
+            tools_output = []
+            for tool_call in run.required_action.submit_tool_outputs.tool_calls:
+                f = tool_call.function
+                print(f)
+                f_name = f.name
+                f_args = json.loads(f.arguments)
+
+                st.toast(f"Launching function {f_name}", icon="🛠️")
+                tool_result = tool_to_function[f_name](**f_args)
+                tools_output.append(
+                    {
+                        "tool_call_id": tool_call.id,
+                        "output": tool_result,
+                    }
+                )
+            client.beta.threads.runs.submit_tool_outputs(
                 thread_id=get_thread_id(),
                 run_id=get_run_id(),
+                tool_outputs=tools_output,
             )
 
-            if run.status == "requires_action":
-                tools_output = []
-                for tool_call in run.required_action.submit_tool_outputs.tool_calls:
-                    f = tool_call.function
-                    print(f)
-                    f_name = f.name
-                    f_args = json.loads(f.arguments)
+        if run.status == "completed":
+            st.toast("Assistant is done", icon="✅")
+            completed = True
 
-                    st.write(f"Launching function {f_name} with args {f_args}")
-                    tool_result = tool_to_function[f_name](**f_args)
-                    tools_output.append(
-                        {
-                            "tool_call_id": tool_call.id,
-                            "output": tool_result,
-                        }
-                    )
-                st.write(f"Will submit {tools_output}")
-                client.beta.threads.runs.submit_tool_outputs(
-                    thread_id=get_thread_id(),
-                    run_id=get_run_id(),
-                    tool_outputs=tools_output,
-                )
-
-            if run.status == "completed":
-                st.write(f"Completed run {get_run_id()}")
-                status_container.update(label="Assistant is done", state="complete")
-                completed = True
-
-            else:
-                time.sleep(0.1)
+        else:
+            time.sleep(0.1)
 
     st.session_state[conversation_state] = [
         (m.role, m.content[0].text.value)
@@ -208,7 +205,6 @@ with left_col:
             for role, message in reversed(st.session_state[conversation_state]):
                 with st.chat_message(role, avatar=chat_config[role]):
                     st.write(message)
-    status_placeholder = st.empty()
 
 with right_col:
     fig = go.Figure(
@@ -250,5 +246,4 @@ st.chat_input(
     placeholder="Ask your question to Thomas, our travel agent",
     key=user_msg_input_key,
     on_submit=on_text_input,
-    args=(status_placeholder,),
 )
