@@ -23,12 +23,12 @@ chunk_size = st.sidebar.number_input('chunk size',min_value=100, max_value=5000,
 context = 'summarize the following chapter'
 
 # file = st.file_uploader('Upload txt file',type='txt')
-chapters = [f'chap{i}' for i in range(2,9)]
+chapters = [f'chap{i}' for i in range(1,11)]
 chap = st.selectbox("Select chapter to summarize",chapters)
 maxtokens = {'gpt-3.5-turbo': 16_000,'gpt-4o': 128_000 }
 st.sidebar.write("Max tokens:", maxtokens[model])
 
-pdf = {'chap1':'',
+pdf = {'chap1':'Chap%201%20-%20Intro.pdf',
        'chap2':'Chap%202%20-%20The%20ChatGPT%20API.pdf',
        'chap3':'Chap%203%20-%20Chaining%20%26%20Summarization.pdf',
        'chap4':'Chap%204%20-%20Vector%20search%20%26%20Question%20Answering.pdf',
@@ -36,9 +36,12 @@ pdf = {'chap1':'',
        'chap6':'Chap%206%20-%20Speech-to-Text%20%26%20Text-to-Speech.pdf',
        'chap7':'Chap%207%20-%20Vision.pdf',
        'chap8':'Chap%208%20-%20DALL-E.pdf',
-       'chap9':''}
+       'chap9':'Chap%209%20-%20Conclusion.pdf',
+       'chap10':'Chap%2010%20-%20Appendix.pdf'}
 
-url = f'https://raw.githubusercontent.com/yanndebray/programming-GPTs/main/{chap}/{pdf[chap]}'
+branch = 'bb24362da3358ff9ef95e4ae356d2bfb5095c2ac' # avant la prise de la bastille
+# branch = 'main'
+url = f'https://raw.githubusercontent.com/yanndebray/programming-GPTs/{branch}/{chap}/{pdf[chap]}'
 # st.write(url)
 r = requests.get(url)
 f = io.BytesIO(r.content)
