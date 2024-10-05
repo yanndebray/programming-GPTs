@@ -53,4 +53,6 @@ The repo is divided into 10 chapters, each covering a different topic and a diff
 
 - **Chapter 9: 📌 Conclusion.** In this chapter, you will review what you have learned, and reflect on the potential and challenges of programming GPTs. You will also learn how to keep up with the latest developments and innovations in the field of GPTs and OpenAI with additional resources.
 
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://programming-gpts.streamlit.app/)
+
 - **Chapter 10: 📚 Appendix.** In this chapter, you will find additional resources, such as a glossary of terms, and a list of references and further readings. You will also find some applications I developed to support some of my work.
