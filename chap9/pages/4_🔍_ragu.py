@@ -1,54 +1,48 @@
 import streamlit as st
 from chat_utils import *
-from langchain.chains import RetrievalQA
-from langchain_community.document_loaders import PyPDFLoader
-from langchain_community.vectorstores import Chroma
-from langchain_openai import ChatOpenAI, OpenAIEmbeddings
-chat = ChatOpenAI(model_name='gpt-3.5-turbo')
-db = Chroma(persist_directory="chap9/chroma", embedding_function=OpenAIEmbeddings())
-retriever = db.as_retriever(search_type="similarity", search_kwargs={"k":3})
+import openai, faiss
+import numpy as np
 
 st.set_page_config(page_title='Ragu',page_icon='🔍')
 st.sidebar.title(f'Ragu 🔍')
 
-if 'avatar' not in st.session_state:
-  st.session_state.avatar = {"assistant": "🤖", "user": "🐱"}
+pages = np.load('chap9/pages.npy').tolist()
 
-avatar = st.session_state.avatar
+def get_embedding(text, model="text-embedding-3-small"):
+   return openai.embeddings.create(input = [text], model=model).data[0].embedding
 
-if 'convo' not in st.session_state:
-    st.session_state.convo = []
+# Step 1: Load the embeddings as numpy array from file
+embeddings = np.load('chap9/embeddings.npy') # (140 vectors, each 1536-dimensional)
+# Step 2: Create a FAISS index (FlatL2 for Euclidean distance)
 
-n = len(os.listdir('chat'))
-if 'id' not in st.session_state:
-    st.session_state.id = n
+d = 1536  # Dimensionality of each vector (1536 in this case)
+index = faiss.IndexFlatL2(d)  # You can also use other index types (e.g., IndexFlatIP for cosine similarity)
 
-id = st.session_state.id
-
-
-if 'model' not in st.session_state:
-    st.session_state.model = 'gpt-3.5-turbo'
-# models_name = ['gpt-3.5-turbo', 'gpt-4o']
-# selected_model = st.sidebar.selectbox('Select OpenAI model', models_name)
-selected_model = st.session_state.model
-st.sidebar.write(f'Selected model: {selected_model}')
+# Step 3: Add the embeddings to the index
+index.add(embeddings)  # Now, the index contains 140 vectors
 
 query = st.text_input("Ask a question")
 if query:
-    qa = RetrievalQA.from_chain_type(
-        llm=chat, chain_type="stuff", retriever=retriever, return_source_documents=True)
-    result = qa.invoke({"query": query})
-    # st.write(result)
-    st.write(result['result'])
+    query_embedding = np.array([get_embedding(query)]) 
+    _,indices = index.search(query_embedding, k=5)
+    prompt = f'''
+    Answer the question based on the following context: 
+    question: {query}
+    context: {'/n'.join([pages[i] for i in indices[0]])}
+    '''
+    m = [{'role':'user','content':prompt}]
+    chat_stream(m)
     with st.expander('Source documents'):
-        for doc in result['source_documents']:
+        st.write(indices)
+        for i in indices[0]:
             st.write('---------------------------------')
-            st.write('Page: ',doc.metadata['page'])
-            st.write('Source: ',doc.metadata['source'])
-            st.write(doc.page_content)
+            st.write(f'Page: {i}')
+            st.write(pages[i])
 
 examples = [
             "What are the vector databases mentioned in the book?",
+            "What are agent?",
+            "What is the name of the agentic framework introduced in this book?"
         ]
 with st.sidebar.expander('Prompt examples'):
     for ex in examples:

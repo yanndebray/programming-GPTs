@@ -18,6 +18,7 @@ pytube
 moviepy
 pydub
 chromadb 
+faiss-cpu
 tiktoken
 pypdf
 llama-index
@@ -25,3 +26,4 @@ google-search-results
 duckduckgo_search
 # elevenlabs
 plotly
+numpy

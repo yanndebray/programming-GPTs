@@ -41,7 +41,7 @@ def dumb_chat():
   st.write(dummy[1]['content'])
   return dummy[1]['content']
 
-def chat_stream(messages,model='gpt-3.5-turbo'):
+def chat_stream(messages,model='gpt-4o-mini'):
   # Generate a response from the ChatGPT model
   completion = client.chat.completions.create(
         model=model,
