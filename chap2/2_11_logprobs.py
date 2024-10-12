@@ -25,7 +25,7 @@ i = st.slider("Tokens", 0, len(logprobs) - 1)
 st.write(''.join(token[:i])) # join list of tokens until i
 df = pd.DataFrame([dict(t) for t in logprobs[i]])
 # Convert logprobs to probabilities
-df['probability'] = df['logprob'].apply(lambda x: exp(x), 3)  # Using e^logprob
+df['probability'] = df['logprob'].apply(lambda x: exp(x))  # Using e^logprob
 st.write('**Next probable tokens:**')
 st.write(df[['token', 'probability']])  # Displaying probabilities instead of logprobs
 st.bar_chart(df, x="token", y="probability",
