@@ -7,19 +7,19 @@ app_id = os.getenv('api_key')
 app = Flask(__name__)
 
 
-# def validate_api_key(request):
-#   auth_header = request.headers.get('Authorization')
-#   if not auth_header:
-#     return False
+def validate_api_key(request):
+  auth_header = request.headers.get('Authorization')
+  if not auth_header:
+    return False
 
-#   try:
-#     auth_type, provided_api_key = auth_header.split(None, 1)
-#     if auth_type.lower() != 'basic':
-#       return False
+  try:
+    auth_type, provided_api_key = auth_header.split(None, 1)
+    if auth_type.lower() != 'basic':
+      return False
 
-#     return provided_api_key == app_id
-#   except Exception:
-#     return False
+    return provided_api_key == app_id
+  except Exception:
+    return False
 
 
 @app.route('/')
@@ -29,10 +29,10 @@ def index():
 
 @app.route('/weather', methods=['GET'])
 def get_weather_data():
-  # if not validate_api_key(request):
-  #   return Response(json.dumps({"error": "Invalid API key"}),
-  #                   status=401,
-  #                   mimetype='application/json')
+  if not validate_api_key(request):
+    return Response(json.dumps({"error": "Invalid API key"}),
+                    status=401,
+                    mimetype='application/json')
   city = request.args.get('city')
   if not city:
     return Response(json.dumps({"error": "City parameter is required"}),
