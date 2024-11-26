@@ -1,0 +1,47 @@
+Here's the translation of the article into English:
+
+---
+
+**We tested Le Chat, the astonishing French ChatGPT from Mistral AI**
+
+The Parisian startup Mistral AI launched a competitor to the ChatGPT conversational robot on Monday, February 26. Named Le Chat (pronounced like the small feline), it is positioned halfway between a research assistant and a personal secretary. This tool is free but is currently accessible only through a waiting list, which will grow if access requests are numerous, explains a company spokesperson.
+
+We asked it nearly a hundred questions to compare its capabilities with those of the pioneering tool ChatGPT. The performance of Le Chat is quite close to the American reference, which, however, surpasses it in several areas, including document summarization. Overall, during our tests, Le Chat made more mistakes than ChatGPT. However, since its development is not yet fully complete, it is possible that this gap may narrow.
+
+**Convincing answers to complex questions**
+
+Like ChatGPT, Le Chat gives the impression of great lucidity: it often responds correctly, even remarkably, to almost all the questions posed to it, even when the inquiry is complex ("Who invented postmodern dance?", "What is the best novel by Nabokov?", "Was the French state favorable to the telephone in the 1870s?"). This incredible Mr. Know-it-all produces answers of quality comparable to both the paid and free versions of ChatGPT. Unfortunately, it disappoints in exactly the same way: a significant error occasionally appears in its responses. For example, Le Chat attributes inventions to Steve Wozniak that he did not contribute to, such as the first portable Macintosh. When we tested its competitor Copilot (initially named Bing Chat) just a year ago, it also added inventions to the already considerable list of Steve Wozniak's contributions to the history of computing.
+
+Contrary to what Le Chat claims, Steve Wozniak did not invent either Apple DOS or the portable Macintosh. This unpredictable tendency to make mistakes undermines the trust placed in it and prompts users to verify information on which they cannot afford to be wrong. The error rate of Le Chat seemed higher than that of ChatGPT, but our tests form too narrow a statistical series to draw definitive conclusions.
+
+**Drafts of messages that are fairly convincing**
+
+The American robot ChatGPT is capable of drafting a message based on a brief textual prompt. Its drafts are rarely usable as is, but sometimes advanced enough to save time. For now, Le Chat seems a bit less proficient in this exercise. Revising and refining its drafts often requires more work.
+
+A very short request is often enough to generate a rich and well-argued message. The French AI can finish an unfinished text, transform awkward French into correct language, and then reformulate it in another style (formal, warm, or formal, for example). It can also provide arguments to convince an interlocutor or counter their attacks. In this regard, its performance is passable, closer to that of ChatGPT version 3.5 (free) than to ChatGPT 4 (paid), which has more precise ideas and richer French.
+
+**Poorly synthesized documents**
+
+This is disappointing: Le Chat rarely manages to correctly summarize a document of several dozen pages or one with a complex structure, such as a scientific study. It alternates between errors, misunderstandings, and omissions, whereas the paid version of ChatGPT generally performs admirably, with only rare misunderstandings. It is impossible to compare with the free version of ChatGPT: it is limited and unable to summarize such documents.
+
+However, when asked to summarize a simple text of a few pages, its performance is equivalent to that of the paid ChatGPT and even slightly surpasses that of the free ChatGPT. All three tools, however, occasionally make mistakes that again undermine the trust placed in them.
+
+**A consensual and positive personality**
+
+When we steer Le Chat towards slippery subjects, such as racism, sexism, or interpersonal conflicts, its bias is clear: ethics and progressivism. This conversational robot often produces responses particularly close to those of ChatGPT, often starting with the same words: "I understand your concern." It professes active listening, reinforcement, assertiveness, and constructiveness.
+
+When we pretend to establish an emotional relationship with it, it generally remains reserved, reminding us that it is a robot devoid of emotions. Its sentences often start with the same words as ChatGPT: "I do not have the ability to..."
+
+**Features to enrich**
+
+While the French feline's AI is promising, its features are still under construction: there is no smartphone application that one could query aloud while driving or cooking, for example. The tools reserved for the paid version of ChatGPT are also missing, such as image generation, the creation of personalized chatbots, or the ability to import an image for analysis. It is also impossible to import a text document, except by cleverly copying and pasting its web address.
+
+Mistral is working on a paid version of Le Chat, equipped with more advanced features, which will be launched at an unspecified date and price. A spokesperson for the French company explains to *Le Monde* that its paid version could then be limited: it would use its most powerful engine only for the most complex responses, resorting to a less resource-intensive engine for simple questions.
+
+---
+
+**Nicolas Six**
+
+---
+
+This article is reserved for subscribers. Subscribe to access this exchange space and contribute to the discussion.

@@ -1,0 +1,65 @@
+# Open-Interpreter
+
+**Simon Willison’s Weblog**
+
+---
+
+## Overview
+
+Open-Interpreter is an open-source alternative to the ChatGPT Code Interpreter, designed as a "natural language interface for computers." Although it has been available for some time, I recently took the opportunity to try it out.
+
+## Getting Started
+
+To run Open-Interpreter without prior installation, I used the following command:
+
+```bash
+uvx --from open-interpreter interpreter
+```
+
+### Features
+
+- **API Integration**: The default mode requires an OpenAI API key to utilize the GPT-4o model. 
+- **Local Model Support**: Users can also run local models using the command `interpreter --local`.
+- **Terminal Operation**: The tool operates directly in your terminal, generating Python code to answer your queries. It requests your permission to execute the code on your machine.
+
+### Example Usage
+
+I tested it by entering the following prompt:
+
+```
+find largest files on my desktop
+```
+
+### Safety Considerations
+
+Since the code is executed directly on your machine, it is crucial to review the generated code carefully before approving it. The team is developing an experimental **safe mode** that scans the generated code using **semgrep**. However, I believe that executing code in a sandbox environment would be a more secure approach, as sandboxing Python presents significant challenges. They do have an experimental **Docker integration** available.
+
+---
+
+**Posted on**: 24th November 2024, 6:29 PM
+
+---
+
+## Recent Articles
+
+- **Ask questions of SQLite databases and CSV/JSON files in your terminal** - 25th November 2024
+- **Weeknotes: asynchronous LLMs, synchronous embeddings, and I kind of started a podcast** - 22nd November 2024
+- **Notes from Bing Chat—Our First Encounter With Manipulative AI** - 19th November 2024
+
+---
+
+### Tags
+
+- Python
+- Sandboxing
+- AI
+- OpenAI
+- Generative AI
+- LLMs
+- AI-Assisted Programming
+- Code Interpreter
+- UV
+
+---
+
+**Colophon**: © 2002-2024 Simon Willison.

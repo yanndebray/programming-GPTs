@@ -1,0 +1,12 @@
+[
+  {
+    "title": "open-interpreter",
+    "category": "Category: Programming Languages",
+    "summary": "Open-Interpreter is an open-source tool that acts as a natural language interface for computers, providing an alternative to the ChatGPT Code Interpreter. It can be run in the terminal without installation, requiring an OpenAI API key for its default mode or allowing the use of local models. The tool generates Python code based on user queries and executes it with user permission. Users are advised to review the generated code for safety, as the team is working on a \"safe mode\" and has experimental Docker integration. The article was published on November 24, 2024, and includes references to related topics in AI and programming."
+  },
+  {
+    "title": "On a test\u00e9 Le Chat, l\u2019\u00e9tonnant ChatGPT \u00e0 la fran\u00e7aise de Mistral\u00a0AI",
+    "category": "Category: Machine Learning",
+    "summary": "Mistral AI has launched Le Chat, a new conversational AI tool designed to compete with ChatGPT, on February 26, 2024. Currently available for free through a waiting list, Le Chat excels in answering complex questions, often matching ChatGPT's performance, but it tends to make more errors, particularly in document synthesis. While it can draft messages and summarize simpler texts, it struggles with longer documents. Le Chat maintains a positive and ethical approach to sensitive topics, similar to ChatGPT, but lacks some advanced features. Mistral AI is also working on a paid version with enhanced functionalities, though details on its release are yet to be announced."
+  }
+]
