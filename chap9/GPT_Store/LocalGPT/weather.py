@@ -3,7 +3,7 @@ import json, datetime, os
 from flask import Flask, request, send_from_directory
 
 # Api key for openweathermap.org can be provided as an environment variable
-os.environ['api_key'] = 'My_API_Key'
+# os.environ['api_key'] = 'My_API_Key'
 
 # city = 'Boston,US'
 app_id = os.getenv('api_key')
