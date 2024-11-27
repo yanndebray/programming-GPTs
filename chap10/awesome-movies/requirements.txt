@@ -1,0 +1,6 @@
+streamlit
+# weaviate-client
+python-dotenv
+pandas
+openai 
+faiss-cpu
