@@ -6,13 +6,13 @@ import numpy as np
 st.set_page_config(page_title='Ragu',page_icon='🔍')
 st.sidebar.title(f'Ragu 🔍')
 
-pages = np.load('chap9/pages.npy').tolist()
+pages = np.load('chap9/Streamlit_GPTs/pages.npy').tolist()
 
 def get_embedding(text, model="text-embedding-3-small"):
    return openai.embeddings.create(input = [text], model=model).data[0].embedding
 
 # Step 1: Load the embeddings as numpy array from file
-embeddings = np.load('chap9/embeddings.npy') # (140 vectors, each 1536-dimensional)
+embeddings = np.load('chap9/Streamlit_GPTs/embeddings.npy') # (140 vectors, each 1536-dimensional)
 # Step 2: Create a FAISS index (FlatL2 for Euclidean distance)
 
 d = 1536  # Dimensionality of each vector (1536 in this case)
