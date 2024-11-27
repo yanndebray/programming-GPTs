@@ -6,15 +6,15 @@ In this repo, you will learn how to program GPTs primarily leveraging OpenAI’s
 Generative Pre-Trained Transformers are quite complicated general-purpose machines that can do a lot of different things, like handling sequences of text, images, and sounds. You will learn the basic concepts and principles behind GPTs, and how they work under the hood. But more importantly, you will learn how to integrate them inside of your applications.
 
 The repo is divided into 10 chapters, each covering a different topic and a different aspect of programming GPTs. The chapters are:
-- **Chapter 1: 🤖 Introduction to GPTs**. How they work and their evolution. 
+- **Chapter 1: 🤖 Introducing GPTs.** How they work and their evolution. 
 
-- **Chapter 2: 🐱💬 The Chat API.** In this chapter, you will learn how to use the Chat API, a simple way to create conversational agents with GPTs. You will learn how to create your own chatbot.
+- **Chapter 2: 🐱💬 OpenAI APIs.** In this chapter, you will learn how to use the OpenAI APIs, a simple way to create AI agents with GPT Models. You will start by learning how to create your own chatbot.
 
     [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://chat48.streamlit.app/)
 
 <video src="https://github.com/slevin48/openai/assets/12418115/91b2c4c6-7338-4f51-9440-16e59626378d" controls="controls" style="max-width: 730px;"></video>
 
-- **Chapter 3: 🔗 Chaining & Summarization.** In this chapter, you will learn how to chain calls to a Large Language Model and use it to summarize texts, such as articles, books, or transcripts. You will learn how to use the Chat API together with the LangChain package to enhance GPTs.
+- **Chapter 3: 🔗 Prompting, Chaining & Summarization.** In this chapter, you will learn how to engineer prompts, chain calls to a Large Language Model and use it to summarize texts, such as articles, books, or transcripts. You will use the OpenAI API together with the LangChain package to enhance GPTs.
 
     [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://teams-summarizer.streamlit.app/)
 
@@ -51,11 +51,15 @@ The repo is divided into 10 chapters, each covering a different topic and a diff
 
 <video src="https://github.com/slevin48/openai/assets/12418115/3726aa2c-67e0-474c-909f-5cb54eaa39db" controls="controls" style="max-width: 730px;"></video>
 
-- **Chapter 9: 📌 Conclusion.** In this chapter, you will review what you have learned, and reflect on the potential and challenges of programming GPTs. You will also learn how to keep up with the latest developments and innovations in the field of GPTs and OpenAI with additional resources.
+- **Chapter 9: 📌 Deploying GPTs.** In this chapter, you will reuse what you have learned, and you will deploy your own GPTs. This will be made concrete with a small team of GPTs covering each one chapter of the book.
 
     [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://programming-gpts.streamlit.app/)
 
 <video src="https://github.com/user-attachments/assets/b972e931-9412-4561-a578-5fb83cf78398" controls="controls" style="max-width: 730px;"></video>
 
 
-- **Chapter 10: 📚 Appendix.** In this chapter, you will find additional resources, such as a glossary of terms, and a list of references and further readings. You will also find some applications I developed to support some of my work.
+- **Chapter 10: 📚 Appendix.** In this chapter, you will find additional resources to keep up with the latest developments and innovations in the field of GPTs.
+
+    [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://awesome-movies.streamlit.app/?q=super+hero&type=Hybrid)
+
+<video src="https://github.com/user-attachments/assets/f1cd1721-7440-4a14-b8f5-0527fa18afce" controls="controls" style="max-width: 730px;"></video>
