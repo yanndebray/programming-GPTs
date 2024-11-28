@@ -2,6 +2,9 @@
 
 <img align="right" src="./img/parrot.png" height="400px"/>
 
+Book available on Amazon 📖 
+https://www.amazon.com/dp/B0DP76LL4D
+
 In this repo, you will learn how to program GPTs primarily leveraging OpenAI’s APIs. If you don’t know what an API is (Application Programming Interface), then this is not the repo you’re looking for. Go look it up on the internet, and come back after learning some basics of programming, preferably in Python, as this will be the language used for the tutorials in each chapter.
 Generative Pre-Trained Transformers are quite complicated general-purpose machines that can do a lot of different things, like handling sequences of text, images, and sounds. You will learn the basic concepts and principles behind GPTs, and how they work under the hood. But more importantly, you will learn how to integrate them inside of your applications.
 
