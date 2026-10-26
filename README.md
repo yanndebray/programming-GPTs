@@ -7,6 +7,62 @@
 Book available on Amazon 📖 
 https://www.amazon.com/dp/B0DP76LL4D
 
+## 📖 Read the book online
+
+The full content of the book is available here, one page per chapter:
+
+- [Preface](0_Preface.md)
+    - Who is this book for
+    - About the author
+    - What you will learn
+    - Setting up the Programming Environment
+- [1. Introducing GPTs](1_Introducing_GPTs.md)
+    - 1.1. Large Language Models Are Next-Word Predictors
+    - 1.2. Generative Pretrained Transformers: Building Blocks of Language Intelligence
+    - 1.3. Evolution of GPTs
+    - 1.4. Building Your Own GPT
+- [2. OpenAI APIs](2_OpenAI_APIs.md)
+    - 2.1. Quick tour of the OpenAI developer platform
+    - 2.2. Getting started with the chat completion API
+    - 2.3. Prices of the API
+    - 2.4. Build your first chatbot app
+    - 2.5. Advanced parameters
+- [3. Prompting, Chaining and Summarization](3_Prompting_Chaining_and_Summarization.md)
+    - 3.1. The art of prompting
+    - 3.2. Prompt engineering techniques in app development
+    - 3.3. Why chaining
+    - 3.4. Summarizing long documents
+- [4. Vector search & Question Answering](4_Vector_search_Question_Answering.md)
+    - 4.1. Map Rerank
+    - 4.2. Retrieval-Augmented Generation
+    - 4.3. Application: Question answering on Book
+- [5. Agents & Tools](5_Agents_Tools.md)
+    - 5.1. Agents select tools
+    - 5.2. OpenAI Functions
+    - 5.3. OpenAI Assistants
+- [6. Speech-to-Text and Text-to-Speech](6_Speech_to_Text_and_Text_to_Speech.md)
+    - 6.1. Transcription
+    - 6.2. Voice synthesis
+    - 6.3. Application: Daily tech podcast
+- [7. Vision](7_Vision.md)
+    - 7.1. From traditional computer vision to multi-modal language models
+    - 7.2. Object detection
+    - 7.3. From mock to web UI
+    - 7.4. Video understanding
+- [8. DALL-E image generation](8_DALL_E_image_generation.md)
+    - 8.1. Generation
+    - 8.2. Edits
+    - 8.3. Variations
+    - 8.4. Application: GPT Journey – choose your own adventure
+- [9. Deploying GPTs](9_Deploying_GPTs.md)
+    - 9.1. Deploy on the OpenAI GPT Store
+    - 9.2. Deploy GPT Apps on Streamlit Cloud
+- [10. Appendix](10_Appendix.md)
+    - 10.1. More AI theory
+    - 10.2. More LLMs: open-source and local alternatives
+    - 10.3. More Applications
+    - 10.4. More copilots
+
 In this repo, you will learn how to program GPTs primarily leveraging OpenAI’s APIs. If you don’t know what an API is (Application Programming Interface), then this is not the repo you’re looking for. Go look it up on the internet, and come back after learning some basics of programming, preferably in Python, as this will be the language used for the tutorials in each chapter.
 Generative Pre-Trained Transformers are quite complicated general-purpose machines that can do a lot of different things, like handling sequences of text, images, and sounds. You will learn the basic concepts and principles behind GPTs, and how they work under the hood. But more importantly, you will learn how to integrate them inside of your applications.
 
